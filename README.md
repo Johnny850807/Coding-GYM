@@ -1,9 +1,10 @@
-# Coding-GYM
+﻿# Coding-GYM
 ─程式武功道館 寒訓─
 
 ## 簽到區
 
 - Waterball
+洪賓忠簽到
 
 
 1. Java 
