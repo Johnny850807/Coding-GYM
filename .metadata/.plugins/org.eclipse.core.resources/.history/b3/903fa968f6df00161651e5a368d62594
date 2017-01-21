@@ -1,0 +1,46 @@
+package ­±¿n;
+
+import java.util.Scanner;
+
+public class Area {
+	public static void main(String[] args){
+		Triangle a = new Triangle();
+		a.show();
+		
+		Rectangle b = new Rectangle();
+		b.show();
+		
+		Circular c = new Circular();
+		c.show();
+	}
+}
+
+class Triangle{
+	Scanner input = new Scanner(System.in);
+	public float bottom=(float) input.nextDouble();
+	public float high=(float) input.nextDouble();
+	public void show(){
+		
+		System.out.println(bottom*high*0.5);
+	}
+}
+
+class Rectangle{
+	Scanner input = new Scanner(System.in);
+	public int high=input.nextInt();
+	public int wide=input.nextInt();
+	public void show(){
+		System.out.println(high*wide);
+	}
+	
+}
+
+class Circular{
+	Scanner input = new Scanner(System.in);
+	public float radius=(float) input.nextDouble();
+	public void show(){
+		System.out.println(radius*radius*3.14);
+	}
+	
+}
+

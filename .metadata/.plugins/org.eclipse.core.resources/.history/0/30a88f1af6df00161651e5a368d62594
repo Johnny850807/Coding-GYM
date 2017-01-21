@@ -1,0 +1,38 @@
+package ­±¿n;
+
+public class Area {
+	public static void main(String[] args){
+		Triangle a = new Triangle();
+		a.show();
+		
+		Rectangle b = new Rectangle();
+		b.show();
+		
+		Circular c = new Circular();
+		c.show();
+	}
+}
+
+class Triangle{
+	public float bottom,high;
+	public void show(){
+		System.out.println(bottom*high*0.5);
+	}
+}
+
+class Rectangle{
+	public int high,wide;
+	public void show(){
+		System.out.println(high*wide);
+	}
+	
+}
+
+class Circular{
+	public float radius;
+	public void show(){
+		System.out.println(radius*radius*3.14);
+	}
+	
+}
+
