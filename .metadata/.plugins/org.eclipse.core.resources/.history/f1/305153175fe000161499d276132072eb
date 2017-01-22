@@ -1,0 +1,60 @@
+package 面積;
+
+import java.util.Scanner;
+
+public class Area {
+	private static Scanner input;
+
+	public static void main(String[] args){
+		System.out.println("請先輸入數字選擇何種形狀的面積 :1.三角形、2.矩形、3.圓形"\n);
+		input = new Scanner(System.in);
+		int x=input.nextInt();
+		
+		if(x==1){
+		Triangle a = new Triangle();
+		a.show();
+		}
+		if(x==2){
+		Rectangle b = new Rectangle();
+		b.show();
+		}
+		if(x==3){
+		Circular c = new Circular();
+		c.show();
+		}
+	}
+}
+
+class Triangle{
+	Scanner input = new Scanner(System.in);
+	public void show(){
+		System.out.print("輸入底邊");
+		float bottom=(float) input.nextInt();
+		System.out.print("輸入高");
+		float high=(float) input.nextInt();
+		System.out.println("三角形面積為 "+bottom*high*0.5);
+	}
+}
+
+class Rectangle{
+	Scanner input = new Scanner(System.in);
+	public void show(){
+		System.out.print("輸入長");
+		int high=input.nextInt();
+		System.out.print("輸入寬 ");
+		int wide=input.nextInt();
+		System.out.println("矩形面積為 "+high*wide);
+	}
+	
+}
+
+class Circular{
+	Scanner input = new Scanner(System.in);
+	public void show(){
+		System.out.print("輸入半徑");
+		float radius=(float) input.nextDouble();
+		System.out.println("圓形面積為 "+radius*radius*3.14);
+	}
+	
+}
+

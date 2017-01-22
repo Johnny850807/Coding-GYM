@@ -3,43 +3,27 @@ package 面積;
 import java.util.Scanner;
 
 public class Area {
+	private static Scanner input;
+
 	public static void main(String[] args){
+		System.out.println("請先輸入數字選擇何種形狀的面積 :1.三角形、2.矩形、3.圓形");
+		input = new Scanner(System.in);
+		int x=input.nextInt();
+		
+		if(x==1){
 		Triangle a = new Triangle();
 		a.show();
-		
+		}
+		if(x==2){
 		Rectangle b = new Rectangle();
 		b.show();
-		
+		}
+		if(x==3){
 		Circular c = new Circular();
 		c.show();
+		}
 	}
 }
 
-class Triangle{
-	Scanner input = new Scanner(System.in);
-	public void show(){
-		float bottom=(float) input.nextDouble();
-		float high=(float) input.nextDouble();
-		System.out.println(bottom*high*0.5);
-	}
-}
 
-class Rectangle{
-	Scanner input = new Scanner(System.in);
-	public void show(){
-		int high=input.nextInt();
-		int wide=input.nextInt();
-		System.out.println(high*wide);
-	}
-	
-}
-
-class Circular{
-	Scanner input = new Scanner(System.in);
-	public void show(){
-		float radius=(float) input.nextDouble();
-		System.out.println(radius*radius*3.14);
-	}
-	
-}
 
