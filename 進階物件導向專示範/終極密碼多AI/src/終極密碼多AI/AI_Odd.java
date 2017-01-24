@@ -2,7 +2,7 @@ package ²×·¥±K½X¦hAI;
 import java.util.Random;
 public class AI_Odd extends Player {
 	public AI_Odd() {
-		super(PlayerType.AI, "");
+		super(PlayerType.AIODD, "");
 	}
 
 	@Override

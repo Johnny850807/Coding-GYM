@@ -19,11 +19,14 @@ public abstract class Player {
 		return String.format("%s ²q¤F¼Æ¦r  %d%n" , this , guess );
 	}
 	public int doGuessingAction(){
-		int guess = getGuessingNumber();
+		//Template method
+		int guess =  game.getMaxBound() == game.getMinBound() ?
+				game.getMaxBound() : getGuessingNumber();
 		getGuessMessage(guess);
 		return guess;
 	}
-	public abstract int getGuessingNumber();
+	
+	protected abstract int getGuessingNumber();
 	
 	public PlayerType getType() {
 		return type;

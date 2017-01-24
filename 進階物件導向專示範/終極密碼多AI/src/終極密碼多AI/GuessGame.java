@@ -25,7 +25,7 @@ public class GuessGame {
 	public boolean doGuessingAction(Player guessingPlayer){
 		int guess = guessingPlayer.doGuessingAction();
 		System.out.println(guessingPlayer.getGuessMessage(guess));
-		if ( guess > minBound && guess < maxBound )
+		if ( guess >= minBound && guess <= maxBound )
 		{
 			
 			if ( guess == answer )

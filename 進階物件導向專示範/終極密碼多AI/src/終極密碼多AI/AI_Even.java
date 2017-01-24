@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class AI_Even extends Player {
 	public AI_Even() {
-		super(PlayerType.AI, "" );
+		super(PlayerType.AIEVEN, "" );
 	}
 
 	@Override
@@ -21,4 +21,6 @@ public class AI_Even extends Player {
 		}while(rand % 2 != 0 || rand < min || rand > max );  //retain odd and bounded
 		return rand;
 	}
+	
+	
 }
