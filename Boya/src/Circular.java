@@ -3,11 +3,10 @@ import java.util.Scanner;
 public class Circular {
 	
 	void setCircular() {
-		DecimalFormat df=new DecimalFormat("#.##");
 		Shape Circular = new Shape();
 		Scanner scanner = new Scanner(System.in);
 		
-		System.out.println("½Ğ¿é¤J¶ê§Î : ¥b®|¡C");
+		System.out.println("Â½ÃÂ¿Ã©Â¤JÂ¶ÃªÂ§Ã : Â¥bÂ®|Â¡C");
 		Circular.FirstLength = scanner.nextFloat();;
 		Circular.Area = Circular.FirstLength*Circular.FirstLength*3.14;
 		System.out.println(Circular.Area);
