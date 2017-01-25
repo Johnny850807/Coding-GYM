@@ -1,0 +1,35 @@
+import java.awt.Choice;
+import java.util.Scanner;
+
+public class hello_world {
+	public static void main(String[] args) {
+		
+		int choice,temp1,temp2;
+		float temp3;
+        Scanner scanner = new Scanner(System.in);
+        
+        while(true)
+        {
+        	System.out.println("(1) 三角形 (2) 矩形 (3) 圓形");
+	        choice = scanner.nextInt();
+	        
+	        if(choice==1){
+	        	System.out.println("請輸入底、高");
+	        	temp1 = scanner.nextInt();
+	        	temp2 = scanner.nextInt();
+	        	System.out.print("三角形面積為:"+ (temp1 * temp2)/2);
+	        }
+	        else if(choice==2){
+	        	System.out.println("請輸入長、寬");
+	        	temp1 = scanner.nextInt();
+	        	temp2 = scanner.nextInt();
+	        	System.out.print("矩形面積為:"+ temp1 * temp2);
+	        }
+	        else if(choice==3){
+	        	System.out.println("請輸入半徑");
+	        	temp3 = scanner.nextFloat();
+	        	System.out.print("圓形面積為:"+ temp3 * temp3 * 3.14);
+	        }
+        }	
+	}
+};
