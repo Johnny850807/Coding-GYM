@@ -1,0 +1,22 @@
+import java.awt.Choice;
+import java.util.Scanner;
+
+public class hello_world {
+
+	public static void main(String[] args) {
+		System.out.println("決定要計算何種形狀的面積：(1) 三角形 (2) 矩形 (3) 圓形");
+		
+		
+
+		public class HelloUser {
+		    public static void main(String[] args) {
+		        Scanner scanner = new Scanner(System.in);
+		        System.out.print("Please input a number: ");
+		        System.out.printf("Oh! I get %d!!", scanner.nextInt());
+		    }
+		}
+		
+	}
+
+	return 0;
+}

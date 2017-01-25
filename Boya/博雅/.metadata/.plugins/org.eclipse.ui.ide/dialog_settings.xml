@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\Jacky\Documents\GitHub\Coding-GYM\Boya"/>
+			<item value="C:\Users\Jacky\Documents\Java work"/>
+			<item value="C:\Users\Jacky\Documents\GitHub\Coding-GYM"/>
+			<item value="D:\Javamer\Coding-GYM\賓忠\物件村"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+	<section name="NewWizardAction">
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item value="573" key="DIALOG_X_ORIGIN"/>
+		<item value="249" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="SaveAsDialogSettings">
+		<item value="700" key="DIALOG_WIDTH"/>
+		<item value="1|Microsoft JhengHei UI|10.2|0|WINDOWS|1|-17|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft JhengHei UI" key="DIALOG_FONT_NAME"/>
+		<item value="659" key="DIALOG_HEIGHT"/>
+		<item value="619" key="DIALOG_X_ORIGIN"/>
+		<item value="85" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

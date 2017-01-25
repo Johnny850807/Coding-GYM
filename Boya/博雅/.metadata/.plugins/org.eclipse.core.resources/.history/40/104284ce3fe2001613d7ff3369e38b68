@@ -1,0 +1,11 @@
+import java.awt.Choice;
+import java.util.Scanner;
+
+public class Triangle {
+	int temp1,temp2;
+	
+	System.out.println("請輸入底、高");
+	temp1 = scanner.nextInt();
+	temp2 = scanner.nextInt();
+	System.out.print("三角形面積為:"+ (temp1 * temp2)/2);
+}
