@@ -3,14 +3,13 @@ import java.util.Scanner;
 public class Triangle {
 
 	void setTriangle() {
-		Shape Triangle = new Shape();
+		float 底;
+		float 高;
 		Scanner scanner = new Scanner(System.in);
-		
+
 		System.out.println("請輸入三角形 : 底、高。");
-		Triangle.FirstLength = scanner.nextFloat();
-		Triangle.SecondLength = scanner.nextFloat();
-		Triangle.Area = (Triangle.FirstLength*Triangle.SecondLength)/2;
-		
-		System.out.println(Triangle.Area);
+		底 = scanner.nextFloat();
+		高 = scanner.nextFloat();
+		System.out.println((底 * 高) / 2);
 	}
 }
