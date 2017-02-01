@@ -1,0 +1,14 @@
+package 二十一點遊戲;
+
+public class TestProgram {
+	public static void main(String[] argv)
+	{
+		Deck deck = new Deck();
+		deck.Shuffle();
+		deck.sort();
+		System.out.println(deck.print());
+		HumanPlayer h = new HumanPlayer("nick");
+		System.out.println(h.is_getCard());
+		System.out.println(h.getName());
+	}
+}

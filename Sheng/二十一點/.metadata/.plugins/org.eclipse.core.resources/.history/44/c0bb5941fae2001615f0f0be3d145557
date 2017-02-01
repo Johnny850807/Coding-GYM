@@ -1,0 +1,12 @@
+package 二十一點遊戲;
+
+public class TestProgram {
+	public static void main(String[] argv)
+	{
+		Card card1 = new Card(2,11);
+		Card card2 = new Card(3,11);
+		card1.print();
+		card2.print();
+		card1.compare(card2).print();;
+	}
+}

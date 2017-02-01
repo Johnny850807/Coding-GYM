@@ -1,0 +1,38 @@
+package 二十一點遊戲;
+
+import java.util.ArrayList;
+
+public class Game {
+	private ArrayList<Player> list;
+	private Deck deck;
+	private int humanAmount;
+	private int comAmount;
+	public Game(int humanAmount,int comAmount)
+	{
+		this.humanAmount = humanAmount;
+		this.comAmount = comAmount;
+		for(int i=1;i<=humanAmount;i++)
+		{
+			list.add(new HumanPlayer("玩家" + Integer.toString(i)));
+		}
+		for(int i=1;i<=comAmount;i++)
+		{
+			list.add(new ComPlayer("電腦" + Integer.toString(i)));
+		}
+		for(int i=0;i<list.size();i++)
+		{
+			int ran = (int)(Math.random()*list.size());
+			Player temp = list.get(i);
+			list.set(i, list.get(ran));
+			list.set(ran, temp);
+		}
+		for(int i=0;i<list.size();i++)
+		{
+			System.out.println(list.get(i).getName());
+		}
+	}
+	public void run()
+	{
+		System.out.println("遊戲開始");
+	}
+}

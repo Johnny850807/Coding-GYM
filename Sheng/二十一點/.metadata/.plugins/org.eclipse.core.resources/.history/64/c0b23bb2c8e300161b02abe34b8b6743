@@ -1,0 +1,10 @@
+package 二十一點遊戲;
+
+public class TestProgram {
+	public static void main(String[] argv)
+	{
+		Deck deck = new Deck();
+		deck.Shuffle();
+		System.out.println(deck.print());
+	}
+}

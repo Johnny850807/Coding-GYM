@@ -1,0 +1,53 @@
+package 二十一點遊戲;
+
+import java.util.ArrayList;
+
+public class Game {
+	private ArrayList<Player> list;
+	private Deck deck;
+	private int humanAmount;
+	private int comAmount;
+	private int round;
+	public Game(int humanAmount,int comAmount)
+	{
+		list = new ArrayList<Player>();
+		this.humanAmount = humanAmount;
+		this.comAmount = comAmount;
+		round = 3;
+		for(int i=1;i<=humanAmount;i++)
+		{
+			list.add(new HumanPlayer("玩家" + Integer.toString(i)));
+		}
+		for(int i=1;i<=comAmount;i++)
+		{
+			list.add(new ComPlayer("電腦" + Integer.toString(i)));
+		}
+		for(int i=0;i<list.size();i++)
+		{
+			int ran = (int)(Math.random()*list.size());
+			Player temp = list.get(i);
+			list.set(i, list.get(ran));
+			list.set(ran, temp);
+		}
+		System.out.print("順序為:");
+		for(int i=0;i<list.size();i++)
+		{
+			System.out.print(list.get(i).getName() + "->");
+		}
+		System.out.println("");
+	}
+	public void run()
+	{
+		System.out.println("遊戲開始");
+		for(int i=0;i<round;i++)
+		{
+			for(int j=0;j<list.size();j++)
+			{
+				System.out.println("輪到" + list.get(j).getName());
+				do{
+					
+				}while(list.get(j).is_getCard() && list.get(j).is_range());
+			}
+		}
+	}
+}

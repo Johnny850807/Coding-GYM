@@ -1,0 +1,10 @@
+package 二十一點遊戲;
+
+public class Deck {
+	private Card[] cards;
+	private int cardAmount;
+	public Deck()
+	{
+		
+	}
+}

@@ -1,0 +1,9 @@
+package 二十一點遊戲;
+
+abstract public class Player {
+	protected int cash;
+	public Player()
+	{
+		cash=0;
+	}
+}

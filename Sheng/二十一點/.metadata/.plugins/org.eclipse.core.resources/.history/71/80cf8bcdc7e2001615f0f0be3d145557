@@ -1,0 +1,11 @@
+package 二十一點遊戲;
+
+public class Card {
+	private int suit;
+	private int rank;
+	public Card(int suit,int rank)//(花色，大小)
+	{
+		this.suit=suit;
+		this.rank=rank;
+	}
+}

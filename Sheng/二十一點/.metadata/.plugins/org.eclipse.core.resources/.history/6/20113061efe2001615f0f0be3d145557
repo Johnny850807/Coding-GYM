@@ -1,0 +1,9 @@
+package 二十一點遊戲;
+
+public class TestProgram {
+	public static void main(String[] argv)
+	{
+		Card card = new Card(4,13);
+		card.print();
+	}
+}
