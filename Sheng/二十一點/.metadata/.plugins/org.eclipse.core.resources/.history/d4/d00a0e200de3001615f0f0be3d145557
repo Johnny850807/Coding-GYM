@@ -1,0 +1,6 @@
+package 二十一點遊戲;
+
+abstract public class Player {
+	protected int cash;
+	protected Card[] cards;
+}

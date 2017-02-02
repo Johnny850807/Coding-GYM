@@ -1,0 +1,6 @@
+package 二十一點遊戲;
+
+public class Card {
+	private int rank;
+	private int suit;
+}

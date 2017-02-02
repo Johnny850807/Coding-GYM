@@ -1,0 +1,9 @@
+package 二十一點遊戲;
+import java.util.Scanner;
+public class HumanPlayer extends Player{
+
+	public HumanPlayer(String name)
+	{
+		super(name);
+	}
+}

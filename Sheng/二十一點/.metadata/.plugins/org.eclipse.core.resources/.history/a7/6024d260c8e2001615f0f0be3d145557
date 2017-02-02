@@ -1,0 +1,12 @@
+package 二十一點遊戲;
+
+public class Card {
+	private static String[] suits={"黑桃","紅心","方塊","梅花"};
+	private int suit;
+	private int rank;
+	public Card(int suit,int rank)//(花色，大小)
+	{
+		this.suit=suit;
+		this.rank=rank;
+	}
+}

@@ -1,0 +1,8 @@
+package 二十一點遊戲;
+
+public class ComPlayer extends Player{
+	public ComPlayer(String name)
+	{
+		super(name);
+	}
+}

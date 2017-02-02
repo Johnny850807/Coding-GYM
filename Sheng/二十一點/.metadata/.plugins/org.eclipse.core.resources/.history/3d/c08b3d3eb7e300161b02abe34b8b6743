@@ -1,0 +1,19 @@
+package 二十一點遊戲;
+
+abstract public class Player {
+	protected static final int limit=21;
+	protected int cash;
+	public Player()
+	{
+		cash=0;
+	}
+	abstract boolean is_getCard();
+	public boolean is_range()
+	{
+		if(cash<=limit)
+		{
+			return true;//未超過
+		}
+		return false;
+	}
+}

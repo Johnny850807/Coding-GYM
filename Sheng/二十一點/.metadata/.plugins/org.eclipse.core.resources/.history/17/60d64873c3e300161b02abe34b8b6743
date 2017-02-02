@@ -1,0 +1,55 @@
+package 二十一點遊戲;
+import java.util.Stack;
+public class Deck implements Poker{
+	private Stack<Card> cards;
+	public Deck()
+	{
+		cards = new Stack<Card>();
+		for(int suit=1,number=0;suit<=4;suit++)
+		{
+			for(int rank=1;rank<=13;rank++)
+			{
+				cards.add(new Card(suit,rank));
+				number++;
+			}
+		}
+	}
+	/*public void Shuffle()
+	{
+		for(int j=0;j<10;j++)
+		{
+			for(int i=0;i<cards.size();i++)
+			{
+				int ran = (int)(Math.random()*cards.size());
+				cards.insertElementAt(cards.elementAt(ran), i);
+				cards.insertElementAt(cards.elementAt(i), ran);
+			}
+		}
+	}
+	public void sort()
+	{
+		for(int i=0;i<cardAmount;i++)
+		{
+			for(int j=0;j<cardAmount;j++)
+			{
+				if(cards[i].compare(cards[j])==cards[j])
+				{
+					Card temp = cards[i];
+					cards[i] = cards [j];
+					cards[j] = temp;
+				}
+			}
+		}
+	}*/
+	@Override
+	public String print()
+	{
+		String temp="";
+		for(int number=0;number<cards.size();number++)
+		{
+			
+			temp+= cards.elementAt(number).print() + "\n";
+		}
+		return temp;
+	}
+}

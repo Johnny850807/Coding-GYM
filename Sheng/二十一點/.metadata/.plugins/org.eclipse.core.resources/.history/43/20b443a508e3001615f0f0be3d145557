@@ -1,0 +1,43 @@
+package 二十一點遊戲;
+
+public class Deck implements Poker{
+	private Card[] cards;
+	private final int cardAmount;
+	public Deck()
+	{
+		cardAmount=52;
+		cards = new Card[cardAmount];
+		for(int suit=1,number=0;suit<=4;suit++)
+		{
+			for(int rank=1;rank<=13;rank++)
+			{
+				cards[number] = new Card(suit,rank);
+				number++;
+			}
+		}
+	}
+	public void Shuffle()
+	{
+		for(int j=0;j<10;j++)
+		{
+			for(int i=0;i<cardAmount;i++)
+			{
+				int ran = (int)(Math.random()*cardAmount);
+				Card temp = cards[i];
+				cards[i] = cards [ran];
+				cards[ran] = temp;
+			}
+		}
+	}
+	
+	@Override
+	public String print()
+	{
+		String temp="";
+		for(int number=0;number<cardAmount;number++)
+		{
+			temp+=cards[number].print() + "\n";
+		}
+		return temp;
+	}
+}
