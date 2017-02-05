@@ -13,11 +13,13 @@ public abstract class MealsGettable {
 		this.selfName = selfName;
 	}
 	
+	/**呼叫此方法來印出菜單分類名稱與內容**/
 	public void printSelfAndItems(){
 		System.out.printf("%s: %s%n",typeName,selfName);
 		printSubItems();
 	}
 	
+	/**根據每個子類別菜單印內容**/
 	protected abstract void printSubItems();
 	
 	

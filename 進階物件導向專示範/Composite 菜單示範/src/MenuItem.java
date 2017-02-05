@@ -6,7 +6,7 @@ public class MenuItem extends MealsGettable {
 	}
 	
 	@Override
-	protected void printSubItems() {}
+	protected void printSubItems() {}  /**There is no more sub item**/
 
 
 

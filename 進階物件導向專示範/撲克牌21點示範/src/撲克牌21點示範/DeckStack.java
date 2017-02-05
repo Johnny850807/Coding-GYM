@@ -26,13 +26,13 @@ public class DeckStack extends Stack<Card> implements PokeCard {
 	public void randomlySwapShuffle(){
 		Random rand = new Random();
 		for ( int i = 0 ; i < size() ; i ++ )
-			swapTwoCards( i , rand.nextInt(size()));
+			swapTwoCards( (PokeCard)elementData[i] , (PokeCard)elementData[ rand.nextInt(size())]);
 	}
 	
-	private void swapTwoCards(int i , int j){
-		Object temp = elementData[i];
-		elementData[i] = elementData[j];
-		elementData[j] = temp;
+	private void swapTwoCards(PokeCard i , PokeCard j){
+		PokeCard temp = i;
+		i = j;
+		j = temp;
 	}
 	
 	@Override
