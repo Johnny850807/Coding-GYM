@@ -1,0 +1,11 @@
+package 學生資訊系統;
+
+import java.util.Scanner;
+
+public class StudentGrades {
+	Scanner input = new Scanner(System.in);
+	public void input(){
+		int grade = input.nextInt();
+		
+	}
+}

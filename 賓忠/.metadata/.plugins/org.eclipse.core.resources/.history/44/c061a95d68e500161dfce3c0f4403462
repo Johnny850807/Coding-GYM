@@ -1,0 +1,41 @@
+package 學生資訊系統;
+
+import java.util.Scanner;
+
+public class StudentInformation {
+	private static Scanner input;
+	float high,weight;
+	int grade;
+	String id;
+	public StudentInformation(float high,float weight,int grade,String id){
+		StudentInformation a = new StudentInformation(high, weight, grade, id);
+		a.high = high;
+		a.weight = weight;
+		a.grade = grade;
+		a.id = id;
+	}
+	public void High(){
+		high = (float)input.nextFloat();
+	}
+	public float SaveHigh(){
+		return high;
+	}
+	public void Weight(){
+		weight = (float)input.nextFloat();
+	}
+	public float SaveWeight(){
+		return weight;
+	}
+	public void Grade(){
+		grade = input.nextInt();
+	}
+	public int SaveGrade(){
+		return grade;
+	}
+	public void Id(){
+		id = (String)input.nextLine();
+	}
+	public String SaveId(){
+		return id;
+	}
+}

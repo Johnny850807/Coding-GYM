@@ -1,0 +1,16 @@
+package 學生資訊系統;
+
+import java.util.Scanner;
+
+public class StudentSystem {
+	private static Scanner input;
+	public static void main(String[] args){
+		System.out.println("請輸入學生人數");
+		int number = input.nextInt();
+		int i;
+		for(i=1;i<=number.length;i++){
+			
+			
+		}
+	}
+}

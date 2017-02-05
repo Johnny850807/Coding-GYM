@@ -1,0 +1,48 @@
+package 學生資訊系統;
+
+
+public class StudentInformation {
+	private float high;
+	private float weight;
+	private int grade;
+	private String id;
+	
+	public StudentInformation(float high, float weight, int grade, String id){
+		this.high=high;
+		this.weight=weight;
+		this.grade=grade;
+		this.id=id;
+	}
+	public String toString(){
+		return "Student [height=" + high + ", weight=" + weight + ", grades=" + grade + ", id=" + id + "]";
+	}
+	public void setHigh(float fhigh){
+		high = fhigh;
+	}
+	public float getHigh(){
+		return high;
+	}
+	public void setWeight(float fweight){
+		weight = fweight;
+	}
+	public float getWeight(){
+		return weight;
+	}
+	public void setGrade(int igrade){
+		if(igrade>=0 || igrade<=100) grade = igrade;
+		else
+			grade = -1;
+	}
+	public int getGrade(){
+		return grade;
+	}
+	public void setId(String sid){
+		id = sid;
+	}
+	public String getId(){
+		return id;
+	}
+	
+	
+
+}

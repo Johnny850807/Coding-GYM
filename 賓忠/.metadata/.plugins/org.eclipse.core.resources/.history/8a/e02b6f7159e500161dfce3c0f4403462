@@ -1,0 +1,10 @@
+package 學生資訊系統;
+
+import java.util.Scanner;
+
+public class StudentWeight {
+	Scanner input = new Scanner(System.in);
+	public void input(){
+		float weight = (float) input.nextDouble();
+	}
+}

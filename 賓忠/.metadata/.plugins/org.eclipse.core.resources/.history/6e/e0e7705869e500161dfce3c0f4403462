@@ -1,0 +1,25 @@
+package 學生資訊系統;
+
+import java.util.Scanner;
+
+public class StudentSystem {
+	private static Scanner input;
+	public static void main(String[] args){
+		System.out.println("請輸入學生人數");
+		StudentInformation[] number  = new StudentInformation[input.nextInt()];
+		int i;
+		int k,t;
+		for(i=1;i<=number.length;i++){
+			number [i] = new StudentInformation(input.nextFloat(),input.nextFloat(),input.nextInt(),input.nextLine());	
+		}
+		for(k=1;k<number.length;k++)
+			for(t=k+1;t<number.length;t++)
+				if(number[k].Grade() > number[t].Grade())
+				{
+					StudentInformation v = number[t];
+					number[t] = number[k];
+					number[k] = v;
+		}
+		
+	}
+}
