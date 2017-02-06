@@ -1,0 +1,9 @@
+package µæ³æ;
+
+public class Main {
+	public static void main(String[] argv)
+	{
+		Food f = new Food("fjjfgh",1);
+		f.print();
+	}
+}

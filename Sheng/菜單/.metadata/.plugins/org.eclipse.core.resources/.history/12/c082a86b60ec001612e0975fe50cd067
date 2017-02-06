@@ -1,0 +1,38 @@
+package 菜單;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Item {
+	protected String name;
+	protected ArrayList<Item> lowerName;
+	protected String lowerTopic;
+	protected int lowerAmount;
+	public Item(String name,int lowerAmount)
+	{
+		this.name = name;
+		this.lowerAmount = lowerAmount;
+		for(int i=0;i<lowerAmount;i++)
+		{
+			Scanner scanner = new Scanner(System.in);
+			System.out.println("請輸入底層數量:");
+			int tempLowerAmount = scanner.nextInt();
+			System.out.println("請輸入底層名稱:");
+			String tempName = scanner.nextLine();
+			lowerName.add(e);
+		}
+	}
+	public String print()
+	{
+		String temp = name + "\n";
+		int length = lowerAmount;
+		for(int i=1;i<=length;i++)
+		{
+			temp += lowerTopic + i + ":" + lowerName.get(i-1).getName() + "\n";
+		}
+		return temp;
+	}
+	public String getName() {
+		return name;
+	}
+}

@@ -1,0 +1,15 @@
+package 菜單;
+
+public class Main {
+	public static void main(String[] argv)
+	{
+		int amount=1;
+		System.out.println(new Location(amount + "一餐",1));
+		amount++;
+		System.out.println(new Location(amount +"二餐",1));
+		amount++;
+		System.out.println(new Location(amount +"BB阿甯路邊攤",1));
+		amount++;
+		System.out.println(new Location(amount +"黃媽媽",1));
+	}
+}

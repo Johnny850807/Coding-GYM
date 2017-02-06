@@ -1,0 +1,33 @@
+package µæ³æ;
+import java.util.Scanner;
+public class Shop implements Item{
+	private String name;
+	private Food[] foods;
+	public Shop(String name,int number)
+	{
+		this.name=name;
+		foods = new Food[number];
+		input();
+	}
+	public void input()
+	{
+		Scanner scanner = new Scanner(System.in);
+		for(int i=0;i<foods.length;i++)
+		{
+			foods[i] = new Food(scanner.nextLine());
+		}
+	}
+	public String toString()
+	{
+		String temp = "©±®a:" + name + "\n";
+		for(int i=1;i<=foods.length;i++)
+		{
+			temp+= i + "." + foods[i-1] + "\n";
+		}
+		return temp;
+	}
+	@Override
+	public Object print() {
+		return this;
+	}
+}

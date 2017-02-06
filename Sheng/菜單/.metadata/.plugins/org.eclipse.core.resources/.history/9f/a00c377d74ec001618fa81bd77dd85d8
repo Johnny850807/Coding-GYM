@@ -1,0 +1,10 @@
+package µæ³æ;
+
+public class Food extends Item{
+
+	public Food(String name) {
+		super(name);
+		// TODO Auto-generated constructor stub
+	}
+	
+}

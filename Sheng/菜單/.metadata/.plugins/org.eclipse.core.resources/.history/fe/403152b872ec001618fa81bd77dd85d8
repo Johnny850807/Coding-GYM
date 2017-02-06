@@ -1,0 +1,9 @@
+package µæ³æ;
+
+public class Main {
+	public static void main(String[] argv)
+	{
+		Item t = new Item("123");
+		t.print();
+	}
+}

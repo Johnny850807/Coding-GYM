@@ -1,0 +1,9 @@
+package µæ³æ;
+
+public class Main {
+	public static void main(String[] argv)
+	{
+		Location location = new Location("¤@À\",1);
+		System.out.println(location);
+	}
+}

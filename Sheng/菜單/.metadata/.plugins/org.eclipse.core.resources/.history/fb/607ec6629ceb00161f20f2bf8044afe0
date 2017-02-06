@@ -1,0 +1,19 @@
+package µæ³æ;
+
+public class Food implements Item{
+	private static int amount=0;
+	private String name;
+	public Food(String name)
+	{
+		amount++;
+		this.name=name;
+	}
+	public String toString()
+	{
+		return amount+name;
+	}
+	@Override
+	public Object print() {
+		return this;
+	}
+}

@@ -1,0 +1,41 @@
+package 菜單;
+
+import java.util.Scanner;
+
+public class Location implements Item{
+	private String name;
+	private Shop[] shops;
+	public Location(String name,int number)
+	{
+		this.name = name;
+		//shops = new Shop[number];
+		input();
+	}
+	public void input()
+	{
+		/*Scanner scanner = new Scanner(System.in);
+		for(int i=0;i<shops.length;i++)
+		{
+			int number = scanner.nextInt();
+			String name = scanner.nextLine();
+			shops[i] = new Shop(name,number);
+		}*/
+		//測試
+		shops = new Shop[2];
+		shops[0] = new Shop("義大利餐館",2);
+		shops[1] = new Shop("鐵板餐管",2);
+	}
+	public String toString()
+	{
+		String temp = name + "\n";
+		for(int i=1;i<=shops.length;i++)
+		{
+			temp+= "  " + i + "." + shops[i-1].toString() + "\n";
+		}
+		return temp;
+	}
+	@Override
+	public Object print() {
+		return this;
+	}
+}

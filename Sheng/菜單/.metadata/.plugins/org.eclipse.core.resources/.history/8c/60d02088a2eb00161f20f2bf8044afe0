@@ -1,0 +1,9 @@
+package 菜單;
+
+public class Main {
+	public static void main(String[] argv)
+	{
+		Shop shop = new Shop("義大利餐館",10);
+		System.out.println(shop);
+	}
+}

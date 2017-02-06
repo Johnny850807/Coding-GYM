@@ -1,0 +1,5 @@
+package µæ³æ;
+
+public interface List {
+	public String print();
+}

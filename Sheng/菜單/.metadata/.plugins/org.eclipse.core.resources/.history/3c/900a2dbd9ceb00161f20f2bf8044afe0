@@ -1,0 +1,9 @@
+package µæ³æ;
+
+public class Main {
+	public static void main(String[] argv)
+	{
+		Shop shop = new Shop("fjkl",10);
+		System.out.println(shop);
+	}
+}

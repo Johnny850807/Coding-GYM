@@ -1,0 +1,9 @@
+package µæ³æ;
+
+public class Food extends Item{
+
+	public Food(String name, int lowerAmount) {
+		super(name, lowerAmount);
+	}
+	
+}
