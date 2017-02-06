@@ -1,0 +1,15 @@
+package µæ³æ;
+
+import java.util.ArrayList;
+
+public class Main {
+	public static void main(String[] argv)
+	{
+		ArrayList<Item> x = new ArrayList<Item>();
+		x.add(new Item("456"));
+		x.add(new Item("798"));
+		System.out.println(x.size());
+		Item t = new Item("123",x);
+		System.out.println(t.print());
+	}
+}

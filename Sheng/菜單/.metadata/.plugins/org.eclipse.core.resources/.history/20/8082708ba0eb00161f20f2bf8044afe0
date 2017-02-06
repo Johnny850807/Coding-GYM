@@ -1,0 +1,30 @@
+package 菜單;
+
+public class Shop implements Item{
+	private static int amount=0;
+	private String name;
+	private Food[] foods;
+	public Shop(String name,int number)
+	{
+		amount++;
+		this.name=name;
+		//foods = new Food[number];
+		//測試
+		foods = new Food[2];
+		foods[0] = new Food("番茄義大利麵");
+		foods[1] = new Food("焗烤起司麵");
+	}
+	public String toString()
+	{
+		String temp = name + "\n";
+		for(int i=0;i<foods.length;i++)
+		{
+			temp+= "  " + i + "."+ foods[i] + "\n";
+		}
+		return temp;
+	}
+	@Override
+	public Object print() {
+		return this;
+	}
+}

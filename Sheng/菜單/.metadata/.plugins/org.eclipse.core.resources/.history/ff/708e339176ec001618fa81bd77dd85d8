@@ -1,0 +1,15 @@
+package µæ³æ;
+
+import java.util.ArrayList;
+
+public class Main {
+	public static void main(String[] argv)
+	{
+		Location[] locations = new Location[4];
+		
+		Shop[] one = new Shop[2];
+		
+		locations[0] = new Location("¤@À\");
+		
+	}
+}

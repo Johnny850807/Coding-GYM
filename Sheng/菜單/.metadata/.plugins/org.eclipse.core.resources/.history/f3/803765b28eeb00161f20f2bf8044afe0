@@ -1,0 +1,11 @@
+package µæ³æ;
+
+public class Food implements List{
+
+	@Override
+	public String print() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

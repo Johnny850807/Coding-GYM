@@ -1,0 +1,10 @@
+package µæ³æ;
+
+public class Shop extends Item{
+
+	public Shop(String name, int lowerAmount) 
+	{
+		super(name, lowerAmount);
+	}
+
+}

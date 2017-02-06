@@ -1,0 +1,5 @@
+package µæ³æ;
+
+public class Food extends Item{
+	
+}

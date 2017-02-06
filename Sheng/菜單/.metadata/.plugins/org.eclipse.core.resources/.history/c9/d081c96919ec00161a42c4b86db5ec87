@@ -1,0 +1,29 @@
+package µæ³æ;
+
+import java.util.ArrayList;
+
+public class Item {
+	protected static String topic;
+	protected String name;
+	protected ArrayList<Item> list;
+	protected int lowerAmount;
+	public Item(String name,int lowerAmount)
+	{
+		Item.topic="¤£©ú";
+		this.name = name;
+		this.lowerAmount = lowerAmount;
+	}
+	public String print()
+	{
+		String temp = name + "\n";
+		int length = list.size();
+		for(int i=0;i<length;i++)
+		{
+			temp += topic + ":" + list.get(i).getName() + "\n";
+		}
+		return temp;
+	}
+	public String getName() {
+		return name;
+	}
+}

@@ -1,0 +1,17 @@
+package µæ³æ;
+
+public class Food implements Item{
+	private String name;
+	public Food(String name)
+	{
+		this.name=name;
+	}
+	public String toString()
+	{
+		return "­¹ª«:" + name;
+	}
+	@Override
+	public Object print() {
+		return this;
+	}
+}

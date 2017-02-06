@@ -1,0 +1,18 @@
+package µæ³æ;
+
+public class Shop implements Item{
+	private String name;
+	private Food[] foods;
+	public Shop(String name)
+	{
+		this.name=name;
+	}
+	public String toString()
+	{
+		return name;
+	}
+	@Override
+	public Object print() {
+		return this;
+	}
+}

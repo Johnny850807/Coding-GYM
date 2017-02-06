@@ -1,0 +1,6 @@
+package µæ³æ;
+
+public class Item {
+	protected String name;
+	
+}

@@ -1,0 +1,20 @@
+package 菜單;
+
+public class Location implements Item{
+	private String name;
+	private Shop[] shops;
+	public Location(String name,int number)
+	{
+		this.name = name;
+		//shops = new Shop[number];
+		//測試
+		shops = new Shop[2];
+		shops[0] = new Shop("義大利餐館",1);
+		shops[1] = new Shop("鐵板餐管",1);
+	}
+	
+	@Override
+	public Object print() {
+		return this;
+	}
+}
