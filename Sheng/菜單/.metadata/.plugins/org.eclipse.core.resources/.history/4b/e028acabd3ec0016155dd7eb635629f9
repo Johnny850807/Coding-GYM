@@ -12,6 +12,6 @@ public class Food {
 	}
 	public String toString()
 	{
-		return "н╣кл" + name + "\n";
+		return "н╣кл" + name;
 	}
 }
