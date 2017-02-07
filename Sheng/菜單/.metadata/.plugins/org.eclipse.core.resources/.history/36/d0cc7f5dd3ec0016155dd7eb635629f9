@@ -12,18 +12,9 @@ public class Location {
 		this.name = scanner.nextLine();
 		System.out.println("請輸入店家數量");
 		this.shops = new Shop[scanner.nextInt()];
-		for(int i=0;i<shops.length;i++)
-		{
-			shops[i] = new Shop();
-		}
 	}
 	public String toString()
 	{
-		String temp = name + "\n";
-		for(int i=0;i<shops.length;i++)
-		{
-			temp += (i+1) + shops[i].toString() + "\n";
-		}
-		return temp;
+		
 	}
 }
