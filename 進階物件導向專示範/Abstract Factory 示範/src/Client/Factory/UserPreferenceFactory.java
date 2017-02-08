@@ -9,8 +9,10 @@ public class UserPreferenceFactory {
 		{
 		case 1:
 			return new NinjaWeaponsFactory();
-		default:
+		case 2:
 			return new SwordHeroWeaponsFactory();
+		default:
+			return new FighterWeaponsFactory();
 		}
 	}
 	

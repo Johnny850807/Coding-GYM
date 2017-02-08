@@ -49,11 +49,13 @@ public abstract class Role {
 	
 	protected int getInjuryThroughDefense(int injury){
 		int defense = defenseWeapon.getDefense();
-		return injury - defense < 0 ? 0 : injury - defense;
+		injury = injury - defense < 0 ? 0 : injury - defense;
+		System.out.println(injury);
+		return injury;
 	}
 	
 	public void beMagicInjured(int injury){
-		int turnsOutInjury = getInjuryThroughDefense(injury);
+		int turnsOutInjury = getInjuryThroughMagicDefense(injury);
 		hp = hp - injury < 0 ? 0 : hp - injury;
 	}
 	
@@ -63,35 +65,38 @@ public abstract class Role {
 	}
 	
 	public void doAttackAction(Role attackedRole){
-		Attackable attackChoice = toMakeChoice();
-		int repeat = attackChoice.getReaptedTimes();
-		
+		Attackable attackChoice = toMakeChoice();	
 		System.out.printf("%s 使用  %s 進行攻擊 !!%n" , name , attackChoice.getName() );
-		delay();
-		
-		for ( int i = 0 ; i < repeat ; i ++ )
-		{
-			int injury = attackChoice.getInjury();
-			System.out.println(injury);
-			attackedRole.beInjured(injury);
-		}
+		delay(1000);
 
+		injuringRoleByAttackChoice(attackedRole , attackChoice);
 		loseMp( attackChoice.getLoseMp() );
-		delay();
-	}
-	
-	private void delay(){
-		try {
-			Thread.sleep(1000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+		
+		delay(1000);
 	}
 	
 	protected abstract Attackable toMakeChoice();
 	
+	private void injuringRoleByAttackChoice(Role role , Attackable attackChoice){
+		int repeat = attackChoice.getReaptedTimes();
+		for ( int i = 0 ; i < repeat ; i ++ )
+		{
+			int injury = attackChoice.getInjury();
+			role.beInjured(injury);
+			delay(200);
+		}
+	}
+	
 	private void loseMp(int abatement){
 		mp = mp - abatement < 0 ? 0 : mp - abatement;
+	}
+	
+	private void delay(int times){
+		try {
+			Thread.sleep(times);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public void printInfo(){

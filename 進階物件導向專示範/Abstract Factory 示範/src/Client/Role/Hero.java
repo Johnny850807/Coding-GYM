@@ -42,11 +42,11 @@ public class Hero extends Role{
 		int num;
 		do
 		{
-			System.out.println("選擇角色 : (1) 忍者 (2) 武士 :");
+			System.out.println("選擇角色 : (1) 忍者 (2) 武士 (3) 拳皇 :");
 			num = scanner.nextInt();
-			if ( num < 1 || num > 2 )
+			if ( num < 1 || num > 3 )
 				System.out.println("輸入錯誤");
-		}while( num < 1 || num > 2);
+		}while( num < 1 || num > 3);
 		return num;
 	}
 	
