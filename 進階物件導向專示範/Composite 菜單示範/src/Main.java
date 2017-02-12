@@ -11,13 +11,16 @@ public class Main {
 		MealsGettable bbNingVendor = new Vendor("BB阿甯路邊攤");
 		MealsGettable yellowMom = new Vendor("黃媽媽");
 		
-		myMenuList.add(firstRestaurant).add(secondRestaurant)
-		.add(bbNingVendor).add(yellowMom);
+		myMenuList.add(firstRestaurant);
+		myMenuList.add(secondRestaurant);
+		myMenuList.add(bbNingVendor);
+		myMenuList.add(yellowMom);
 		
 		/*一餐*/
 		
 		MealsGettable italyVendor = new Vendor("義大利");
-		italyVendor.addItem(new MenuItem("番茄義大利麵")).addItem(new MenuItem("焗烤起司麵"));
+		italyVendor.addItem(new MenuItem("番茄義大利麵"));
+		italyVendor.addItem(new MenuItem("焗烤起司麵"));
 		
 		MealsGettable ironVendor = new Vendor("鐵板餐管");
 		ironVendor.addItem(new MenuItem("鐵板牛肉")).addItem(new MenuItem("鐵板豬"));

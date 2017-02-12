@@ -1,0 +1,10 @@
+package ¦¨ÁZ;
+
+public abstract class Source {
+	protected int sumSource;
+	protected int attendSource;
+	protected int midExamSource;
+	protected int finalExamSource;
+	protected int workSource;
+	public abstract int calculate();
+}

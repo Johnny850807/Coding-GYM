@@ -1,0 +1,17 @@
+package ¦¨ÁZ;
+
+public class Chinese extends Source{
+
+	public Chinese(int attendSource, int midExamSource, int finalExamSource, int workSource) {
+		super(attendSource, midExamSource, finalExamSource, workSource);
+		// TODO Auto-generated constructor stub
+		subject = "°ê¤å";
+	}
+
+	@Override
+	public void calculate() {
+		// TODO Auto-generated method stub
+		sumSource = (attendSource*0.3 + workSource*0.7)*0.4 + midExamSource*0.2 + finalExamSource*0.4;
+	}
+
+}

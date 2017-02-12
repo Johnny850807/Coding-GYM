@@ -1,0 +1,8 @@
+package ¦¨ÁZ;
+
+public abstract class Source {
+	protected int attendSource;
+	protected int midExamSource;
+	protected int finalExamSource;
+	protected int workSource;
+}
