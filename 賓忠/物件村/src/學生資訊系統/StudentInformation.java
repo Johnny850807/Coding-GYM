@@ -29,9 +29,7 @@ public class StudentInformation {
 		return weight;
 	}
 	public void setGrade(int igrade){
-		if(igrade>=0){         //確保成績不會是負數(沒有成功..)
-		grade = igrade;
-		}
+		igrade = igrade < 0 ? 0 : igrade;  //如果是負數就傳0
 	}
 	public int getGrade(){
 		return grade;

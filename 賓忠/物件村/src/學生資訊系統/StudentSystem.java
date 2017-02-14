@@ -3,7 +3,7 @@ package 學生資訊系統;
 import java.util.Scanner;
 
 public class StudentSystem {
-	private static Scanner input = new Scanner(System.in);;
+	private static Scanner input = new Scanner(System.in);
 	public static void main(String[] args){
 		System.out.println("請輸入學生人數: ");
 		StudentInformation[] number  = new StudentInformation[input.nextInt()];
