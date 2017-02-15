@@ -1,0 +1,20 @@
+package ¦¨ÁZ;
+
+public class Calculate {
+	public Calculate()
+	{
+		
+	}
+	public int EnglishCalculate()
+	{
+		return 0;
+	}
+	public int ChineseCalculate()
+	{
+		return 0;
+	}
+	public int CodeCalculate()
+	{
+		return 0;
+	}
+}

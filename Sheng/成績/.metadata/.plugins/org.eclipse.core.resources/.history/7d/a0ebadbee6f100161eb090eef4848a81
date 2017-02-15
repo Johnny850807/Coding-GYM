@@ -1,0 +1,9 @@
+package ¦¨ÁZ;
+
+public class Code extends Source{
+	public Code(String subject, int attendSource, int midExamSource, int finalExamSource, int workSource) {
+		super(subject, attendSource, midExamSource, finalExamSource, workSource);
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,9 @@
+package ¦¨ÁZ;
+
+public class English extends Source{
+	public English(String subject, int attendSource, int midExamSource, int finalExamSource, int workSource) {
+		super(subject, attendSource, midExamSource, finalExamSource, workSource);
+		// TODO Auto-generated constructor stub
+	}
+
+}

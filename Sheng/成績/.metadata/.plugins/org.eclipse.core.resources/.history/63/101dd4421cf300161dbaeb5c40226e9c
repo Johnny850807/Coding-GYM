@@ -1,0 +1,5 @@
+package ¦¨ÁZ;
+
+interface Calculate {
+	public double Calculate(double attendSource,double workSource,double midExamSource,double finalExamSource);
+}

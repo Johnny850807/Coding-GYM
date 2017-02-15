@@ -1,22 +1,27 @@
 package ¦¨ÁZ;
 
-public abstract class Source {
+public class Source {
 	protected String subject;
 	protected double sumSource;
 	protected double attendSource;
 	protected double midExamSource;
 	protected double finalExamSource;
 	protected double workSource;
-	public Source(int attendSource,int midExamSource,int finalExamSource,int workSource)
+	protected Calculate calculate;
+	public Source(String subject,double attendSource,double midExamSource,double finalExamSource,double workSource,Calculate calculate)
 	{
 		this.attendSource = attendSource;
 		this.midExamSource = midExamSource;
 		this.finalExamSource = finalExamSource;
 		this.workSource = workSource;
+		this.subject = subject;
+		this.calculate = calculate;
 		sumSource = 0;
-		subject = "¥¼¿é¤J";
 	}
-	public abstract void calculate();
+	public void sumSource()
+	{
+		sumSource = calculate.sumSource(attendSource, workSource, midExamSource, finalExamSource);
+	}
 	public void display()
 	{
 		System.out.println("---------------" + subject + "----------------");

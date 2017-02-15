@@ -1,0 +1,9 @@
+package ¦¨ÁZ;
+
+public class Chinese extends Source{
+
+	public Chinese(String subject, int attendSource, int midExamSource, int finalExamSource, int workSource) {
+		super(subject, attendSource, midExamSource, finalExamSource, workSource);
+	}
+
+}

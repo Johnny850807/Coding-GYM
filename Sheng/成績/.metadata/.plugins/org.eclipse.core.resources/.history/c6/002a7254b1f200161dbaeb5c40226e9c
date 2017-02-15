@@ -1,0 +1,20 @@
+package ¦¨ÁZ;
+
+public class Calculate {
+	public Calculate()
+	{
+		
+	}
+	public double EnglishCalculate(double attendSource,double midExamSource,double finalExamSource,double workSource)
+	{
+		return (attendSource*0.3 + workSource*0.7)*0.4 + midExamSource*0.2 + finalExamSource*0.4;
+	}
+	public double ChineseCalculate(double attendSource,double midExamSource,double finalExamSource,double workSource)
+	{
+		return (attendSource*0.4 + workSource*0.6)*0.4 + midExamSource*0.3 + finalExamSource*0.3;
+	}
+	public double CodeCalculate(double attendSource,double midExamSource,double finalExamSource,double workSource)
+	{
+		return (attendSource*0.5 + workSource*0.5)*0.3 + midExamSource*0.3 + finalExamSource*0.4;
+	}
+}

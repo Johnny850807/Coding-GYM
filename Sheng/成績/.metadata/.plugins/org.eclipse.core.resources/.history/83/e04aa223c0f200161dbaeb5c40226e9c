@@ -1,0 +1,7 @@
+package ¦¨ÁZ;
+
+interface Calculate {
+	public double EnglishCalculate(double attendSource,double workSource,double midExamSource,double finalExamSource);
+	public double ChineseCalculate(double attendSource,double workSource,double midExamSource,double finalExamSource);
+	public double CodeCalculate(double attendSource,double workSource,double midExamSource,double finalExamSource);
+}
