@@ -11,6 +11,9 @@ public abstract class Human {
 		return str1;
 	}
 	
+	public abstract void eat();
+	public abstract void sleep();
+	
 }
 
 
