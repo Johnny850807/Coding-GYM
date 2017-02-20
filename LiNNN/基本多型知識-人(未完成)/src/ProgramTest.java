@@ -6,8 +6,10 @@ public class ProgramTest {
 	
 		Scanner input = new Scanner(System.in);
 		Human[] human = new Human[100];
-		human[1] = new Man();  // 回傳Man類別	
-		human[2] = new Woman();
+		if (char == 'b')
+			human[x] = new Man();
+		else
+			human[x] = new Woman();
 		/*
 		final int MAN = 1;
 		final int WOMAN = 2;
