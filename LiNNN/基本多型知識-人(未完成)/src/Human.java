@@ -1,5 +1,5 @@
 
-public class Human {
+public abstract class Human {
 	
 	String str1;
 	
