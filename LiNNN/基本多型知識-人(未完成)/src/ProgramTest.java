@@ -5,9 +5,17 @@ public class ProgramTest {
 	public static void main(String[] args) {
 	
 		Scanner input = new Scanner(System.in);
+		Human[] human = new Human[100];
+		human[1] = new Man();  // 回傳Man類別	
+		human[2] = new Woman();
+		/*
+		final int MAN = 1;
+		final int WOMAN = 2;
 		
-		Human human;
-		human = new Man();  // 回傳Man類別		
+		if ( human.type == MAN )
+			human.manEat();
+		else
+			human.womanEat();*/
 		
 		System.out.println("Input: ");
 		String str1 = input.nextLine();
