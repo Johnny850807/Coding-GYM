@@ -6,9 +6,8 @@ public class ProgramTest {
 	
 		Scanner input = new Scanner(System.in);
 		
-		Human sex = new Human();
-		Man m = new Man();
-		Woman w = new Woman();
+		Human human;
+		human = new Man();  // 回傳Man類別		
 		
 		System.out.println("Input: ");
 		String str1 = input.nextLine();
