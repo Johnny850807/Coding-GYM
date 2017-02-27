@@ -1,0 +1,7 @@
+package Loginsystem;
+
+public class Passworderror extends Exception{
+	public Passworderror(){
+		System.out.println("±K½X¿ù»~");
+	}
+}

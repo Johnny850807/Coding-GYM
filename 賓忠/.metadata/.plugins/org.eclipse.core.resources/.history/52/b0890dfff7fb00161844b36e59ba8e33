@@ -1,0 +1,8 @@
+import java.util.Scanner;
+public class SignIn {
+	public static String A = "123";
+	public static String B = "567";
+	private static Scanner input = new Scanner(System.in);
+	Logic check = new Logic(input.next(),input.next());
+	
+}

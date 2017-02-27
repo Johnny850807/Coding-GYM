@@ -1,0 +1,7 @@
+package Loginsystem;
+
+public class Accounterror extends Exception{
+	public Accounterror(){
+		System.out.println("±b¸¹¿ù»~");
+	}
+}
