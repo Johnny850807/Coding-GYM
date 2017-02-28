@@ -13,14 +13,8 @@ public static void main(String[] args){
 	try{
 		Check.checkinformation(accountinput(),passwordinput());
 		checkright = true;
-	}catch(Accounterror Account_ex){
-		System.out.println(Account_ex.getMessage());
-		
-	}catch(Passworderror Password_ex){
-		System.out.println(Password_ex.getMessage());
-		
-	}catch(Allerror All_ex){
-		System.out.println(All_ex.getMessage());
+	}catch(Accounterror | Passworderror | Allerror ex){
+		System.out.println(ex.getMessage());
 	}
 	
 	}
