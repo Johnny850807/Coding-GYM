@@ -4,3 +4,6 @@ c:\users\sterbenfox\documents\visual studio 2015\Projects\student\student\bin\De
 c:\users\sterbenfox\documents\visual studio 2015\Projects\student\student\obj\Debug\student.csprojResolveAssemblyReference.cache
 c:\users\sterbenfox\documents\visual studio 2015\Projects\student\student\obj\Debug\student.exe
 c:\users\sterbenfox\documents\visual studio 2015\Projects\student\student\obj\Debug\student.pdb
+D:\NativeGit\Coding-GYM\Chnegyi\學生\student\student\bin\Debug\student.exe.config
+D:\NativeGit\Coding-GYM\Chnegyi\學生\student\student\obj\Debug\student.exe
+D:\NativeGit\Coding-GYM\Chnegyi\學生\student\student\obj\Debug\student.pdb
