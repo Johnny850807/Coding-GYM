@@ -8,45 +8,39 @@ namespace student
 {
     class StudentData
     {
-        public int amount;
-        public string[] height;
-        public string[] weight;
-        public string[] grades;
-        public string[] stuid;
-        Program main = new Program();
+      
+        public string height;
+        public string weight;
+        public int grades;
+        public string stuid;
+        
+   
 
 
-
-        public void SetAmount() {
-            height = new string[amount+1];
-            weight = new string[amount+1];
-            grades = new string[amount+1];
-            stuid = new string[amount+1];
-
-        }
-        public void input()
+     
+       public void input()
         {
-            for(int iInput = 0; iInput < amount; iInput++)
-            {
-                Console.WriteLine("輸入第" + (iInput + 1)+ "筆資料");
+           
+                
                 Console.WriteLine("身高:");
-                height[iInput] = Console.ReadLine();
+                height = Console.ReadLine();
                 Console.WriteLine("體重:");
-                weight[iInput] = Console.ReadLine();
+                weight = Console.ReadLine();
                 Console.WriteLine("成績:");
-                grades[iInput] = Console.ReadLine();
+                grades = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("學號:");
-                stuid[iInput] = Console.ReadLine();
+                stuid = Console.ReadLine();
+
               
 
-            }
-            for(int iOutput=0; iOutput < amount; iOutput++)
-            {
-                Console.WriteLine("第"+(iOutput+1)+"筆資料為: 身高:"+height[iOutput]+"體重:"+weight[iOutput]+"成績:"+grades[iOutput]+"學號:"+stuid[iOutput]);
-
-            }
+            
+           
 
         } 
+        public void show (){
+
+            Console.WriteLine("身高:"+height+"體重:"+weight+"成績:"+grades+"學號:"+stuid);
+        }
 
     }
 }

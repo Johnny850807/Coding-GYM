@@ -13,10 +13,30 @@ namespace student
             Console.WriteLine("輸入學生數量");
              int iAmount;
             iAmount = Convert.ToInt32(Console.ReadLine());
-            StudentData StuData = new StudentData();
-            StuData.amount = iAmount;
-            StuData.SetAmount();
-            StuData.input();
+            StudentData swap = new StudentData();
+            StudentData[] students = new StudentData[iAmount];
+
+            for (int i = 0; i < iAmount; i++)
+            {
+                Console.WriteLine("請輸入第" + (i + 1) + "筆資料:");
+                students[i] = new StudentData();
+                students[i].input();
+            }
+            for(int checkone =0; checkone<iAmount;checkone++)
+                for(int checktwo=0;checktwo<checkone;checktwo++)
+                    if(students[checkone].grades< students[checktwo].grades)
+                        {
+                            swap = students[checkone];
+                        students[checkone] = students[checktwo];
+                        students[checktwo] = swap;
+
+                        }
+            for(int list = 0; list < iAmount; list++)
+            {
+                students[list].show();
+
+            }
+
             Console.Read();
            
         }

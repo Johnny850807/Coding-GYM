@@ -13,37 +13,30 @@ namespace human
             bool restart = true;
             while (restart)
             {
+                
                 Console.WriteLine("輸入男女順序:");
                 string GorB = Console.ReadLine();
-                int next = 0;
-                char iJudge;
-                men menbehavior = new men();
-                Female girlbehavior = new Female();
+                
+               
+                human[] behavior = new  human[GorB.Length];
                 
 
 
-                while (next != GorB.Length)
+               for(int i = 0; i < GorB.Length; i++)
                 {
-                    iJudge = GorB[next];
-                    if (iJudge == 'B' || iJudge == 'b')
-                        menbehavior.eattalk();
-                    if (iJudge == 'g' || iJudge == 'G')
-                        girlbehavior.eattalk();
-                    next++;
-                    
-                }
-                next = 0;
+                    if (GorB[i] == 'B' || GorB[i] == 'b')
+                        behavior[i] = new men();
+                    else
+                        if (GorB[i] == 'G' || GorB[i] == 'g')
+                        behavior[i] = new Female();
 
-                while (next !=GorB.Length)
-                {
-                    iJudge = GorB[next];
-                    if (iJudge == 'B' || iJudge == 'b')
-                        menbehavior.sleeptalk();
-                    if (iJudge == 'g' || iJudge == 'G')
-                        girlbehavior.sleeptalk();
-                    next++;
                 }
-                next = 0;
+                for (int talkone = 0; talkone < GorB.Length; talkone++)
+                    behavior[talkone].eattalk();
+                for (int talktwo = 0; talktwo < GorB.Length; talktwo++)
+                    behavior[talktwo].sleeptalk();
+
+
 
                 Console.WriteLine("案任意見重複");
                 Console.ReadKey();
