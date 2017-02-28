@@ -1,0 +1,6 @@
+c:\users\sterbenfox\documents\visual studio 2015\Projects\login\login\bin\Debug\login.exe.config
+c:\users\sterbenfox\documents\visual studio 2015\Projects\login\login\bin\Debug\login.exe
+c:\users\sterbenfox\documents\visual studio 2015\Projects\login\login\bin\Debug\login.pdb
+c:\users\sterbenfox\documents\visual studio 2015\Projects\login\login\obj\Debug\login.csprojResolveAssemblyReference.cache
+c:\users\sterbenfox\documents\visual studio 2015\Projects\login\login\obj\Debug\login.exe
+c:\users\sterbenfox\documents\visual studio 2015\Projects\login\login\obj\Debug\login.pdb
