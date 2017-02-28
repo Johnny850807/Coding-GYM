@@ -4,3 +4,7 @@ c:\users\sterbenfox\documents\visual studio 2015\Projects\login\login\bin\Debug\
 c:\users\sterbenfox\documents\visual studio 2015\Projects\login\login\obj\Debug\login.csprojResolveAssemblyReference.cache
 c:\users\sterbenfox\documents\visual studio 2015\Projects\login\login\obj\Debug\login.exe
 c:\users\sterbenfox\documents\visual studio 2015\Projects\login\login\obj\Debug\login.pdb
+D:\GitHub\Coding-GYM\Chnegyi\例外處理\login\bin\Debug\login.exe.config
+D:\GitHub\Coding-GYM\Chnegyi\例外處理\login\obj\Debug\login.exe
+D:\GitHub\Coding-GYM\Chnegyi\例外處理\login\obj\Debug\login.pdb
+D:\GitHub\Coding-GYM\Chnegyi\例外處理\login\obj\Debug\login.csprojResolveAssemblyReference.cache

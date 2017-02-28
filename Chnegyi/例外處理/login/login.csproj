@@ -44,9 +44,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Account.cs" />
-    <Compile Include="AccountData.cs" />
-    <Compile Include="accountsaveplace.cs" />
-    <Compile Include="loadaccount.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
