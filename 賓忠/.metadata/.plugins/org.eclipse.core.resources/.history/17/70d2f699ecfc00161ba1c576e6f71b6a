@@ -1,0 +1,7 @@
+package 例外處理.登入;
+
+public class Accounterror extends Exception{
+	public Accounterror(){
+		System.out.println("帳號錯誤");
+	}
+}

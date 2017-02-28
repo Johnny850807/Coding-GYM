@@ -1,0 +1,11 @@
+package 例外處理.登入;
+import java.util.Scanner;
+
+public class Logic {
+	public static String A = "123";
+	public static String B = "567";
+	public void check(){
+		
+	}
+	
+}

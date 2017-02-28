@@ -1,0 +1,21 @@
+
+public class Logic {
+	private String account;
+	private String password;
+	public Logic(String account,String password){
+		this.account = account;
+		this.password = password;
+	}
+	public void setaccount(String x){
+		account = x;
+	}
+	public String getaccount(){
+		return account;
+	}
+	public void setpassword(String y){
+		password = y;
+	}
+	public String getpassword(){
+		return password;
+	}
+}

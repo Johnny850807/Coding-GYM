@@ -7,7 +7,7 @@ public class StudentInformation {
 	private int grade;
 	private String id;
 	
-	public StudentInformation(float high, float weight, int grade, String id){
+	public  StudentInformation(float high, float weight, int grade, String id){
 		this.high=high;          //this.high ,肚把计倒StudentInformation Instance variable
 		this.weight=weight;      //篶Α把计籔ン戈Θ,this跋
 		this.grade=grade;

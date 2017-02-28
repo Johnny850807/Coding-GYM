@@ -1,0 +1,7 @@
+package 例外處理.登入;
+
+public class Allerror extends Exception{
+	public Allerror(){
+		System.out.println("用戶不存在");
+	}
+}

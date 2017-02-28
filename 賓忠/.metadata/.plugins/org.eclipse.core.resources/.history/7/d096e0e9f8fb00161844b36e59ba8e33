@@ -1,0 +1,12 @@
+package 例外處理.登入;
+
+import java.util.Scanner;
+
+public class Input {
+	public void Inputinformation(){
+		Scanner input = new Scanner(System.in);
+		String account = input.next();
+		String password = input.next();
+	}
+
+}
