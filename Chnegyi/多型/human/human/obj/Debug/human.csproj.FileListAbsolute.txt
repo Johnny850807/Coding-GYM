@@ -4,3 +4,9 @@ C:\Users\SterbenFox\Documents\Visual Studio 2015\Projects\human\human\bin\Debug\
 C:\Users\SterbenFox\Documents\Visual Studio 2015\Projects\human\human\bin\Debug\human.pdb
 C:\Users\SterbenFox\Documents\Visual Studio 2015\Projects\human\human\obj\Debug\human.exe
 C:\Users\SterbenFox\Documents\Visual Studio 2015\Projects\human\human\obj\Debug\human.pdb
+D:\GitHub\Coding-GYM\Chnegyi\多型\human\human\bin\Debug\human.exe.config
+D:\GitHub\Coding-GYM\Chnegyi\多型\human\human\obj\Debug\human.exe
+D:\GitHub\Coding-GYM\Chnegyi\多型\human\human\obj\Debug\human.pdb
+D:\GitHub\Coding-GYM\Chnegyi\多型\human\human\bin\Debug\human.exe
+D:\GitHub\Coding-GYM\Chnegyi\多型\human\human\bin\Debug\human.pdb
+D:\GitHub\Coding-GYM\Chnegyi\多型\human\human\obj\Debug\human.csprojResolveAssemblyReference.cache
