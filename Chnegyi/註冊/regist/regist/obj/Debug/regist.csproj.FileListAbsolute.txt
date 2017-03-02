@@ -4,3 +4,9 @@ D:\GitHub\Coding-GYM\Chnegyi\註冊\regist\regist\bin\Debug\regist.pdb
 D:\GitHub\Coding-GYM\Chnegyi\註冊\regist\regist\obj\Debug\regist.csprojResolveAssemblyReference.cache
 D:\GitHub\Coding-GYM\Chnegyi\註冊\regist\regist\obj\Debug\regist.exe
 D:\GitHub\Coding-GYM\Chnegyi\註冊\regist\regist\obj\Debug\regist.pdb
+D:\NativeGit\Coding-GYM\Chnegyi\註冊\regist\regist\bin\Debug\regist.exe.config
+D:\NativeGit\Coding-GYM\Chnegyi\註冊\regist\regist\obj\Debug\regist.exe
+D:\NativeGit\Coding-GYM\Chnegyi\註冊\regist\regist\obj\Debug\regist.pdb
+D:\NativeGit\Coding-GYM\Chnegyi\註冊\regist\regist\bin\Debug\regist.exe
+D:\NativeGit\Coding-GYM\Chnegyi\註冊\regist\regist\bin\Debug\regist.pdb
+D:\NativeGit\Coding-GYM\Chnegyi\註冊\regist\regist\obj\Debug\regist.csprojResolveAssemblyReference.cache

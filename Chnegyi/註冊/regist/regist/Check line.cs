@@ -8,7 +8,6 @@ using System.IO;
 namespace regist
 {
     class Check_line
-
     {
         private int amount=1;
         
@@ -18,6 +17,6 @@ namespace regist
                 amount++;
             file.Close();
             return amount;
-                }
+         }
     }
 }

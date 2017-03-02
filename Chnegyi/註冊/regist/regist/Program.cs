@@ -21,10 +21,7 @@ namespace regist
                 accountdata[] Data = new accountdata[LineAmount];
                 regist cintext = new regist();
                 for (int i = 0; i < LineAmount; i++)
-                {
-
                     Data[i] = new accountdata();
-                }
 
 
                 StreamReader fileload = new StreamReader(@"..\..\..\..\..\..\資源區\IO進階登入\帳密.txt", Encoding.Default);

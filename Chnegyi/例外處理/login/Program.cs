@@ -8,11 +8,9 @@ namespace login
 {
     class Program
     {
-
-
         static void Main(string[] args)
         {
-            AccountData data = new AccountData();
+            Account data = new Account();
             string cinid;
             string cinpassword;
 
@@ -27,23 +25,12 @@ namespace login
                 try
                 {
                     data.checkaccount(cinid, cinpassword);
-
-
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine(ex.Message.ToString());
-
                 }
-
-
-
-
-
-
-
                 Console.ReadKey();
-
             }
         }
     }
