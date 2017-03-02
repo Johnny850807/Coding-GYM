@@ -14,13 +14,13 @@ namespace login
         public void checkaccount(string inaccount,string inpassword)
         {
             if (inaccount != accountID && password != inpassword)
-                throw new Exception ("Allerror");
+                throw new ALLERROR();
                 
             if (inaccount != accountID)
-                throw new Exception("IDerror");
+                throw new IDERROR();
 
             if (password != inpassword)
-                throw new Exception("passworderror");
+                throw new PASSWORDERROR();
             Console.WriteLine("成功登入!");
 
 
