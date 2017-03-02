@@ -21,14 +21,10 @@ namespace regist
                 Check[] Data = new Check[LineAmount];
                 regist cintext = new regist();
                 for (int i = 0; i < LineAmount; i++)
-<<<<<<< HEAD
-                    Data[i] = new accountdata();
-=======
-                {
-
                     Data[i] = new Check();
-                }
->>>>>>> refs/remotes/origin/diefish
+
+
+
 
 
                 StreamReader fileload = new StreamReader(@"..\..\..\..\..\..\資源區\IO進階登入\帳密.txt", Encoding.Default);
