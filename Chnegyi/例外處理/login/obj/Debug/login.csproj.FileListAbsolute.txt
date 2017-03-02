@@ -14,6 +14,11 @@ D:\GitHub\Coding-GYM\Chnegyi\例外處理\login\obj\Debug\login.exe
 D:\GitHub\Coding-GYM\Chnegyi\例外處理\login\obj\Debug\login.pdb
 D:\GitHub\Coding-GYM\Chnegyi\例外處理\login\obj\Debug\login.csprojResolveAssemblyReference.cache
 >>>>>>> b98f9613cdbe66c77fe249019f2e6f79bdcf7189
+<<<<<<< HEAD
 D:\NativeGit\Coding-GYM\Chnegyi\例外處理\login\bin\Debug\login.exe
 D:\NativeGit\Coding-GYM\Chnegyi\例外處理\login\bin\Debug\login.pdb
 D:\NativeGit\Coding-GYM\Chnegyi\例外處理\login\obj\Debug\login.csprojResolveAssemblyReference.cache
+=======
+D:\GitHub\Coding-GYM\Chnegyi\例外處理\login\bin\Debug\login.exe
+D:\GitHub\Coding-GYM\Chnegyi\例外處理\login\bin\Debug\login.pdb
+>>>>>>> refs/remotes/origin/diefish
