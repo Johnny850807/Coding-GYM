@@ -19,4 +19,6 @@ namespace regist
             return amount;
          }
     }
+
+
 }

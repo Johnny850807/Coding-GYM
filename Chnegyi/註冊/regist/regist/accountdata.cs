@@ -13,31 +13,18 @@ namespace regist
         public string name;
         public string ID;
         public string password;
-        public string checkID;
-        public string checkpassword;
-        public bool IDCheck;
-        public bool PassCheck;
 
 
         public void input(){
-            
-            string[] splitpoint=account.Split(' ');
-            ID = splitpoint[0];
-            password = splitpoint[1];
+            string[] splitpoint = account.Split(' ');
+
             name = splitpoint[2];
+
+            password = splitpoint[1];
+            ID = splitpoint[0];
             
             
             }
-        public void checkandput()
-        {
-
-            if (ID == checkID)
-                IDCheck = true;
-            if (password == checkpassword)
-               PassCheck = true;
-
-
-        }
-
+   
     }
 }

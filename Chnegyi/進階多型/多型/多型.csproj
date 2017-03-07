@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{386FA71B-2AA2-4B0B-9DFA-8BC46CDABCB8}</ProjectGuid>
+    <ProjectGuid>{38BFBA2F-6CCF-4F62-A41E-A39385D65A30}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>regist</RootNamespace>
-    <AssemblyName>regist</AssemblyName>
+    <RootNamespace>多型</RootNamespace>
+    <AssemblyName>多型</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,12 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="accountdata.cs" />
-    <Compile Include="Check line.cs" />
-    <Compile Include="Check.cs" />
+    <Compile Include="AI.cs" />
+    <Compile Include="BothAI.cs" />
+    <Compile Include="EvenAI.cs" />
+    <Compile Include="guessgame.cs" />
+    <Compile Include="human.cs" />
+    <Compile Include="OddAI.cs" />
+    <Compile Include="player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="regist.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
