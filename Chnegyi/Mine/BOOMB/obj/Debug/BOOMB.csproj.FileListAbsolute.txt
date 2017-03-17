@@ -1,0 +1,6 @@
+C:\地雷\BOOMB\BOOMB\bin\Debug\BOOMB.exe.config
+C:\地雷\BOOMB\BOOMB\bin\Debug\BOOMB.exe
+C:\地雷\BOOMB\BOOMB\bin\Debug\BOOMB.pdb
+C:\地雷\BOOMB\BOOMB\obj\Debug\BOOMB.csprojResolveAssemblyReference.cache
+C:\地雷\BOOMB\BOOMB\obj\Debug\BOOMB.exe
+C:\地雷\BOOMB\BOOMB\obj\Debug\BOOMB.pdb
