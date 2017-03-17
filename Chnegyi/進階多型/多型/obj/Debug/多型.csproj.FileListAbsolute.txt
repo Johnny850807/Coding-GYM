@@ -4,3 +4,9 @@ C:\Users\SterbenFox\Desktop\dd\多型\多型\bin\Debug\多型.pdb
 C:\Users\SterbenFox\Desktop\dd\多型\多型\obj\Debug\多型.csprojResolveAssemblyReference.cache
 C:\Users\SterbenFox\Desktop\dd\多型\多型\obj\Debug\多型.exe
 C:\Users\SterbenFox\Desktop\dd\多型\多型\obj\Debug\多型.pdb
+D:\NativeGit\Coding-GYM\Chnegyi\進階多型\多型\bin\Debug\多型.exe.config
+D:\NativeGit\Coding-GYM\Chnegyi\進階多型\多型\obj\Debug\多型.exe
+D:\NativeGit\Coding-GYM\Chnegyi\進階多型\多型\obj\Debug\多型.pdb
+D:\NativeGit\Coding-GYM\Chnegyi\進階多型\多型\bin\Debug\多型.exe
+D:\NativeGit\Coding-GYM\Chnegyi\進階多型\多型\bin\Debug\多型.pdb
+D:\NativeGit\Coding-GYM\Chnegyi\進階多型\多型\obj\Debug\多型.csprojResolveAssemblyReference.cache

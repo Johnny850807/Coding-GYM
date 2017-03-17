@@ -10,8 +10,5 @@ namespace 多型
     {
         public int AIGuess;
         public Random RandomGuess = new Random();
-        
-        
-
     }
 }
