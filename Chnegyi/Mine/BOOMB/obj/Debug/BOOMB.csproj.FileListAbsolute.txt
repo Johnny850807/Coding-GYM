@@ -4,3 +4,9 @@ C:\地雷\BOOMB\BOOMB\bin\Debug\BOOMB.pdb
 C:\地雷\BOOMB\BOOMB\obj\Debug\BOOMB.csprojResolveAssemblyReference.cache
 C:\地雷\BOOMB\BOOMB\obj\Debug\BOOMB.exe
 C:\地雷\BOOMB\BOOMB\obj\Debug\BOOMB.pdb
+C:\Users\SterbenFox\Documents\GitHub\Coding-GYM\Chnegyi\Mine\BOOMB\bin\Debug\BOOMB.exe.config
+C:\Users\SterbenFox\Documents\GitHub\Coding-GYM\Chnegyi\Mine\BOOMB\bin\Debug\BOOMB.exe
+C:\Users\SterbenFox\Documents\GitHub\Coding-GYM\Chnegyi\Mine\BOOMB\bin\Debug\BOOMB.pdb
+C:\Users\SterbenFox\Documents\GitHub\Coding-GYM\Chnegyi\Mine\BOOMB\obj\Debug\BOOMB.csprojResolveAssemblyReference.cache
+C:\Users\SterbenFox\Documents\GitHub\Coding-GYM\Chnegyi\Mine\BOOMB\obj\Debug\BOOMB.exe
+C:\Users\SterbenFox\Documents\GitHub\Coding-GYM\Chnegyi\Mine\BOOMB\obj\Debug\BOOMB.pdb

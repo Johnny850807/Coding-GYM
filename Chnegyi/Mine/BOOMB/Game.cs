@@ -28,7 +28,8 @@ namespace BOOMB
 
             while (NotMine != 0)
             {
-                Map.PrintCheckMap();
+                Map.printMap();
+
                 Console.WriteLine("輸入座標:x:");
                 int x = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("輸入座標:y:");
@@ -40,9 +41,8 @@ namespace BOOMB
                     NotMine=Map.GroundCheck(x, y, NotMine);
                 }
             }
-            Console.WriteLine(" GMAE OVER!!");
-            Console.WriteLine(" ANS:");
-            Map.PrintAns();
+            Map.printAns();
+     
 
         }
     }
