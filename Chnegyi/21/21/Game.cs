@@ -69,6 +69,7 @@ namespace _21
             int NowScore;
             Console.WriteLine("開始遊戲");
             for (int turn = 0; turn < 10; turn++) {
+                NowMax = 0;
                 Console.WriteLine("--------第" + (turn + 1).ToString() + "輪---------");
                 for (int i = 0; i < Player.Count; i++)
                 {
