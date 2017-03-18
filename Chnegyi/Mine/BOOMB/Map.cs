@@ -30,83 +30,66 @@ namespace BOOMB
             int x, y;
             while (MineAmount != 0)
             {
-                x = rd.Next(MapSize);
-                y = rd.Next(MapSize);
-                if (Ground[x][y].Mine != true)
+                x = rd.Next(MapSize-1);
+                y = rd.Next(MapSize-1);
+               if( MineAmount != Ground[x][y].SetMine(MineAmount))
                 {
-                    Ground[x][y].Mine = true;
                     MineAmount--;
+                    for (int i = -1; i <= 1; i++)
+                        for (int j = -1; j <= 1; j++)
+                            if ((x + i) <= MapSize && (y + j) <= MapSize && (x + i) >= 0 && (y + j) >= 0)
+                            {
+                                Ground[x + i][y + j].AddRound();
+                            }
                 }
+                    
+          
             }
-        }
-        public int GroundCheck(int x, int y,int NotMine)
-        {
-
-
-            if (Ground[x][y].Chcek == true)
-                Console.WriteLine("已猜過");
-            if (Ground[x][y].Mine != true)
-            {
-                Ground[x][y].Chcek = true;
-                NotMine--;
-                if (NotMine == 0)
-                    Console.WriteLine("YOU WIN!!");
-                return NotMine;
-            }
-            else
-            {
-                Console.WriteLine("BOOM!! YOU LOSE");
-                return 0;
-            }
+ 
         }
 
-
-
-        public void PrintCheckMap()
+        public int GroundCheck(int x,int y,int NotMine)
         {
-            Console.Write(' ');
-            for (int x = 0; x < MapSize; x++)
-                Console.Write(Convert.ToString(x));
+            NotMine = Ground[x][y].Check(NotMine);
+            return NotMine;
+        }
+
+        public void printMap()
+        {
+            Console.Write("  ");
+            for(int g=0;g<MapSize;g++)
+                Console.Write(Convert.ToString(g));
             Console.Write('\n');
-
-
             for (int i = 0; i < MapSize; i++)
             {
-                Console.Write(Convert.ToString(i));
+                Console.Write(' '+Convert.ToString(i));
                 for (int j = 0; j < MapSize; j++)
-                {
-
-                    if (Ground[i][j].Chcek == true)
-                        Console.Write('o');
-                    else
-                        Console.Write('-');
-                }
+                    Ground[i][j].Print();
+                   
+                
                 Console.Write('\n');
             }
+
+
         }
-        public void PrintAns()
+        public void printAns()
         {
-
-            Console.Write(' ');
-            for (int x = 0; x < MapSize; x++)
-                Console.Write(Convert.ToString(x));
+            Console.Write("  ");
+            for (int g = 0; g < MapSize; g++)
+                Console.Write(Convert.ToString(g));
             Console.Write('\n');
-
-
             for (int i = 0; i < MapSize; i++)
             {
-                Console.Write(Convert.ToString(i));
+                Console.Write(' ' + Convert.ToString(i));
                 for (int j = 0; j < MapSize; j++)
-                {
-                    if (Ground[i][j].Mine == true)
-                        Console.Write('*');
-                    else
-                        Console.Write('o');
-                }
+                    Ground[i][j].PrintAns();
+
+
                 Console.Write('\n');
             }
 
         }
+     
     }
 }
 
