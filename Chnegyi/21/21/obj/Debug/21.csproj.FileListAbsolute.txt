@@ -1,0 +1,6 @@
+C:\地雷\21\21\bin\Debug\21.exe.config
+C:\地雷\21\21\bin\Debug\21.exe
+C:\地雷\21\21\bin\Debug\21.pdb
+C:\地雷\21\21\obj\Debug\21.csprojResolveAssemblyReference.cache
+C:\地雷\21\21\obj\Debug\21.exe
+C:\地雷\21\21\obj\Debug\21.pdb

@@ -8,17 +8,23 @@ namespace BOOMB
 {
     class Game
     {
-        int MineAmount,MapSize;
+        private int MineAmount,MapSize;
         Map Map = new Map();
-        public void SetGame()
+        public Game()
         {
             
             Console.WriteLine("輸入範圍:");
             MapSize = Convert.ToInt32(Console.ReadLine());
-            Map.MapSize = MapSize;
-            Map.SetMap();
+            Map.SetMap(MapSize);
             Console.WriteLine("輸入數量:");
             MineAmount = (Convert.ToInt32(Console.ReadLine()));
+            while (MineAmount > MapSize * MapSize)
+            {
+                Console.WriteLine("數量超過範圍請重新輸入:");
+                MineAmount = (Convert.ToInt32(Console.ReadLine()));
+
+            }
+
             Map.SetMine(MineAmount);
         }
         public void StartGame()
