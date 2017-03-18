@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddScore.cs" />
     <Compile Include="AI.cs" />
     <Compile Include="Card.cs" />
     <Compile Include="Enum.cs" />

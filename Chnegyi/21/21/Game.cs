@@ -68,8 +68,8 @@ namespace _21
             bool getcard;
             int NowScore;
             Console.WriteLine("開始遊戲");
-            for (int turn = 0; turn < 3; turn++) {
-                Console.WriteLine("第" + (turn + 1).ToString() + "輪");
+            for (int turn = 0; turn < 10; turn++) {
+                Console.WriteLine("--------第" + (turn + 1).ToString() + "輪---------");
                 for (int i = 0; i < Player.Count; i++)
                 {
 
@@ -87,27 +87,15 @@ namespace _21
                         getcard = false;
                         while (!getcard)
                         {
-                            s = rd.Next(3);
-                            c = rd.Next(12);
+                            s = rd.Next(4);
+                            c = rd.Next(13);
                             getcard = Card[s][c].CheckUsed();
                         }
                         Console.WriteLine("-----------------------");
                         Console.WriteLine("抽到" + Card[s][c].CardName);
 
-                        if (c == 0)
-                        {
-                            if (NowScore + 11 < 22)
-                                NowScore += 11;
-                            else
-                                NowScore += 1;
-                        }
-                        else
-                        {
-                            if (9 < c && c < 13)
-                                NowScore += 10;
-                            else
-                                NowScore += (c + 1);
-                        }
+
+                        NowScore=AddScore(NowScore, c);
                         if (NowScore > 21)
                         {
                             Console.WriteLine("爆了");
@@ -131,6 +119,24 @@ namespace _21
             }
             ShowEnd();
         }
+        private int AddScore(int NowScore,int c)
+        {
+            if (c == 0)
+            {
+                if (NowScore + 11 < 22)
+                    NowScore += 11;
+                else
+                    NowScore += 1;
+            }
+            else
+            {
+                if (9 < c && c < 13)
+                    NowScore += 10;
+                else
+                    NowScore += (c + 1);
+            }
+            return NowScore;
+        }
         private bool CheckNoCard() {
             for (int i = 0; i < 4; i++)
                 for (int j = 0; j < 13; j++)
@@ -153,7 +159,7 @@ namespace _21
         {
             int NO = 0;
 
-            Console.WriteLine("=========遊戲結束=========");
+            Console.WriteLine("===========遊戲結束===========");
             Console.WriteLine("排名:");
             Player.Sort(new CompareByScore());
             foreach(Player gg in Player)

@@ -10,7 +10,7 @@ namespace _21
     {
         private string SuitName;
         private string CardNumName;
-        private Boolean Used=false;
+        private bool Used=false;
         public string CardName;
         public void SetName(string SuitName,string CardNumName) {
             this.SuitName = SuitName;
