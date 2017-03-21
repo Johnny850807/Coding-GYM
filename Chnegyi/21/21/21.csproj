@@ -42,9 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddScore.cs" />
     <Compile Include="AI.cs" />
     <Compile Include="Card.cs" />
+    <Compile Include="Cardpile.cs" />
     <Compile Include="Enum.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="Human.cs" />

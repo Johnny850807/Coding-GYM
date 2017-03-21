@@ -8,27 +8,12 @@ namespace _21
 {
     class Game
     {
+        Cardpile CardPlie=new Cardpile();
         private int PlayerAmount;
         private int AIAmount;
-        Card[][] Card;
         private List<Player> Player = new List<Player>();
-        Suit suit = 0;
-        Cardnum Cardnum = 0;
+       
         AIName AIName = 0;
-        public Game()
-        {
-            Card = new Card[4][];
-            for (int i = 0; i < 4; i++)
-            {
-                Card[i] = new Card[13];
-            }
-            for (int i = 0; i < 4; i++)
-                for (int j = 0; j < 13; j++)
-                {
-                    Card[i][j] = new Card();
-                    Card[i][j].SetName((suit + i).ToString(), (Cardnum + j).ToString());
-                }
-        }
         public void SetGame()
         {
             Console.WriteLine("輸入玩家數量");
@@ -59,15 +44,14 @@ namespace _21
         }
         public void StartGame()
         {
-            Random rd = new Random();
-            int s = 0, c = 0;
+            Random rd = new Random();       
             int NowMax = 0;
             int TurnWin = 0;
+            int GetScore;
             bool finish;
-            bool NoCard;
-            bool getcard;
             int NowScore;
             Console.WriteLine("開始遊戲");
+            
             for (int turn = 0; turn < 10; turn++) {
                 NowMax = 0;
                 Console.WriteLine("--------第" + (turn + 1).ToString() + "輪---------");
@@ -79,24 +63,9 @@ namespace _21
                     Console.WriteLine("輪到" + Player[i].GetName());
                     while (!finish)
                     {
-                        NoCard = CheckNoCard();
-                        if (NoCard == true)
-                        {
-                            WashCard();
-                            Console.WriteLine("========已從新洗牌========");
-                        }
-                        getcard = false;
-                        while (!getcard)
-                        {
-                            s = rd.Next(4);
-                            c = rd.Next(13);
-                            getcard = Card[s][c].CheckUsed();
-                        }
-                        Console.WriteLine("-----------------------");
-                        Console.WriteLine("抽到" + Card[s][c].CardName);
-
-
-                        NowScore=AddScore(NowScore, c);
+                        CardPlie.CheckNoCard();                       
+                        GetScore=CardPlie.GetCard();                        
+                        NowScore=AddScore(NowScore, GetScore);
                         if (NowScore > 21)
                         {
                             Console.WriteLine("爆了");
@@ -114,7 +83,7 @@ namespace _21
                     }
                 }
                 Console.WriteLine("=====此輪勝者為" + Player[TurnWin].GetName()+"======");
-                Console.WriteLine("=====================================");
+                Console.WriteLine("*****************************************");
                 Player[TurnWin].AddPoint();
 
             }
@@ -138,29 +107,14 @@ namespace _21
             }
             return NowScore;
         }
-        private bool CheckNoCard() {
-            for (int i = 0; i < 4; i++)
-                for (int j = 0; j < 13; j++)
-                    if (Card[i][j].OnlyCheck() == false)
-                        return false;
 
-
-
-            return true;
-
-        }
-        private void WashCard()
-        {
-            for (int i = 0; i < 4; i++)
-                for (int j = 0; j < 13; j++)
-                    Card[i][j].ReSet();
-        }
+        
 
         private void ShowEnd()
         {
             int NO = 0;
 
-            Console.WriteLine("===========遊戲結束===========");
+            Console.WriteLine("=============遊戲結束=============");
             Console.WriteLine("排名:");
             Player.Sort(new CompareByScore());
             foreach(Player gg in Player)
