@@ -10,11 +10,12 @@ namespace BOOMB
     {
 
         Ground[][] Ground;
-        public int MapSize;
+        private int MapSize;
 
 
-        public void SetMap()
+        public void SetMap(int MapSize)
         {
+            this.MapSize = MapSize;
             Ground = new Ground[MapSize][];
             for (int i = 0; i < MapSize; i++)
             {
