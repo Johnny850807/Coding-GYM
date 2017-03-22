@@ -1,2 +1,0 @@
-INDEX VERSION 1.129+D:\github\Coding-GYM\.metadata\.plugins\org.eclipse.jdt.core
-1501475852.index

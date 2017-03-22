@@ -10,3 +10,6 @@ C:\Users\SterbenFox\Documents\GitHub\Coding-GYM\Chnegyi\Mine\BOOMB\bin\Debug\BOO
 C:\Users\SterbenFox\Documents\GitHub\Coding-GYM\Chnegyi\Mine\BOOMB\obj\Debug\BOOMB.csprojResolveAssemblyReference.cache
 C:\Users\SterbenFox\Documents\GitHub\Coding-GYM\Chnegyi\Mine\BOOMB\obj\Debug\BOOMB.exe
 C:\Users\SterbenFox\Documents\GitHub\Coding-GYM\Chnegyi\Mine\BOOMB\obj\Debug\BOOMB.pdb
+D:\NativeGit\Coding-GYM\Chnegyi\Mine\BOOMB\bin\Debug\BOOMB.exe.config
+D:\NativeGit\Coding-GYM\Chnegyi\Mine\BOOMB\obj\Debug\BOOMB.exe
+D:\NativeGit\Coding-GYM\Chnegyi\Mine\BOOMB\obj\Debug\BOOMB.pdb
