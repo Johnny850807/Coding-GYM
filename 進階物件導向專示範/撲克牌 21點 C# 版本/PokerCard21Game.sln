@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokerCard21Game", "PokerCard21Game.csproj", "{B475B4ED-A2F6-4EF9-B9E1-A4719C547B9A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D127892E-6A28-4E21-AD07-D1073E0ABC98}"
+	ProjectSection(SolutionItems) = preProject
+		..\PokerCard\PokerCard.cs = ..\PokerCard\PokerCard.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B475B4ED-A2F6-4EF9-B9E1-A4719C547B9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B475B4ED-A2F6-4EF9-B9E1-A4719C547B9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B475B4ED-A2F6-4EF9-B9E1-A4719C547B9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B475B4ED-A2F6-4EF9-B9E1-A4719C547B9A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

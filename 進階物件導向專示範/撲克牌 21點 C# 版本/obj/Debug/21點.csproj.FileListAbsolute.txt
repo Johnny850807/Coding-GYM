@@ -1,0 +1,6 @@
+D:\我的文件\ProgrammingWorkShop\Visual Studio Projects\C# WorkShop\21點\bin\Debug\21點.exe.config
+D:\我的文件\ProgrammingWorkShop\Visual Studio Projects\C# WorkShop\21點\bin\Debug\21點.exe
+D:\我的文件\ProgrammingWorkShop\Visual Studio Projects\C# WorkShop\21點\bin\Debug\21點.pdb
+D:\我的文件\ProgrammingWorkShop\Visual Studio Projects\C# WorkShop\21點\obj\Debug\21點.csprojResolveAssemblyReference.cache
+D:\我的文件\ProgrammingWorkShop\Visual Studio Projects\C# WorkShop\21點\obj\Debug\21點.exe
+D:\我的文件\ProgrammingWorkShop\Visual Studio Projects\C# WorkShop\21點\obj\Debug\21點.pdb
