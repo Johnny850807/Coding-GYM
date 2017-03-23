@@ -1,0 +1,6 @@
+D:\我的文件\ProgrammingWorkShop\Visual Studio Projects\C# WorkShop\泛型 零件工廠\bin\Debug\泛型 零件工廠.exe.config
+D:\我的文件\ProgrammingWorkShop\Visual Studio Projects\C# WorkShop\泛型 零件工廠\bin\Debug\泛型 零件工廠.exe
+D:\我的文件\ProgrammingWorkShop\Visual Studio Projects\C# WorkShop\泛型 零件工廠\bin\Debug\泛型 零件工廠.pdb
+D:\我的文件\ProgrammingWorkShop\Visual Studio Projects\C# WorkShop\泛型 零件工廠\obj\Debug\泛型 零件工廠.csprojResolveAssemblyReference.cache
+D:\我的文件\ProgrammingWorkShop\Visual Studio Projects\C# WorkShop\泛型 零件工廠\obj\Debug\泛型 零件工廠.exe
+D:\我的文件\ProgrammingWorkShop\Visual Studio Projects\C# WorkShop\泛型 零件工廠\obj\Debug\泛型 零件工廠.pdb
