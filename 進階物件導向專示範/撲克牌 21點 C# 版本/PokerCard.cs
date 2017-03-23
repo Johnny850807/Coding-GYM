@@ -81,17 +81,11 @@ namespace PokerCards
     }
 
     /* PokerDeck contains 52 PokerCards , 
-     * the deck will be auto-shuffled at the time invoke the constructor
      * if you want to reshuffle the deck from discards deck , should invoke pushAllCards( discards )
      * ***/
     public class PokerDeck : PokerCardItem 
     {
         private Stack<PokerCardItem> cardStack = new Stack<PokerCardItem>();
-
-        public PokerDeck()
-        {
-            createAndShuffle();
-        }
 
         public PokerCardItem pop()
         {

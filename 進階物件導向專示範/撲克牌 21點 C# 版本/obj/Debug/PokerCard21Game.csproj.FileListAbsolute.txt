@@ -7,3 +7,6 @@ D:\我的文件\ProgrammingWorkShop\Visual Studio Projects\C# WorkShop\21點\obj
 D:\NativeGit\Coding-GYM\進階物件導向專示範\撲克牌 21點 C# 版本\bin\Debug\21點.exe.config
 D:\NativeGit\Coding-GYM\進階物件導向專示範\撲克牌 21點 C# 版本\obj\Debug\21點.exe
 D:\NativeGit\Coding-GYM\進階物件導向專示範\撲克牌 21點 C# 版本\obj\Debug\21點.pdb
+D:\NativeGit\Coding-GYM\進階物件導向專示範\撲克牌 21點 C# 版本\bin\Debug\21點.exe
+D:\NativeGit\Coding-GYM\進階物件導向專示範\撲克牌 21點 C# 版本\bin\Debug\21點.pdb
+D:\NativeGit\Coding-GYM\進階物件導向專示範\撲克牌 21點 C# 版本\obj\Debug\PokerCard21Game.csprojResolveAssemblyReference.cache
