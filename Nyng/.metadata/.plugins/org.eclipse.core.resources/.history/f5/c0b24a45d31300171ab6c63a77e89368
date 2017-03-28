@@ -1,0 +1,11 @@
+package org.nyngwang.composite;
+
+public abstract class Food implements FindFood {
+	
+	@Override
+	public void whatIveThought() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,5 @@
+package org.nyngwang.composite;
+
+public abstract class Restaurant d {
+	
+}

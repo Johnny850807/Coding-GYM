@@ -1,0 +1,15 @@
+package org.nyngwang.composite;
+
+public class Main {
+	public static void main(String[] args) {
+		Place firstRestaurant = new FirstRestaurant();
+		Place spaghettiHut = new SpaghettiHut();
+		spaghettiHut.add(new TomatoSpaghetti());
+		spaghettiHut.add(new BakedRoastedPasta());
+		Place hotPlateNoodlesHut = new HotPlateNoodlesHut();
+		hotPlateNoodlesHut.add(thought);
+		hotPlateNoodlesHut.add(thought);
+		firstRestaurant.add(spaghettiHut);
+		
+	}
+}

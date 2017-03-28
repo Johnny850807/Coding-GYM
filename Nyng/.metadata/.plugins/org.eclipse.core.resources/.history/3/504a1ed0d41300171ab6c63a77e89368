@@ -1,0 +1,11 @@
+package org.nyngwang.composite;
+
+public abstract class Restaurant implements FindFood {
+	ArrayList<Food>
+	@Override
+	public String whatIveThought() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

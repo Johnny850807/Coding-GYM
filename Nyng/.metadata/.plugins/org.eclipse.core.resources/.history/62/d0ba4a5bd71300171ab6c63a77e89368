@@ -1,0 +1,9 @@
+package org.nyngwang.composite;
+
+public class FirstRestaurant extends Place {
+
+	public FirstRestaurant(String name) {
+		super(name);
+	}
+
+}

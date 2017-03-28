@@ -1,0 +1,9 @@
+package org.nyngwang.composite;
+
+public class TomatoSpaghetti extends Food {
+
+	public TomatoSpaghetti(String name) {
+		super(name);
+	}
+
+}

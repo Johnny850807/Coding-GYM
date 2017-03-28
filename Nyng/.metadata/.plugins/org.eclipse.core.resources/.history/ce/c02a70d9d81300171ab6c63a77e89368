@@ -1,0 +1,11 @@
+package org.nyngwang.composite;
+
+import java.util.ArrayList;
+
+public class HotPlateNoodlesHut extends Place {
+
+	public HotPlateNoodlesHut(String name, ArrayList<FindFood> thought) {
+		super("Hot Plate Noodles Hut", thought);
+	}
+
+}
