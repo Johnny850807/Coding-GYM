@@ -1,0 +1,27 @@
+package org.nyngwang.composite;
+
+import java.util.ArrayList;
+
+public abstract class Place implements FindFood {
+	protected String name;
+	protected ArrayList<FindFood> thought;
+	
+	public Place(String name) {
+		this.name = name;
+	}
+	
+	@Override
+	public void whatIveThought() {
+		System.out.println("At " + name);
+		if (thought.size() > 0) {
+			for (FindFood each: thought) {
+				System.out.print(" ");
+				each.whatIveThought();
+			}
+		}
+	}
+	
+	public void add(FindFood thought) {
+		this.thought.add(thought);
+	}
+}

@@ -1,0 +1,24 @@
+package org.nyngwang.composite;
+
+import java.util.ArrayList;
+
+public abstract class Restaurant implements FindFood {
+	ArrayList<Food> food;
+	protected String name;
+	
+	public Restaurant() {
+		
+	}
+	@Override
+	public String whatIveThought() {
+		StringBuilder listOfFood = new StringBuilder();
+		
+		
+		for (Food f: food) {
+			listOfFood.append(f.whatIveThought());
+		}
+		
+		return listOfFood.toString();
+	}
+
+}

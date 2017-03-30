@@ -1,0 +1,7 @@
+package org.nyngwang.composite;
+
+public class Main {
+	public static void main(String[] args) {
+		Place firstRestaurant = new FirstRestaurant();
+	}
+}

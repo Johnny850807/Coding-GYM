@@ -1,0 +1,14 @@
+package org.nyngwang.composite;
+
+import java.util.ArrayList;
+
+public abstract class Place implements FindFood {
+	protected String name;
+	protected ArrayList<FindFood> thought;
+	
+	@Override
+	public void whatIveThought() {
+		
+	}
+
+}

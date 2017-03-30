@@ -1,0 +1,11 @@
+package org.nyngwang.composite;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class FirstRestaurant extends Place {
+
+	public FirstRestaurant(String name) {
+		super(name);
+	}
+}

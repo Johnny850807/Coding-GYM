@@ -1,0 +1,6 @@
+package org.nyngwang.composite;
+
+import java.util.ArrayList;
+
+public class HotPlateNoodlesHut extends Place {
+}
