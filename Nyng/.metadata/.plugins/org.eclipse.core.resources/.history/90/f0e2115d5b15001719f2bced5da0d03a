@@ -1,0 +1,22 @@
+package org.nyngwang.area;
+
+public class Rectangle extends Shape {
+	protected double height;
+	protected double width;
+	
+	public Rectangle setHeight(double height) {
+		this.height = height;
+		return this;
+	}
+	
+	public Rectangle setWidth(double width) {
+		this.width = width;
+		return this;
+	}
+	
+	@Override
+	public double getArea() {
+		return height*width;
+	}
+	
+}

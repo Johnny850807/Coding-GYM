@@ -1,0 +1,11 @@
+package org.nyngwang.area;
+
+public class Triangle extends Shape {
+	private int base;
+	private int height;
+	@Override
+	public int area() {
+		return (int)0.5*base*height;
+	}
+
+}

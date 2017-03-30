@@ -1,0 +1,6 @@
+package org.nyngwang.area;
+
+public abstract class Shape {
+	public abstract void readParameters(double[] ps);
+	public abstract double area();
+}

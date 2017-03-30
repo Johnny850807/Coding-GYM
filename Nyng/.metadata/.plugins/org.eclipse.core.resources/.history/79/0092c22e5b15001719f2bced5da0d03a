@@ -1,0 +1,21 @@
+package org.nyngwang.area;
+
+public class Triangle extends Shape {
+	protected double base;
+	protected double height;
+	
+	public Triangle setBase(double base) {
+		this.base = base;
+		return this;
+	}
+	
+	public Triangle setHeight(double height) {
+		this.height = height;
+		return this;
+	}
+
+	@Override
+	public double getArea() {
+		return 0.5*base*height;
+	}
+}

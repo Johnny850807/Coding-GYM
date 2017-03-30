@@ -1,0 +1,5 @@
+package org.nyngwang.area;
+
+public abstract class Parameters {
+
+}

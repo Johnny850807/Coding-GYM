@@ -1,0 +1,11 @@
+package org.nyngwang.area;
+
+public class Circle extends Shape {
+
+	@Override
+	public void onAreaChange() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

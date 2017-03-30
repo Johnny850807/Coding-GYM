@@ -1,0 +1,4 @@
+package org.nyngwang.area;
+
+public abstract class Shape {
+}
