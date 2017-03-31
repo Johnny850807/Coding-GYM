@@ -1,0 +1,7 @@
+package org.nyngwang.area;
+
+import java.util.Scanner;
+
+public abstract class Shape {
+	protected Computer computer;
+}

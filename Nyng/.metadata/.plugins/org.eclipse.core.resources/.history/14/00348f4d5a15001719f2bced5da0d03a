@@ -1,0 +1,6 @@
+package org.nyngwang.area;
+
+public abstract class Shape {
+	protected double area;
+	public double getArea();
+}

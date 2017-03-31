@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-<typeInfo handle="=Composite/src&lt;org.nyngwang.composite{FindFood.java[FindFood" modifiers="513" timestamp="1490718616000"/>
-<typeInfo handle="=Composite/src&lt;org.nyngwang.composite{Place.java[Place" modifiers="1025" timestamp="1490720005000"/>
-<typeInfo handle="=Composite/src&lt;org.nyngwang.composite{Food.java[Food" modifiers="1025" timestamp="1490719782000"/>
+<typeInfo handle="=Composite/src&lt;org.nyngwang.composite{FindFood.java[FindFood" modifiers="513" timestamp="1490721976000"/>
+<typeInfo handle="=Composite/src&lt;org.nyngwang.composite{Place.java[Place" modifiers="1025" timestamp="1490722448000"/>
+<typeInfo handle="=Composite/src&lt;org.nyngwang.composite{Food.java[Food" modifiers="1025" timestamp="1490721994000"/>
+<typeInfo handle="=Level1_Area/src&lt;org.nyngwang.area{Shape.java[Shape" modifiers="1025" timestamp="1490888453000"/>
 </typeInfoHistroy>

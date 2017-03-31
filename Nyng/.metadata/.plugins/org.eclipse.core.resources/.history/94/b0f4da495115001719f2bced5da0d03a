@@ -1,0 +1,10 @@
+package org.nyngwang.area;
+
+public class Triangle extends Shape {
+
+	@Override
+	public int area() {
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+package org.nyngwang.area;
+
+import java.util.Scanner;
+
+public class Main {
+	public static Scanner scan = new Scanner(System.in);
+	public static void main(String[] args) {
+		while (true) {
+			System.out.println("(1) Triangle (2) Circle (3) Rectangle ? ");
+		}
+	}
+}

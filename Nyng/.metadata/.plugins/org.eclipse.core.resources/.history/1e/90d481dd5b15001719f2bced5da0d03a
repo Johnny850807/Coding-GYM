@@ -1,0 +1,14 @@
+package org.nyngwang.area;
+
+public class Circle extends Shape {
+	protected double radius;
+	protected final double PI = 3.14159265;
+	@Override
+	public Circle setRadius() {
+		
+	}
+	
+	public void onAreaChange() {
+		this.area = this.radius * this.radius * PI;
+	}
+}
