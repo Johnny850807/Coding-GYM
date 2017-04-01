@@ -35,16 +35,12 @@ public class User implements Runnable{
 	}
 	
 	private void deposit(int amount){
-		if (bank.isStop())
-			return;
 		System.out.printf("User %s is depositting , Amount : %d ...%n" , Thread.currentThread().getName() , amount);
 		bank.deposit(amount);
 		money -= amount;
 	}
 	
 	private void draw(int amount){
-		if (bank.isStop())
-			return;
 		int result = bank.draw(amount);
 		System.out.printf("User %s is drawing , Amount : %d ... , Get : %d %n" , Thread.currentThread().getName() , amount , result);
 		money += result;

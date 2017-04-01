@@ -7,7 +7,7 @@ public class Bank {
 	
 	public synchronized void deposit(int money){
 		this.money += money;
-		
+		stop = false;
 		income += money;
 	}
 	
