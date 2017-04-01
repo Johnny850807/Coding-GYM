@@ -1,0 +1,12 @@
+D:\我的文件\ProgrammingWorkShop\Visual Studio Projects\C# WorkShop\多執行緒 銀行  示範\bin\Debug\多執行緒 銀行  示範.exe.config
+D:\我的文件\ProgrammingWorkShop\Visual Studio Projects\C# WorkShop\多執行緒 銀行  示範\obj\Debug\多執行緒 銀行  示範.csprojResolveAssemblyReference.cache
+D:\我的文件\ProgrammingWorkShop\Visual Studio Projects\C# WorkShop\多執行緒 銀行  示範\bin\Debug\多執行緒 銀行  示範.exe
+D:\我的文件\ProgrammingWorkShop\Visual Studio Projects\C# WorkShop\多執行緒 銀行  示範\bin\Debug\多執行緒 銀行  示範.pdb
+D:\我的文件\ProgrammingWorkShop\Visual Studio Projects\C# WorkShop\多執行緒 銀行  示範\obj\Debug\多執行緒 銀行  示範.exe
+D:\我的文件\ProgrammingWorkShop\Visual Studio Projects\C# WorkShop\多執行緒 銀行  示範\obj\Debug\多執行緒 銀行  示範.pdb
+D:\NativeGit\Coding-GYM\基本java示範\多執行緒 銀行  C#示範\bin\Debug\多執行緒 銀行  示範.exe.config
+D:\NativeGit\Coding-GYM\基本java示範\多執行緒 銀行  C#示範\bin\Debug\多執行緒 銀行  示範.exe
+D:\NativeGit\Coding-GYM\基本java示範\多執行緒 銀行  C#示範\bin\Debug\多執行緒 銀行  示範.pdb
+D:\NativeGit\Coding-GYM\基本java示範\多執行緒 銀行  C#示範\obj\Debug\多執行緒 銀行  示範.csprojResolveAssemblyReference.cache
+D:\NativeGit\Coding-GYM\基本java示範\多執行緒 銀行  C#示範\obj\Debug\多執行緒 銀行  示範.exe
+D:\NativeGit\Coding-GYM\基本java示範\多執行緒 銀行  C#示範\obj\Debug\多執行緒 銀行  示範.pdb
