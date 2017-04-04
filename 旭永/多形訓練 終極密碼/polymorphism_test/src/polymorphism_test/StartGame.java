@@ -6,8 +6,6 @@ import java.util.Scanner;
 public class StartGame {
 	
 	private Player[] player;
-	
-	
 	private int humancount,evenAIcount,cardinalAIcount;
 	
 	private static int i=0;

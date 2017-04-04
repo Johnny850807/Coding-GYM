@@ -12,9 +12,7 @@ public class Human extends Player{
 
 	@Override
 	void guess() {
-		
-		
-	
+
 		Scanner humanguess =new Scanner(System.in);
 		
 		guessnumber=humanguess.nextInt();
