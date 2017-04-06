@@ -42,6 +42,7 @@ public class Factory<C extends Components ,P extends Produce>  {
 					throw new ComponentsNotEnough();
 					
 				}else{
+					Components_count_Screw-=3;
 					System.out.println("獲得Car");
 				}
 				
@@ -50,6 +51,7 @@ public class Factory<C extends Components ,P extends Produce>  {
 				if(Components_count_Screw-7<0){
 					throw new ComponentsNotEnough();
 				}else{
+					Components_count_Screw-=7;
 					System.out.println("獲得Robot");
 				}
 				

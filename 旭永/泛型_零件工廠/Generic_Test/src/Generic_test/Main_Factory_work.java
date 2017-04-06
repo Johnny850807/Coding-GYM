@@ -28,6 +28,7 @@ public class Main_Factory_work {
 			
 			
 			f.product(new Robot());
+			f.product(new Robot());
 		} catch (ComponentsNotEnough e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
