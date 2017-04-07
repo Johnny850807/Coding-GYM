@@ -7,7 +7,7 @@ public class Main_GameStart {
 		//公會
 		Guild guild=new Guild();
 		
-		
+		//水球潘留言:  你中二病發作喔
 		//冒險者們
 		warrior Andy=new warrior("Andy");
 		Archer Roget=new Archer("Roget");
