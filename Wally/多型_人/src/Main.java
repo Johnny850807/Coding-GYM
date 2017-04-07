@@ -18,12 +18,12 @@ public class Main {
 			{
 				case 'B':
 				case 'b':	
-				((Man)man).eat();
+				man.eat();
 				break;
 
 				case 'G':
 				case 'g':	
-				((Woman)woman).eat();
+				woman.eat();	
 				break;
 				default:
 				break;
@@ -36,12 +36,12 @@ public class Main {
 			{
 				case 'B':
 				case 'b':	
-				((Man)man).sleep();
+				woman.sleep();	
 				break;
 
 				case 'G':
 				case 'g':	
-				((Woman)woman).sleep();
+				woman.sleep();	
 				break;
 				default:
 				break;
