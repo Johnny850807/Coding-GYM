@@ -2,13 +2,6 @@ import java.util.Scanner;
 
 public class Main{
 	
-	public static void Exchange ( float first , float second )
-	{
-		
-		first = (int)first^(int)second ;
-		second = (int)first^(int)second ;
-		first = (int)first^(int)second ;
-	}
 	public static void main (String[] args )
 	{
 		int i , j ;
@@ -20,33 +13,27 @@ public class Main{
 			amount = input.nextFloat() ;
 		}	while( amount < 1 ) ;
 		Student students[]= new Student[(int)amount] ;
-		
+		Student exchange = new Student();
 		for ( i = 0 ; i < amount ; i ++ )
 			{
 				students[i] = new Student();
-				students[i].setHeight();
-				students[i].setWeight();
-				students[i].setGrades();
-				students[i].setId();
+				System.out.println("第"+(i+1)+"個學生 :");
+				students[i].setInformations(); // 設定全部學生資料
 			}
-		if	( amount < 2 )
-			for ( i = 0 ; i < amount ; i ++ )
-				System.out.println("學生的身高是 : " + students[i].getHeight() + " 學生的體重是 : " + students[i].getWeight() + " 學生的成績是 : " + students[i].getGrades() + " 學生的學號是 : " + students[i].getId() ) ;
-		else
-			for ( i = 0 ; i < amount ; i ++ )
+		for ( i = 0 ; i < amount ; i ++ )
 			{
+				if	( amount > 1 )					
 				for ( j = i ; j < amount ; j ++ )
 					{
 						if	( students[i].getGrades() > students[j].getGrades() )
 							{
-								Exchange ( students[i].getHeight() , students[j].getHeight() ) ;
-								Exchange ( students[i].getWeight() , students[j].getWeight() ) ;
-								Exchange ( students[i].getGrades() , students[j].getGrades() ) ;
-								Exchange ( students[i].getId()	   , students[j].getId() 	 ) ;
+							exchange = students[i] ;
+							students[i] = students[j] ;
+							students[j] = exchange ;		
 							}	
 					
 					}
-				System.out.println("學生的身高是 : " + students[i].getHeight() + " 學生的體重是 : " + students[i].getWeight() + " 學生的成績是 : " + students[i].getGrades() + " 學生的學號是 : " + students[i].getId() ) ;
+				students[i].getInformations(); // 取得全部學生資料 , 如要取得單獨資料 , 可打 students[第幾個學生-1].某個資料
 			}
 	}	
 	

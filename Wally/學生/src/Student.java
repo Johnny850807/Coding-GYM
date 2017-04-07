@@ -12,59 +12,35 @@ public class Student{
 	public static float setNumbers () {
 	
 	float number ;
-
 	do
 	{
 		number = input.nextFloat();
-	}	while( number < 1 ) ;
+	}	while( number < 1 ) ;	
 		return number ;
 	}
-	
-	public float getHeight() {
-		return height;
-	}
-	public void setHeight() {
-		System.out.println("請輸入身高 :");
+	public void setInformations() {
 		do
 		{
+		System.out.println("請輸入身高 體重  成績  學號:");	
 		this.height = Student.setNumbers();
-		if	(this.height > 250 )
-			System.out.println("請重新輸入身高 :");
-		}while(this.height > 250 );
-		// 假設巨人症最多生長到250光年
+		this.weight = Student.setNumbers();
+		this.grades = Student.setNumbers();
+		this.id = (int)Student.setNumbers() ;
+		}while(this.height > 250 || this.weight > 300 || this.grades > 100);
+	}
+	public void getInformations() {
+		System.out.println("身高是: "+this.height+" 體重是: "+this.weight+" 成績是: "+this.grades+" 學號是: "+this.id);
+	}
+	public float getHeight() {
+		return height;
 	}
 	public float getWeight() {
 		return weight;
 	}
-	public void setWeight() {
-		System.out.println("請輸入體重  :");
-		do
-		{
-		this.weight = Student.setNumbers();
-		if	(this.weight > 300 )
-			System.out.println("請重新輸入體重 :");
-		}while(this.weight > 300 );
-		// 假設體重計受力最多300公斤重
-	}
 	public float getGrades() {
 		return grades;
 	}
-	public void setGrades() {
-		System.out.println("請輸入成績 :");
-		do
-		{
-		this.grades = Student.setNumbers();
-		if	(this.grades > 100)
-			System.out.println("請重新輸入成績 :");
-		}while(this.grades > 100 );
-		// 假如學生不靠作弊最多能考100分
-	}
 	public int getId() {
 		return id;
-	}
-	public void setId() {
-		System.out.println("請輸入學號 :");
-		this.id = (int)Student.setNumbers() ;
-		// 您儘管輸入字串,能成功算我輸
 	}
 }
