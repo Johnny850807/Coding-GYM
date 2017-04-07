@@ -5,7 +5,7 @@ public class Main {
 	{
 	
 		Scanner input = new Scanner(System.in);
-		System.out.println("請輸入選項 :\n(B or b):男 \n(G or g):女  ");
+		System.out.println("請輸入選項 :\n(B or b):男 \0(G or g):女  ");
 
 		//以下宣告物件與輸出動作
 		String actions = input.next() ;
