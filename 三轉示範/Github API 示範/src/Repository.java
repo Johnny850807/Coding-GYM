@@ -30,7 +30,7 @@ public class Repository {
 
 	@Override
 	public String toString() {
-		return "±M®× " + id + ":\n--¦WºÙ: "+name+"\n--´y­z: "+description+"\n";
+		return "å°ˆæ¡ˆ " + id + "\n--åç¨±: "+name+"\n--æ•˜è¿°: "+description+"\n";
 	}
 	
 	
