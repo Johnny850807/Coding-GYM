@@ -17,48 +17,44 @@ public class User_A extends User implements Runnable{
 	{
 		while( b.account_balance > 0 )
 		{
-			
-		
-				synchronized(b)
-				{
 				
-					
-						int choose=(int)(Math.random()*2+1);
+			synchronized(b)
+			{
+				
+				
+				int choose=(int)(Math.random()*2+1);
 						
 						
-						if(choose ==1)
-						{
-							int draw=(int)(Math.random()*3000+900);
+				if(choose ==1)
+				{
+					int draw=(int)(Math.random()*3000+900);
+					draw(draw);
 							
-							draw(draw);
+					if(b.account_balance==0)
+					{
+						Thread.yield();
+					}
+						b.draw_money+=draw;
 						
-							
-							if(b.account_balance==0){
-								Thread.yield();
-							}
-							b.draw_money+=draw;
-						}
-						
-						else
-						{
-							int deposit=(int)(Math.random()*3000+900);
-							deposit(deposit);				
-							b.deposit_money+=deposit;
-						}
-						
-						try {
-							Thread.sleep(1000);
-						} catch (InterruptedException e) {
-							e.getMessage();
-						}
-					
+				}
+				else
+				{
+					int deposit=(int)(Math.random()*3000+900);
+					deposit(deposit);				
+					b.deposit_money+=deposit;
+				}
+				
+			
 			}
-			
-			
-			
-			
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.getMessage();
+			}
 		}
-
+		
+		
+			
 		
 	}
 	
