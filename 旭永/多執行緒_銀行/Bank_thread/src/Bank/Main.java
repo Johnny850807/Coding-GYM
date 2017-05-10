@@ -11,7 +11,10 @@ public class Main {
 	public static void main(String[] args) {
 
 		Bank bank=new Bank();
-
+		
+		
+		
+		
 
 		new Thread(new User_A(bank)).start();
 		new Thread(new User_B(bank)).start();

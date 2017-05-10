@@ -4,57 +4,72 @@ import java.util.Random;
 
 import Bank.Bank;
 
-public abstract class User {
-	int init_money=3000;
+public abstract class User implements Runnable{
 	
-	Bank b;
+	private int init_money=3000;
+	private static Bank b;
+	
 	public User(Bank b)
 	{
 		this.b=b;
 	}
-
 	
 	//存
-	void deposit(int money)
+	public void deposit(int money)
 	{
-
-		if(money>init_money)
+		if(init_money>money)
 		{
-//			Thread.currentThread().getName()
-			System.out.println(this.getClass().getSimpleName()+"要領"+money+"元"
-						+"但餘額不足 , Bank餘額剩"+b.account_balance );
-			return;
+			System.out.println(this.getClass().getSimpleName()+"存"+money+"元");
+			b.deposit(money);
+			init_money-=money;
 		}
-		
-		b.account_balance+=money;
-		init_money-=money;
-		System.out.println(this.getClass().getSimpleName()+"存了"+money+"元    "+
-				this.getClass().getSimpleName()+"剩"+init_money+"元"+
-				"  Bank餘額剩:" + b.account_balance );
-		
-		
+		else{
+			System.out.println(money+"元存款失敗,"+this.getClass().getSimpleName()+"的餘額不足");
+		}
+	
 	}
 	
 	//取
-	int draw(int money){
+	public int draw(int money)
+	{
 		
-		
-		if(  money >b.account_balance ){
-			System.out.print(this.getClass().getSimpleName()+"領了"+money);
-			System.out.println("     Bank餘額不足  餘額剩"+b.account_balance);
-			
-			return b.account_balance  ;
-		}
-		
-
-		b.account_balance-=money;
+		System.out.println(this.getClass().getSimpleName()+"領了"+money+"元    ");
+		int getmoney = b.draw(money);
 		init_money+=money;
-		System.out.println(this.getClass().getSimpleName()+"領了"+money+
-				"元    "+this.getClass().getSimpleName()+"剩"+init_money+"元"+
-				"   Bank餘額剩:"+b.account_balance);
 		
-		return b.account_balance;
-		 
+		return getmoney;
 	}
 
+	
+	
+	@Override
+	public void run()
+	{
+		
+		while(!b.isGoBankrupt())
+		{
+			int choose=(int)(Math.random()*2+1);
+					
+			if(choose ==1)
+			{
+				int draw=(int)(Math.random()*3000+900);
+				draw(draw);
+					
+			}
+			else
+			{
+				int deposit=(int)(Math.random()*3000+900);
+				
+				deposit(deposit);
+				
+			}
+			
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		
+	}
 }
