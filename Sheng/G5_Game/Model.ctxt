@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=second
+comment0.target=Model(int)
+comment1.params=
+comment1.target=int\ getSecond()
+comment2.params=second
+comment2.target=void\ setSecond(int)
+comment3.params=controller
+comment3.target=void\ setController(Controller)
+numComments=4

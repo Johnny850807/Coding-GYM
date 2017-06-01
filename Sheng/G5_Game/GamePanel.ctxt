@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=GamePanel()
+comment1.params=second
+comment1.target=void\ setUpTime(int)
+comment2.params=
+comment2.target=void\ display()
+comment3.params=g
+comment3.target=void\ paintComponent(java.awt.Graphics)
+numComments=4
