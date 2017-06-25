@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=controller
+comment0.target=Counter(Controller)
+comment1.params=
+comment1.target=void\ run()
+comment2.params=
+comment2.target=void\ count()
+comment3.params=
+comment3.target=void\ pause()
+numComments=4
