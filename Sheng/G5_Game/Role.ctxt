@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=heightLength\ widthLength\ x
+comment0.target=Role(int,\ int,\ int)
+comment1.params=x
+comment1.target=void\ setX(int)
+comment2.params=
+comment2.target=int\ getX()
+numComments=3

@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=model\ viewer
+comment0.target=Controller(Model,\ View)
+comment1.params=
+comment1.target=Model\ getModel()
+comment2.params=model
+comment2.target=void\ notifyTime(Model)
+numComments=3

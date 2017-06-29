@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=ImgSequence()
+comment1.params=
+comment1.target=java.awt.Image\ nextImge()
+comment2.params=
+comment2.target=int\ getCurrentIdx()
+comment3.params=img
+comment3.target=void\ addImge(java.awt.Image)
+numComments=4
