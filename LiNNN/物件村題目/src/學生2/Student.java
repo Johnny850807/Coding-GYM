@@ -1,12 +1,12 @@
 package ¾Ç¥Í2;
 
-public class StudentInformation {
+public class Student {
         private int height;
         private int weight;
         private int grade;
         private String id;
         
-        public StudentInformation ( int height, int weight, int grade, String id ) { 
+        public Student ( int height, int weight, int grade, String id ) { 
                 this.height = height;
                 this.weight = weight;
                 this.grade = grade;
