@@ -4,7 +4,8 @@ public class Rectangle {
 	int length;
 	int width;
 	int area;
-	public void getArea() {
+	public int getArea() {
 		area=length*width;
+		return area;
 	}
 }
