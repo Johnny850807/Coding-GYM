@@ -5,17 +5,28 @@ public class Student {
 	private int weight;
 	private int grades;
 	private String id;
-	public void setHeight(int h) {
-		height=h;
+	public Student() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
-	public void setWeight(int w) {
-		weight=w;
+	public Student(int height, int weight, int grades, String id) {
+		super();
+		this.height = height;
+		this.weight = weight;
+		this.grades = grades;
+		this.id = id;
 	}
-	public void setGrades(int g) {
-		grades=g;
+	public void setHeight(int height) {
+		this.height = height;
 	}
-	public void setId(String i) {
-		id=i;
+	public void setWeight(int weight) {
+		this.weight = weight;
+	}
+	public void setGrades(int grades) {
+		this.grades = grades;
+	}
+	public void setId(String id) {
+		this.id = id;
 	}
 	public int getHeight() {
 		return height;
