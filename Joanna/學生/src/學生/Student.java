@@ -1,10 +1,10 @@
 package ¾Ç¥Í;
 
 public class Student {
-	int height;
-	int weight;
-	int grades;
-	String id;
+	private int height;
+	private int weight;
+	private int grades;
+	private String id;
 	public void setHeight(int h) {
 		height=h;
 	}
