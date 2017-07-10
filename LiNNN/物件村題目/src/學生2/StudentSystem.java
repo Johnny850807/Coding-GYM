@@ -2,13 +2,14 @@ package 學生2;
 
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.Comparator;
 
 public class StudentSystem {
         
         public static void main (String[] args){
                 
                 Scanner input = new Scanner(System.in);
-                CompareByGrade compare = new CompareByGrade();
+                
                 
                 System.out.println("請輸入學生人數: ");
                 Student[] amount = new Student[input.nextInt()]; 
@@ -18,6 +19,18 @@ public class StudentSystem {
                 for ( int i = 0; i < amount.length; i++ ) {
                         amount[i] = new Student( input.nextInt(), input.nextInt(), input.nextInt(), input.nextLine() );
                 }
+              
+                Comparator compare = new Comparator() {
+                        public int compare(Object o1, Object o2) {
+                                int grade1 = ((Student)o1).getGrade();
+                                int grade2 = ((Student)o2).getGrade();
+                                if ( grade1 > grade2)
+                                        return 1;
+                                if (grade1 < grade2)
+                                        return -1;
+                                return 0;
+                        }
+                };
                 
                 Arrays.sort(amount, compare);
                 
