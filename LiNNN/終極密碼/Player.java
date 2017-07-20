@@ -4,23 +4,26 @@ import java.util.Scanner;
 
 public abstract class Player {
 	
-	private String playerName;
-	
 	Scanner input = new Scanner(System.in);
+	protected String playerName;
+	private String[] aiPlayerName = {"Sam", "Ball", "Book·Shiuan", "曾淦傑", "黃+尾", "墨水球", "鯉開灰", "吹豐雞", "張援鬆", "小瓜呆<3"};
+	private int index = (int) (Math.random() * 10);
 	
-	public Player() {
-		System.out.println("請輸入玩家名稱: ");
-		setPlayerName(input.nextLine());
-	}
 
+	public Player() {
+		this.setPlayerName(playerName);
+	}
+	
 	public String getPlayerName() {
 		return playerName;
 	}
 
 	public void setPlayerName(String playerName) {
-		this.playerName = playerName;
+		this.playerName = aiPlayerName[index];
 	}
 	
 	public abstract int guessNumber(int small, int big);
+	
+	public abstract String getPlayerType();
 	
 }
