@@ -25,6 +25,7 @@ public class Main {
 				case 'g':	
 				woman.eat();	
 				break;
+				
 				default:
 				break;
 			}
@@ -41,8 +42,9 @@ public class Main {
 
 				case 'G':
 				case 'g':	
-				woman.sleep();	
+				woman.sleep();
 				break;
+				
 				default:
 				break;
 			}
