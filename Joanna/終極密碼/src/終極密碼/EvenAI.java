@@ -4,6 +4,11 @@ import java.util.Random;
 
 public class EvenAI extends AI {
 	
+	public String nameSelf() {
+		name = "°¸¼ÆAI";
+		return name;
+	}
+	
 	@Override
 	public int generateNumber(int lowerBound, int upperBound) {
 		Random ran = new Random();

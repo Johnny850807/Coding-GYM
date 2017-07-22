@@ -3,7 +3,12 @@ package ²×·¥±K½X;
 import java.util.Random;
 
 public class OddAI extends AI {
-
+	
+	public String nameSelf() {
+		name = "©_¼ÆAI";
+		return name;
+	}
+	
 	@Override
 	public int generateNumber(int lowerBound, int upperBound) {
 		Random ran = new Random();

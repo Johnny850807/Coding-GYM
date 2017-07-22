@@ -1,8 +1,12 @@
 package ²×·¥±K½X;
 
 public abstract class Player {
-	public int answer;
-	public String name;
+	protected int answer;
+	protected String name;
+	
+	public Player() {
+        name = nameSelf();
+    }
 	
 	public String getName() {
 		return name;
@@ -11,5 +15,7 @@ public abstract class Player {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public abstract int generateNumber(int lowerBound, int upperBound);
+	
+	protected abstract int generateNumber(int lowerBound, int upperBound);
+	protected abstract String nameSelf();
 }
