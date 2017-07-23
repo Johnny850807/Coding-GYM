@@ -5,17 +5,22 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class LandmineGame {
-	private ArrayList<ArrayList<Item>> landmines;
-	private int size;
+	private Item[][] landmines;
+	private int mapSize;
 	private int landmineAmount;
 	private int guessTimes;
 	private boolean isOver;
 	
-	public LandmineGame(ArrayList<ArrayList<Item>> landmines, int size, int landmineAmount) {
+	public LandmineGame(int mapSize, int landmineAmount) {
 		super();
-		this.landmines = landmines;
-		this.size = size;
+		this.mapSize = mapSize;
 		this.landmineAmount = landmineAmount;
+		landmines = new Item[mapSize][mapSize];
+		for (int i = 0; i < mapSize; i++) {
+			for (int j = 0; j < mapSize; j++) {
+				landmines[i][j] = new Item();
+			}
+		}
 		guessTimes = 0;
 		isOver = false;
 	}
@@ -27,38 +32,38 @@ public class LandmineGame {
 	}
 
 	public void computeNearbyLandmineAmount() {
-		for (int i = 0; i < size; i++) {
-			for (int j = 0; j < size; j++) {
-				if(!landmines.get(i).get(j).isLandmine()) {
-					int landmineAmount = 0;
+		for (int i = 0; i < mapSize; i++) {
+			for (int j = 0; j < mapSize; j++) {
+				if(!landmines[i][j].isLandmine()) {
+					int nearbyLandmineAmount = 0;
 					for (int k = i-1; k < i+2 ; k++) {
-						if (k >= 0 && k < size) {
+						if (k >= 0 && k < mapSize) {
 							for (int l = j-1; l < j+2 ; l++) {
-								if (l >= 0 && l < size && landmines.get(k).get(l).isLandmine())
-										landmineAmount++;
+								if (l >= 0 && l < mapSize && landmines[k][l].isLandmine()) {
+									nearbyLandmineAmount++;
+								}
 							}
 						}
 					}
-					landmines.get(i).get(j).setNearbyLandmineAmount(landmineAmount);
+					landmines[i][j].setNearbyLandmineAmount(nearbyLandmineAmount);
 				}
 			}
 		}
 	}
 	
 	public void siteLandmine() {
-		int l = landmineAmount;
+		int temp = landmineAmount;
 		do {
 			Random ran = new Random(); 
-			int row = (int) ran.nextInt(size);
-			int col = (int) ran.nextInt(size);
-			if (landmines.get(row).get(col).isLandmine()) {
+			int row = (int) ran.nextInt(mapSize);
+			int col = (int) ran.nextInt(mapSize);
+			if (landmines[row][col].isLandmine()) {
 				continue;
-			}
-				
+			}	
 			else 
-				landmines.get(row).get(col).setLandmine(true);
-			l--;
-		} while (l != 0);
+				landmines[row][col].setLandmine(true);
+			temp--;
+		} while (temp != 0);
 	}
 	
 	public void playGame() {
@@ -71,14 +76,14 @@ public class LandmineGame {
 			int row = input.nextInt();
 			int col = input.nextInt();
 			guessTimes++;
-			if(landmines.get(row).get(col).isLandmine()) {
+			if(landmines[row][col].isLandmine()) {
 				isOver = true;
 				displayNearbyLandmineAmount();
 				System.out.println("====== 踩到地雷了 !!!! 遊戲結束 ======");
 			}
 			else {
-				landmines.get(row).get(col).setOpen(true);
-				if (guessTimes + landmineAmount == size * size) {
+				landmines[row][col].setOpen(true);
+				if (guessTimes + landmineAmount == mapSize * mapSize) {
 					isOver = true;
 					System.out.println("====== 贏了 !!!! 遊戲結束 ======");
 				}
@@ -90,24 +95,13 @@ public class LandmineGame {
 	
 	public void displayNearbyLandmineAmount() {
 		System.out.print("  ");
-		for (int i = 0; i < size; i++) 
+		for (int i = 0; i < mapSize; i++) 
 			System.out.print(i + " ");
 		System.out.println();
-		for (int i = 0; i < size; i++) {
+		for (int i = 0; i < mapSize; i++) {
 			System.out.print(i + " ");
-			for (int j = 0; j < size; j++) {
-				if (!isOver) {
-					if(landmines.get(i).get(j).isOpen())
-						System.out.print(landmines.get(i).get(j).getNearbyLandmineAmount() + " ");
-					else
-						System.out.print("- ");
-				}
-				else {
-					if (landmines.get(i).get(j).isLandmine())
-						System.out.print("* ");
-					else 
-						System.out.print(landmines.get(i).get(j).getNearbyLandmineAmount() + " ");
-				}
+			for (int j = 0; j < mapSize; j++) {
+				landmines[i][j].displayNearbyLandmineAmount(isOver);
 			}
 			System.out.println();
 		}
@@ -115,16 +109,13 @@ public class LandmineGame {
 	
 	public void displayLandmineSite() {
 		System.out.print("  ");
-		for (int i = 0; i < size; i++) 
+		for (int i = 0; i < mapSize; i++) 
 			System.out.print(i + " ");
 		System.out.println();
-		for (int i = 0; i < size; i++) {
+		for (int i = 0; i < mapSize; i++) {
 			System.out.print(i + " ");
-			for (int j = 0; j < size; j++) {
-				if (landmines.get(i).get(j).isLandmine())
-					System.out.print("1 ");
-				else 
-					System.out.print("0 ");
+			for (int j = 0; j < mapSize; j++) {
+				landmines[i][j].displayLandmine();
 			}
 			System.out.println();
 		}

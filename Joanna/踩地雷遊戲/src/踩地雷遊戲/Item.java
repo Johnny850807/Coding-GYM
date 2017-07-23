@@ -7,9 +7,9 @@ public class Item {
 	
 	public Item() {
 		super();
-		setLandmine(false);
-		setOpen(false);
-		setNearbyLandmineAmount(0);
+		isLandmine = false;
+		isOpen = false;
+		nearbyLandmineAmount = 0;
 	}
 
 	public boolean isLandmine() {
@@ -36,6 +36,26 @@ public class Item {
 		this.isOpen = isOpen;
 	}
 	
-
+	public void displayLandmine() {
+		if (isLandmine())
+			System.out.print("1 ");
+		else 
+			System.out.print("0 ");
+	}
+	
+	public void displayNearbyLandmineAmount(boolean isOver) {
+		if (!isOver) {
+			if(isOpen())
+				System.out.print(getNearbyLandmineAmount() + " ");
+			else
+				System.out.print("- ");
+		}
+		else {
+			if (isLandmine())
+				System.out.print("* ");
+			else 
+				System.out.print(getNearbyLandmineAmount() + " ");
+		}
+	}
 	
 }

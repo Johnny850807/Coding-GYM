@@ -17,34 +17,8 @@ public class PlayGame {
 			mapSize = input.nextInt();
 			System.out.println("輸入地雷數量(1~" + (mapSize * mapSize) + ")");
 			landmineAmount = input.nextInt();
-			
-			ArrayList<ArrayList<Item>> landmines = new ArrayList<ArrayList<Item>>();
-			for (int i = 0; i < mapSize; i++) {
-				landmines.add(new ArrayList<Item>());
-				for (int j = 0; j < mapSize; j++) {
-					Item item = new Item();
-					landmines.get(i).add(item);
-				}
-			}
 
-			/*
-			int l = landmineAmount;
-			do {
-				Random ran = new Random(); 
-				int row = (int) ran.nextInt(mapSize);
-				int col = (int) ran.nextInt(mapSize);
-				System.out.println(row + " " + col);
-				if (landmines.get(row).get(col).isLandmine()) {
-					continue;
-				}
-					
-				else 
-					landmines.get(row).get(col).setLandmine(true);
-				l--;
-			} while (l != 0);
-			*/ 
-			
-			LandmineGame landmineGame = new LandmineGame(landmines, mapSize, landmineAmount);
+			LandmineGame landmineGame = new LandmineGame(mapSize, landmineAmount);
 			landmineGame.playGame();
 			
 
