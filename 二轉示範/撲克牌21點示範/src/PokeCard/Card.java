@@ -1,4 +1,4 @@
-package ¼³§JµP21ÂI¥Ü½d;
+package PokeCard;
 
 public class Card implements PokeCard{
 	private RankEnum rank;

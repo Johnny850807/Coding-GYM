@@ -8,20 +8,24 @@ public class GuessGame {
 	private int minBound;
 	private int answer;
 	private boolean isOver = false;  //猜中者出現沒
+	
 	private GuessGame(int maxBound){
 		this.maxBound = maxBound;
 		minBound = 1;
 		createRandomAnswer();
 	}
+	
 	public void createRandomAnswer(){
 		answer = new Random().nextInt(maxBound)+1;
 	}
+	
 	public static GuessGame getInstance(){
 		// singleton
 		if ( instance == null )
 			instance = new GuessGame(100);
 		return instance;
 	}
+	
 	public boolean doGuessingAction(Player guessingPlayer){
 		int guess = guessingPlayer.doGuessingAction();
 		System.out.println(guessingPlayer.getGuessMessage(guess));

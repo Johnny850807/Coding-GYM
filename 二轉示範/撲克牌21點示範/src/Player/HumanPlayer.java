@@ -1,6 +1,8 @@
-package 撲克牌21點示範;
+package Player;
 
 import java.util.Scanner;
+
+import Strategy.HumanInputChoice;
 
 public class HumanPlayer extends Player {
 
@@ -9,13 +11,15 @@ public class HumanPlayer extends Player {
 	}
 
 	@Override
-	public void createName() {
+	public String createName() {
 		Scanner scanner = new Scanner(System.in);
+		String name = "";
 		do{
 			System.out.println("請輸入玩家"+playerAmount+"姓名: ");
 			name = scanner.nextLine();
-		}while(name.length() == 0);
+		}while(name.isEmpty());  //防呆
 		
+		return name;
 	}
 
 }

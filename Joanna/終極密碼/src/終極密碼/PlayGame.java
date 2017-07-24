@@ -31,7 +31,7 @@ public class PlayGame {
 			o.setName("©_¼ÆAI");
 			players.add(o);
 		}
-		for (int i=0; i<evenAIAmount; i++) {
+		for ( int i = 0 ; i < evenAIAmount ; i++ ) {
 			EvenAI e = new EvenAI();
 			e.setName("°¸¼ÆAI");
 			players.add(e);

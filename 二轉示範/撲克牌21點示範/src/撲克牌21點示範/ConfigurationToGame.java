@@ -1,24 +1,31 @@
 package 撲克牌21點示範;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
+import Player.AI_Player;
+import Player.HumanPlayer;
+import Player.Player;
+import PokeCard.DeckStack;
+import Strategy.RandomChoice;
+
 public class ConfigurationToGame {
-	//遊戲設置封裝在這個類別 也是簡單的工廠類別
+	//遊戲設置過程封裝在這個類別，遊戲只需要跟這個類別拿取所需資源即可。
 	private static Scanner scanner = new Scanner(System.in);
 	private int createPlayerAmount = 1;
 	private int createAIAmount = 3;
 	private ArrayList<Player> playerList = new ArrayList<Player>();
-	public ConfigurationToGame(){}
 
+	//得到打亂順序的玩家串列以及印出順序
 	public ArrayList<Player> getShuffledPlayerListAndPrintOrder(){
-		addHumanPlayer();
-		addAiPlayer();
-		shufflePlayerList();
-		printPlayerListOrder();
-		return playerList;
+		addHumanPlayer();  //先增加人類玩家
+		addAiPlayer();  //再增加AI
+		Collections.shuffle(playerList);  //洗牌
+		printPlayerListOrder();  //印出順序
+		return playerList;  
 	}
 	
 	private void addHumanPlayer(){
@@ -29,18 +36,6 @@ public class ConfigurationToGame {
 	private void addAiPlayer(){
 		for ( int i = 0 ; i < createAIAmount ; i ++ )
 			playerList.add( new AI_Player( new RandomChoice())); //隨機決策的笨AI
-	}
-	
-	private void shufflePlayerList(){
-		Random random = new Random();
-		for ( int i = 0 ; i < playerList.size() ; i ++ )
-			swapTwoPlayerByIndex( i , random.nextInt(playerList.size()) );
-	}
-	
-	private void swapTwoPlayerByIndex(int i , int j){
-		Player temp = playerList.get(i);
-		playerList.set(i ,playerList.get(j) );
-		playerList.set(j, temp);
 	}
 	
 	private void printPlayerListOrder(){
@@ -60,6 +55,7 @@ public class ConfigurationToGame {
 		return new DeckStack();
 	}
 	
+	//呼叫這個函數才會開始進行輸入設置相關常數
 	public void doAllSettingInput(){
 		 inputPlayerAmount();
 		 inputAIAmount();

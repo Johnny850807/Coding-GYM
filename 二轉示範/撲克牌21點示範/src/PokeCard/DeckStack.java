@@ -1,4 +1,4 @@
-package ¼³§JµP21ÂI¥Ü½d;
+package PokeCard;
 
 import java.util.Random;
 import java.util.Stack;
