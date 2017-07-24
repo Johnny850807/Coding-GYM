@@ -1,7 +1,10 @@
-package 撲克牌21點示範;
+package Strategy;
 
 import java.util.Scanner;
 
+import Player.Player;
+
+// 輸入來做抉擇
 public class HumanInputChoice implements ChoiceStrategy {
 
 	@Override

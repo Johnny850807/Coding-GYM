@@ -7,7 +7,7 @@ public abstract class Player {
 	Scanner input = new Scanner(System.in);
 	protected String playerName;
 	private String[] aiPlayerName = {"Sam", "Ball", "Book¡PShiuan", "´¿²h³Ç", "¶À+§À", "¾¥¤ô²y", "ÃU¶}¦Ç", "§jÂ×Âû", "±i´©ÃP", "¤p¥Ê§b<3"};
-	private int index = (int) (Math.random() * 10);
+	private final int index = (int) (Math.random() * aiPlayerName.length);
 	
 
 	public Player() {

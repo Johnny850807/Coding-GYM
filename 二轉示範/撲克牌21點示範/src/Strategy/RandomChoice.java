@@ -1,7 +1,10 @@
-package 撲克牌21點示範;
+package Strategy;
 
 import java.util.Random;
 
+import Player.Player;
+
+// 隨機做抉擇
 public class RandomChoice implements ChoiceStrategy {
 
 	@Override

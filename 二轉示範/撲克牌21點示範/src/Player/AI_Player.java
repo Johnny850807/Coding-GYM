@@ -1,6 +1,9 @@
-package 撲克牌21點示範;
+package Player;
 
 import java.util.Random;
+
+import Strategy.ChoiceStrategy;
+import 撲克牌21點示範.NameGenerator;
 
 public class AI_Player extends Player {
 
@@ -9,8 +12,8 @@ public class AI_Player extends Player {
 	}
 
 	@Override
-	protected void createName() {
-		name = participantNames.pop();
+	protected String createName() {
+		return NameGenerator.getInstance().nextName();
 	}
 
 }

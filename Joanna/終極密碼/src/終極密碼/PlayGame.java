@@ -29,7 +29,7 @@ public class PlayGame {
 			OddAI o = new OddAI();
 			players.add(o);
 		}
-		
+
 		for (int i=0; i<evenAIAmount; i++) {
 			EvenAI e = new EvenAI();
 			players.add(e);

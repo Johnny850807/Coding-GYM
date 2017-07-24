@@ -27,6 +27,7 @@ public class Main {
 			String name = scanner.nextLine();
 			players.add(new HumanPlayer(name));
 		}
+		
 		for ( int i = 0 ; i < aiOddAmount ; i ++ )
 			players.add(new AI_Odd());
 		for ( int i = 0 ; i < aiEvenAmount ; i ++ )

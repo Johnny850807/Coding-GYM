@@ -1,4 +1,4 @@
-package ¼³§JµP21ÂI¥Ü½d;
+package PokeCard;
 
 public interface PokeCard {
 	void print();
