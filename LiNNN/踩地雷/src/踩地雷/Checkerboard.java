@@ -42,8 +42,8 @@ public class Checkerboard {
 		for (int i = 0; i < landminesAmount; i++) {
 			boolean isLandmines = false;
 			while (!isLandmines) {
-				row = (int) (Math.random() * 5);
-				col = (int) (Math.random() * 5);
+				row = (int) (Math.random() * size);
+				col = (int) (Math.random() * size);
 				if (checkerBoard[row][col] != "*") {
 					checkerBoard[row][col] = "*";
 					isLandmines = true;
