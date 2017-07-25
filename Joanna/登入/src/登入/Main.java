@@ -18,12 +18,8 @@ public class Main {
 			
 			try {
 				isSignIn = signInSystem.compare(account, password);
-			} catch (AccountNotFoundException a) {
-				System.out.println("帳號不符合");
-			} catch (PasswordNotFoundException p) {
-				System.out.println("密碼不符合");
-			} catch (PairInfoNotFoundException p) {
-				System.out.println("帳密不符合");
+			} catch (Exception ex) {
+				System.out.println(ex.getMessage());
 			}
 			System.out.println();
 			
