@@ -44,7 +44,6 @@ public class File {
 	
 	public void writeFile() {
 
-		String line;
 		try {
 			FileWriter fw = new FileWriter("..\\..\\資源區\\IO進階登入\\帳密.txt");
 			BufferedWriter bw = new BufferedWriter(fw);
