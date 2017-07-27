@@ -9,17 +9,25 @@ public class Main {
 		Scanner input = new Scanner(System.in);
 		int selection;
 		
-		File file = File.getInstance();
+		FileManager file = FileManager.getInstance();
 		do {
 			System.out.println("(0) µn¤J (1) µù¥U±b±K (2) Â÷¶}:");
 			selection = input.nextInt();
 			if (selection == 0) {
 				SignInSystem signInSystem = new SignInSystem();
-				signInSystem.signIn();
+				try {
+					signInSystem.signIn();
+				} catch (UserInformationNotFoundException e) {
+					e.printStackTrace();
+				}
 			}
 			else if (selection == 1) {
 				SignUpSystem signUpSystem = new SignUpSystem();
-				signUpSystem.signUp();
+				try {
+					signUpSystem.signUp();
+				} catch (UserAccountIsExistedException e) {
+					e.printStackTrace();
+				}
 			}
 			else if (selection == 2) {
 				break;

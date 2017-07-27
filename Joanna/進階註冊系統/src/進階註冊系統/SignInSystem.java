@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class SignInSystem extends RegistrationSystem {
 	
-	public void signIn() {
+	public void signIn() throws UserInformationNotFoundException {
 		Scanner input = new Scanner(System.in);
 		
 		System.out.println("輸入帳號: ");
@@ -16,17 +16,12 @@ public class SignInSystem extends RegistrationSystem {
 		password = input.next();
 
 		compare();
-		
 	}
 	
-	public void compare() {
+	public void compare() throws UserInformationNotFoundException {
 		UserInformation ui = UserInformation.getInstance();
-		try {
-			name = ui.compare(account, password);
-			System.out.println("歡迎登入 !! " + name);
-		} catch (UserInformationNotFoundException e) {
-			System.out.println(e.getMessage());
-		}
+		name = ui.compare(account, password);
+		System.out.println("歡迎登入 !! " + name);
 	}
 	
 }

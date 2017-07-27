@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class SignUpSystem extends RegistrationSystem {
 	
-	public void signUp() {
+	public void signUp() throws UserAccountIsExistedException {
 		
 		Scanner input = new Scanner(System.in);
 
@@ -16,21 +16,16 @@ public class SignUpSystem extends RegistrationSystem {
 		password = input.next();
 		
 		compare();
-		
 	}
 	
-	public void compare() {
+	public void compare() throws UserAccountIsExistedException {
 		UserInformation ui = UserInformation.getInstance();
-		try {
-			ui.compare(account);
-			System.out.println("登入成功 " + name);
-			addUserInformation();
-		} catch (UserAccountIsExistedException e) {
-			System.out.println(e.getMessage());
-		}
+		ui.compare(account);
+		System.out.println("登入成功 " + name);
+		saveUserInformation();
 	}
 	
-	public void addUserInformation() {
+	public void saveUserInformation() {
 		UserInformation ui = UserInformation.getInstance();
 		ui.addUserInformation(account, password, name);
 	}
