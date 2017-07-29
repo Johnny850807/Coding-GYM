@@ -10,14 +10,20 @@ public class SmallSoldierCard extends Card{
 	}
 
 	@Override
-	public int compareTo(Card o) {
-		// TODO Auto-generated method stub
-		return 0;
+	public int compareTo(Card c) {
+		if ( c instanceof GeneralCard )
+			return 1;
+		return super.compareTo(c);
 	}
 
 	@Override
 	public String getName() {
 		return "¤p§L";
+	}
+	
+	@Override
+	public int getLevel() {
+		return 0;
 	}
 
 }

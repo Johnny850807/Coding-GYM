@@ -44,6 +44,7 @@ public class TicTacToe {
 			}
 			System.out.println(players[turn] + " 選擇了 " + choose);
 			turn = turn == 0 ? 1 : 0; //輪流
+			delay();
 		}
 		
 		printWinner(board.getWinTeam());
@@ -63,6 +64,15 @@ public class TicTacToe {
 	
 	private void printWinMessage(Player player){
 		System.out.println("恭喜這一場比賽中" + player + "獲得了勝利。" );
+	}
+	
+	private void delay(){
+		try {
+			Thread.sleep(800);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 		
 }

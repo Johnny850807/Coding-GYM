@@ -9,13 +9,13 @@ public class KnightCard extends Card {
 	}
 
 	@Override
-	public int compareTo(Card o) {
-		return 0;
-	}
-
-	@Override
 	public String getName() {
 		return "ÃM¤h";
+	}
+	
+	@Override
+	public int getLevel() {
+		return 2;
 	}
 
 }
