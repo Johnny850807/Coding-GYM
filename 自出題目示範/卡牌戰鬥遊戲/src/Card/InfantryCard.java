@@ -9,14 +9,13 @@ public class InfantryCard extends Card {
 	}
 
 	@Override
-	public int compareTo(Card o) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
 	public String getName() {
 		return "¨B§L";
+	}
+	
+	@Override
+	public int getLevel() {
+		return 1;
 	}
 
 }
