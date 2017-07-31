@@ -1,15 +1,9 @@
 # Coding-GYM
 
-## 簽到區
+`一轉` →  語言基本面
 
-- Waterball
-洪賓忠簽到
-Sheng簽到
-chengyi簽到
-Wally 簽到
-N1ng 簽到
-1. Java 
-2. Android
-3. HTML,JS
-4. PHP
-5. OOD
+`二轉` →  軟體設計面
+
+`三轉` →  網路技術面
+
+`自出題` →  挑戰題、自出題 難度較高
