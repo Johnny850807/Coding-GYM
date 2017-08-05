@@ -10,7 +10,7 @@ public class NameGenerator {
 	private static String[] names = {"處鬼昇昇","遠坤","和昌","阿貴","李銓","天才潘","豐緒","祖鳳"
 			,"遊利","蘇民楊","雄大","李開輝"};
 	protected static Stack<String> participantNames;
-	
+
 	private NameGenerator(){
 		prepareAllDefaultNames();
 	}
