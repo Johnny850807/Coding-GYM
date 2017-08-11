@@ -22,10 +22,7 @@ public class Main {
 		
 		while (!isEnd) {
 			
-			
 			String[] customerSituation = line.split(" ");
-			
-			
 			
 			if (customerSituation[2].equals("A"))
 				queue.put(customerSituation[1], customerSituation[0]);
