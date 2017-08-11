@@ -1,9 +1,16 @@
 package TicTacToe;
 
-public class Main {
+import ConsoleFramework.ConsoleCallback;
+import ConsoleFramework.ConsoleGameConfiguration;
+import TicTacToe.Item.Board;
+import TicTacToe.Player.Player;
 
+public class Main {
 	public static void main(String[] args) {
-		new TicTacToe(new GameConfiguration()).startGame();
+		TicTacToe game = new TicTacToe(new ConsoleGameConfiguration());
+		ConsoleCallback callback = new ConsoleCallback(game);
+		game.setCallback(callback); 
+		game.startGame();
 	}
 
 }

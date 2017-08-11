@@ -5,74 +5,67 @@ import TicTacToe.Item.Team;
 import TicTacToe.Item.Exception.TicTacToeException;
 import TicTacToe.Player.NoPlayer;
 import TicTacToe.Player.Player;
-import Util.Input;
 
 public class TicTacToe {
+	private CallBack callback;
 	private GameConfiguration config;
 	private Board board;
 	private Player[] players;
+	private int turn = 0;
 	
 	public TicTacToe(GameConfiguration config) {
-		super();
 		this.config = config;
 	}
-	
-	
+
+
+	public void setCallback(CallBack callback) {
+		this.callback = callback;
+	}
+
+
 	public void startGame(){
 		config.setup();
 		board = config.getBoard();
 		players = config.getPlayers();
-		
-		while (oneRound())
-			board.clear();
-	}
-
-	private boolean oneRound() {
-		int turn = 0;
-		while(!board.isGameOver())
-		{
-			int choose = 0;
-			board.print();
-			while(true)
-			{
-				try {
-					choose = players[turn].makeChoice();
-					board.makeChoice(players[turn], choose);
-					break;  //沒有例外就會跳離迴圈
-				} catch (TicTacToeException e) {}	
-				
-			}
-			System.out.println(players[turn] + " 選擇了 " + choose);
-			turn = turn == 0 ? 1 : 0; //輪流
-			delay();
-		}
-		
-		printWinner(board.getWinTeam());
-		return Input.nextYesOrNo("還要再進行一場遊戲嗎(y/n)");
+		callback.onDrawBoard(board);
+		callback.onNextTurn(players[turn]);
 	}
 	
-	private void printWinner(Team winTeam){
-		board.print();
-		if (winTeam == players[0].getTeam())
-			printWinMessage(players[0]);
-		else if (winTeam == players[1].getTeam())
-			printWinMessage(players[1]);
-		else
-			printWinMessage(new NoPlayer());
-
+	private int nextTurn(){
+		return turn + 1 > 1 ? 0 : 1;
 	}
 	
-	private void printWinMessage(Player player){
-		System.out.println("恭喜這一場比賽中" + player + "獲得了勝利。" );
-	}
-	
-	private void delay(){
+	public void makeChoice(Player owner, int number){
 		try {
-			Thread.sleep(800);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			board.makeChoice(owner, number);
+			callback.onDrawBoard(board);
+			if (board.isGameOver())
+			{
+				Player winner = producePlayer(board.getWinTeam());
+				callback.onGameResult(winner);
+				return;  //close the game
+			}
+			turn = nextTurn();
+		} catch (TicTacToeException e) {
+			callback.onError(e);
 		}
-	}
 		
+		callback.onNextTurn(players[turn]);
+	}
+	
+	private Player producePlayer(Team winTeam){
+		if (winTeam == players[0].getTeam())
+			return players[0];
+		else if (winTeam == players[1].getTeam())
+			return players[1];
+		else
+			return new NoPlayer();
+	}
+	
+	public interface CallBack{
+		void onError(Throwable err);
+		void onDrawBoard(Board board);
+		void onNextTurn(Player player);
+		void onGameResult(Player winner);
+	}
 }

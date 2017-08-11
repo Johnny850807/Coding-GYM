@@ -9,10 +9,11 @@ import Strategy.ChoiceStrategy;
 import 撲克牌21點示範.Game21Point;
 
 public abstract class Player{
+	protected ChoiceStrategy makeChoiceStrategy;
+	
 	protected List<Card> handCards = Collections.checkedList(new ArrayList(), Card.class);
 	protected String name = "";
 	protected int score; //總成績
-	protected ChoiceStrategy makeChoiceStrategy;
 	public static int playerAmount = 0;
 	
 	

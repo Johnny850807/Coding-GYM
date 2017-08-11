@@ -1,8 +1,8 @@
-package Util;
+package ConsoleFramework;
 
 import java.util.Scanner;
 
-public class Input {
+public class ConsoleInput {
 	private static Scanner scanner = new Scanner(System.in);
 	
 	public static String nextName(){
