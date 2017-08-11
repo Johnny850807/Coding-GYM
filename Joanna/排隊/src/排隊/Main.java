@@ -12,31 +12,33 @@ public class Main {
 	private static String[] stores;
 	private static HashMap<String, ArrayList<String>> queue = new HashMap<>();
 	
-	public static void setStores() {
+	public static void parseStores() {
 		System.out.println("¿é¤J°Ó©±¡G");
 		String line = input.nextLine();
 		stores = line.split(" ");
 	}
 	
-	public static void queue() {
+	public static void allCustomersQueue() {
 		boolean isEnd = false;
 		String line = input.nextLine();
 		while (!isEnd) {	
 			increaseOrDeleteCustomer(line);
 			line = input.nextLine();
-			if (line.equals("0")) {
-				isEnd = true;
-			}						
+			if (line.equals("0")) 
+				isEnd = true;						
 		}
 	}
 	
 	public static void increaseOrDeleteCustomer(String line) {
 		String[] customerSituation = line.split(" ");
+		String store = customerSituation[0];
+		String customer = customerSituation[1];
+		String situation = customerSituation[2];
 		
-		if (customerSituation[2].equals("A"))
-			queue.get(customerSituation[0]).add(customerSituation[1]);
-		else if (customerSituation[2].equals("R"))
-			queue.get(customerSituation[0]).remove(customerSituation[1]);
+		if (situation.equals("A"))
+			queue.get(store).add(customer);
+		else if (situation.equals("R"))
+			queue.get(store).remove(customer);
 	}
 
 	public static void display() {
@@ -57,14 +59,14 @@ public class Main {
 	}
 	
 	public static void main(String [] args) {		
-		setStores();
+		parseStores();
 		
 		for (int i = 0; i < stores.length; i++) {
 			ArrayList<String> customerList = new ArrayList();
 			queue.put(stores[i], customerList);
 		}
 				
-		queue();
+		allCustomersQueue();
 		display();
 
 	}
