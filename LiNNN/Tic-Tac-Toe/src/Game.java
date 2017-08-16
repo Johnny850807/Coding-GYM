@@ -15,17 +15,13 @@ public class Game {
 	}
 
 	public void confGame() {
-		for (int i = 0; i < 2; i++) {
-			System.out.println("請輸入玩家 " + (i + 1) + " 類型: (1)玩家 (2)電腦");
-			int player = input.nextInt();
-			players.add((player == 1) ? new RealPlayer() : new AI());
 
-			players.get(i).setGraph(i);
-		}
+		createPlayer();
+		players.get(0).setGroup(Group.CIRCLE);
+		createPlayer();
+		players.get(1).setGroup(Group.CROSS);
 
-		System.out.println();
-		board.displayBoard();
-
+		showBoard();
 		startGame();
 	}
 
@@ -40,28 +36,49 @@ public class Game {
 			playerChoose(index);
 		}
 	}
+	
+	public void createPlayer() {
+		System.out.println("請輸入玩家類型: (1)玩家 (2)電腦");
+		int player = input.nextInt();
+		players.add((player == 1) ? new RealPlayer() : new AI());
+	}
 
+	public void showBoard() {
+		String[] B = board.toString().split(",");
+		
+		for (int i = 1; i < 10; i++) {
+			System.out.print(B[i-1] + "    ");
+			if (i % 3 == 0)
+				System.out.print("\n\n");
+		}
+	}
+	
 	public void playerChoose(int index) {
 		while (true) {
 			try {
 				int choice = players.get(index).Choice();
-				board.confPosition(choice, players.get(index).getGraph());
+				board.confPosition(choice, players.get(index).getGroup());
 				System.out.println(players.get(index).getName() + " 選擇了 " + choice);
-				System.out.println();
-				board.displayBoard();
-				
-				if (board.gameWinner()) {
-					System.out.println(players.get(index).getName() + " 獲勝!!");
-					gameover = true;
-				} else if (board.draw()) {
-					System.out.println("沒有玩家獲勝");
-					gameover = true;
-					break;
-				}
+				showBoard();
+				judge(index);
+	
 				break;
 			} catch (ChoiceDuplicatedException e) {
 				System.out.println();
 			}
+		}
+	}
+	
+	public void judge(int index) {
+		switch(board.gameJudge()) {
+		case 1:
+			System.out.println(players.get(index).getName()+"獲勝");
+			gameover = true;
+			break;
+		case 2:
+			System.out.println("沒有人獲勝");
+			gameover = true;
+			break;
 		}
 	}
 
