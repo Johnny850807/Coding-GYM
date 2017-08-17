@@ -2,10 +2,7 @@ package ±Æ¶¤;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
 import java.util.Scanner;
-import java.util.Set;
 
 public class Main {
 	private static Scanner input= new Scanner(System.in);
@@ -70,6 +67,5 @@ public class Main {
 		display();
 
 	}
-	
 	
 }

@@ -5,6 +5,15 @@ public abstract class Player {
 	
 	protected String name;
 	private boolean graph;
+	private Group group;
+
+	public Group getGroup() {
+		return group;
+	}
+
+	public void setGroup(Group group) {
+		this.group = group;
+	}
 
 	public Player() {
 		super();
