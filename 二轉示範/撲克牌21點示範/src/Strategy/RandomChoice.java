@@ -11,7 +11,7 @@ public class RandomChoice implements ChoiceStrategy {
 	public boolean makeChoiceToReceiveNextCardOrNot(Player player) {
 		boolean choice = new Random().nextBoolean();
 		System.out.println((choice ? "y" : "n"));
-		return choice ;
+		return choice;
 	}
 
 }
