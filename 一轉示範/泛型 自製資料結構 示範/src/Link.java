@@ -24,7 +24,4 @@ public class Link<T> {
 		this.data = data;
 	}
 
-	
-	
-	
 }
