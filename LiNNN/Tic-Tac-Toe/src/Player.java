@@ -32,12 +32,12 @@ public abstract class Player {
 		return graph;
 	}
 	
-	public abstract String named();
+	public abstract void named();
 	
 	public String getName() {
 		return name;
 	}
 
-	public abstract int Choice();
+	public abstract int choice();
 	
 }

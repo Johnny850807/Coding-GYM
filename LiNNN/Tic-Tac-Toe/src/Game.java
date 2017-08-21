@@ -1,12 +1,13 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import Exception.ChoiceDuplicatedException;
+import Exception.BlockHasBeenChosenException;
+
 
 public class Game {
 	Scanner input = new Scanner(System.in);
-	Board board = new Board();
-	ArrayList<Player> players = new ArrayList<>();
+	private Board board = new Board();
+	private ArrayList<Player> players = new ArrayList<>();
 	private boolean gameover;
 
 	public Game() {
@@ -36,7 +37,7 @@ public class Game {
 			playerChoose(index);
 		}
 	}
-	
+
 	public void createPlayer() {
 		System.out.println("請輸入玩家類型: (1)玩家 (2)電腦");
 		int player = input.nextInt();
@@ -45,34 +46,34 @@ public class Game {
 
 	public void showBoard() {
 		String[] B = board.toString().split(",");
-		
+
 		for (int i = 1; i < 10; i++) {
-			System.out.print(B[i-1] + "    ");
+			System.out.print(B[i - 1] + "    ");
 			if (i % 3 == 0)
 				System.out.print("\n\n");
 		}
 	}
-	
+
 	public void playerChoose(int index) {
 		while (true) {
 			try {
-				int choice = players.get(index).Choice();
+				int choice = players.get(index).choice();
 				board.confPosition(choice, players.get(index).getGroup());
 				System.out.println(players.get(index).getName() + " 選擇了 " + choice);
 				showBoard();
 				judge(index);
-	
+
 				break;
-			} catch (ChoiceDuplicatedException e) {
+			} catch (BlockHasBeenChosenException e) {
 				System.out.println();
 			}
 		}
 	}
-	
+
 	public void judge(int index) {
-		switch(board.gameJudge()) {
+		switch (board.gameJudge()) {
 		case 1:
-			System.out.println(players.get(index).getName()+"獲勝");
+			System.out.println(players.get(index).getName() + "獲勝");
 			gameover = true;
 			break;
 		case 2:
