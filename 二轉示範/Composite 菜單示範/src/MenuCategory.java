@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class MenuCategory extends MealsGettable {
 
@@ -14,8 +15,6 @@ public class MenuCategory extends MealsGettable {
 			m.printSelfAndItems();
 		}
 	}
-
-	
 
 
 }

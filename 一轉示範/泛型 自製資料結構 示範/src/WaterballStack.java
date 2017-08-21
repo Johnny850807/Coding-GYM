@@ -11,6 +11,7 @@ public class WaterballStack<T> implements Iterable<T>{
 		this.comparator = comparator;
 		this.sortedList = new SortedLinkedList<T>(comparator);
 	}
+	
 	public void push(T t){
 		sortedList.add(t);
 	}
@@ -38,6 +39,7 @@ public class WaterballStack<T> implements Iterable<T>{
 		stack.sortedList = this.sortedList.clone();
 		return stack;
 	}
+	
 	@Override
 	public Iterator<T> iterator() {
 		return new SortedLinkIterator();
@@ -49,6 +51,7 @@ public class WaterballStack<T> implements Iterable<T>{
 		public SortedLinkIterator(){
 			cloneStack = WaterballStack.this.clone(); //先複製一份資料結構 用這個資料結構進行 pop 走訪就不會動到原本的
 		}
+		
 		@Override
 		public boolean hasNext() {
 			return cloneStack.hasNext();

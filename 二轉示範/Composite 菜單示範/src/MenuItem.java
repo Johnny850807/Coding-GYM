@@ -1,3 +1,4 @@
+import java.util.List;
 
 public class MenuItem extends MealsGettable {
 
@@ -7,8 +8,5 @@ public class MenuItem extends MealsGettable {
 	
 	@Override
 	protected void printSubItems() {}  /**There is no more sub item**/
-
-
-
 
 }
