@@ -90,10 +90,13 @@ public class ECommerce {
 			@Override
 			public void run() {
 				try {
-					userRepository.buyProduct(products.get(index));
+					user = userRepository.buyProduct(products.get(index));
+					view.onProductCreatedFinsih(user);
 				} catch (MoneyNotEnoughException e) {
 					view.onMoneyNotEnough();
-				} catch (Exception e) {
+				} catch (ArrayIndexOutOfBoundsException e) {
+					view.onProductIndexError();
+				}catch (Exception e) {
 					e.printStackTrace();
 				}
 			}

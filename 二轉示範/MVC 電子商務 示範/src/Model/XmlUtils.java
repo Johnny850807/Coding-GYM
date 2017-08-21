@@ -31,12 +31,18 @@ public class XmlUtils {
 	private static final String USER = "user";
 	private static final String PRODUCT = "product";
 
-	public static User parseUserByElement(Element userElement) {
+	public static User parseUserByElement(Element userElement) throws ParseException {
 		String userName = userElement.getAttribute("name");
 		String userAccount = userElement.getAttribute("account");
 		String userPassword = userElement.getAttribute("password");
 		int userMoney = Integer.valueOf(userElement.getAttribute("money"));
-		return new User(userName, userAccount, userPassword, userMoney);
+		User user = new User(userName, userAccount, userPassword, userMoney);
+		List<Element> productElements = parseProductElementsUnderUserElement(userElement);
+		List<Product> products = new ArrayList<>();
+		for (Element element : productElements)
+			products.add(parseProductByElement(element));
+		user.setProducts(products);
+		return user;
 	}
 
 	public static List<Element> parseProductElementsUnderUserElement(Element userElement) {

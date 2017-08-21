@@ -9,6 +9,7 @@ import Model.User;
 public class ViewImp implements View{
 	private ECommerce ecommerce;
 	private State state;
+	private User user;
 	
 	
 	public ViewImp(ECommerce ecommerce) {
@@ -24,6 +25,8 @@ public class ViewImp implements View{
 	@Override
 	public void onSignInSuccessfully(User user) {
 		state = new EcommerceState(user, this);
+		this.user = user;
+		System.out.println(user);		
 		state.showUi();
 	}
 	
@@ -34,12 +37,21 @@ public class ViewImp implements View{
 			Product product = products.get(i);
 			System.out.println("("+i+") "+product.getName() + " - " + product.getPrice());
 		}
+		ecommerce.buyProductByIndex(Input.nextInt("現有金錢: " + user.getMoney() + ", 輸入欲購買編號"));
 	}
 	
 	@Override
 	public void onMoneyNotEnough() {
 		System.out.println("金錢不足。");
+		state.showUi();
 	}
+	
+	@Override
+	public void onProductIndexError() {
+		System.out.println("輸入錯誤");
+		state.showUi();
+	}
+
 
 	@Override
 	public void onAccountDuplicated() {
@@ -55,9 +67,16 @@ public class ViewImp implements View{
 
 	@Override
 	public void onProductCreatedFinsih(User user) {
+		System.out.println("購買成功 !!");
+		System.out.println(user);
 		state.showUi();
-		
 	}
+	
+	@Override
+	public void onShowUserProductsFinish() {
+		state.showUi();
+	}
+
 
 	@Override
 	public void onError(Exception err) {
@@ -79,6 +98,5 @@ public class ViewImp implements View{
 	public ECommerce getEcommerce() {
 		return ecommerce;
 	}
-
 
 }

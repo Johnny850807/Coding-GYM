@@ -55,4 +55,9 @@ public class User {
 		return String.format("姓名： %s, 金錢： %d", name, money);
 	}
 	
+	public void showProducts(){
+		for (Product product : products)
+			System.out.println("- " + product.getName() + " 購買日期: " + product.dateToString());
+	}
+	
 }
