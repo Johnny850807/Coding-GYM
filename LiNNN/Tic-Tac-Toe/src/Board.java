@@ -1,4 +1,4 @@
-import Exception.ChoiceDuplicatedException;
+import Exception.BlockHasBeenChosenException;
 
 public class Board {
 	public static final int SIZE = 9;
@@ -11,30 +11,23 @@ public class Board {
 			blocks[j] = new Block();
 	}
 
-	public String displayBoard(int k) {
-		String bString = "";
-			bString += blocks[k-1].displayBlock(k);
-		
-		return bString;
-	}
-	
 	@Override
 	public String toString() {
 		String board = "";
-		for (int k = 1; k < 10; k++) {
-			board += displayBoard(k);
+		for (int k = 0; k < 9; k++) {
+			board += blocks[k].toString();
 		}
-		
+
 		return board;
 	}
 
-	public void confPosition(int choice, Group group) throws ChoiceDuplicatedException {
+	public void confPosition(int choice, Group group) throws BlockHasBeenChosenException {
 		if (blocks[choice - 1].haveBeenChosen() == true)
-			throw new ChoiceDuplicatedException();
+			throw new BlockHasBeenChosenException();
 		blocks[choice - 1].setGroup(group);
 	}
 
-	public boolean gameWinner() {
+	public boolean hasWinner() {
 		for (int i = 0; i < 3; i++) {
 			if (blocks[i % 9].haveBeenChosen() && blocks[i % 9].getGroup() == blocks[(i + 3) % 9].getGroup()
 					&& blocks[i % 9].getGroup() == blocks[(i + 6) % 9].getGroup())
@@ -72,13 +65,13 @@ public class Board {
 			draw = true;
 		return draw;
 	}
-	
+
 	public int gameJudge() {
-		if (gameWinner())
+		if (hasWinner())
 			return 1;
 		else if (draw())
 			return 2;
 		return 0;
 	}
-	
+
 }
