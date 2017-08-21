@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<MVC>
+<user account="123444" money="5000" name="asda4" password="45675">
+<product date="2017/08/21 16:34:15" name="123" price="500"/>
+<product date="2017/08/21 16:34:40" name="123" price="500"/>
+</user>
+<user account="sad1" money="5000" name="ha" password="s55"/>
+<user account="sd" money="5000" name="asd" password="a"/>
+</MVC>
