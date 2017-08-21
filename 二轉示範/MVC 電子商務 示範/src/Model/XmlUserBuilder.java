@@ -49,9 +49,11 @@ public class XmlUserBuilder implements UserBuilder<Element> {
 	}
 
 	@Override
-	public UserBuilder<Element> addProduct(Product product)  throws Exception {
+	public UserBuilder<Element> buyProduct(Product product)  throws Exception {
 		Element element = productToElement(document, product);
 		userElement.appendChild(element);
+		int money = Integer.valueOf(userElement.getAttribute("money"));
+		userElement.setAttribute("money", String.valueOf(money - product.getPrice()));
 		return this;
 	}
 
@@ -62,16 +64,8 @@ public class XmlUserBuilder implements UserBuilder<Element> {
 		} catch (TransformerException e) {
 			e.printStackTrace();
 		}
+		int length = parseProductElementsUnderUserElement(userElement).size();
 		return userElement;
 	}
 	
-	public static void main(String[] argv) {
-		try {
-			UserRepository repository = new UserRepositoryImp(new XmlUserBuilder());
-			User user = repository.signIn("123444", "45675");
-			repository.buyProduct(new Product("123", 500));
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
 }

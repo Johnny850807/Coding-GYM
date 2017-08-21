@@ -6,4 +6,29 @@
 </user>
 <user account="sad1" money="5000" name="ha" password="s55"/>
 <user account="sd" money="5000" name="asd" password="a"/>
+<user account="q" money="1080" name="水球" password="q">
+<product date="2017/08/21 22:09:26" name="樹枝" price="40"/>
+<product date="2017/08/21 22:10:59" name="鞋子" price="2100"/>
+<product date="2017/08/21 22:13:28" name="樹枝" price="40"/>
+<product date="2017/08/21 22:16:19" name="水球" price="600"/>
+<product date="2017/08/21 22:16:19" name="樹枝" price="40"/>
+<product date="2017/08/21 22:44:42" name="春" price="3000"/>
+<product date="2017/08/21 22:45:06" name="春" price="3000"/>
+<product date="2017/08/21 22:53:15" name="樹枝" price="40"/>
+<product date="2017/08/21 22:53:15" name="春" price="3000"/>
+<product date="2017/08/22 00:55:20" name="水球" price="600"/>
+<product date="2017/08/22 00:55:47" name="春" price="3000"/>
+<product date="2017/08/22 01:03:59" name="樹枝" price="40"/>
+<product date="2017/08/22 01:05:35" name="樹枝" price="40"/>
+<product date="2017/08/22 01:05:35" name="樹枝" price="40"/>
+<product date="2017/08/22 01:06:32" name="樹枝" price="40"/>
+<product date="2017/08/22 01:06:53" name="樹枝" price="40"/>
+<product date="2017/08/22 01:06:53" name="樹枝" price="40"/>
+<product date="2017/08/22 01:06:53" name="樹枝" price="40"/>
+<product date="2017/08/22 01:06:53" name="樹枝" price="40"/>
+</user>
+<user account="dd" money="1960" name="asdas" password="dd">
+<product date="2017/08/22 00:56:02" name="春" price="3000"/>
+<product date="2017/08/22 00:56:02" name="樹枝" price="40"/>
+</user>
 </MVC>

@@ -17,11 +17,9 @@ public class TicTacToe {
 		this.config = config;
 	}
 
-
 	public void setCallback(CallBack callback) {
 		this.callback = callback;
 	}
-
 
 	public void startGame(){
 		config.setup();

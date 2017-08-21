@@ -26,9 +26,6 @@ public class UserRepositoryImp implements UserRepository{
 	public User signIn(String account, String password)  throws Exception{
 		Element userElement = builder.signIn(account, password).build();
 		user = XmlUtils.parseUserByElement(userElement);
-		List<Element> productElements = parseProductElementsUnderUserElement(userElement);
-		for (Element productElement : productElements)
-			user.getProducts().add(parseProductByElement(productElement));
 		return user;
 	}
 
@@ -36,7 +33,8 @@ public class UserRepositoryImp implements UserRepository{
 	public User buyProduct(Product product) throws Exception {
 		if (user.getMoney() < product.getPrice())
 			throw new MoneyNotEnoughException();
-		Element userElement = builder.addProduct(product).build();
+		Element userElement = builder.buyProduct(product).build();
+		int length = parseProductElementsUnderUserElement(userElement).size();
 		return user = parseUserByElement(userElement);
 	}
 }
