@@ -1,20 +1,21 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
 	
 	public static void main(String[] args) {
-		MyMenuList<MealsGettable> myMenuList = new MyMenuList<MealsGettable>();
+		CompositeMenuList myMenuList = new CompositeMenuList("»Ê¶Ç¤j¾Ç");
 		
 		MealsGettable firstRestaurant = new Building("¤@À\");
 		MealsGettable secondRestaurant = new Building("¤GÀ\");
 		MealsGettable bbNingVendor = new Vendor("BBªüÚ¬¸ôÃäÅu");
 		MealsGettable yellowMom = new Vendor("¶À¶ý¶ý");
 		
-		myMenuList.add(firstRestaurant);
-		myMenuList.add(secondRestaurant);
-		myMenuList.add(bbNingVendor);
-		myMenuList.add(yellowMom);
+		myMenuList.addItem(firstRestaurant);
+		myMenuList.addItem(secondRestaurant);
+		myMenuList.addItem(bbNingVendor);
+		myMenuList.addItem(yellowMom);
 		
 		/*¤@À\*/
 		
@@ -23,7 +24,8 @@ public class Main {
 		italyVendor.addItem(new MenuItem("ÖK¯N°_¥qÄÑ"));
 		
 		MealsGettable ironVendor = new Vendor("ÅKªOÀ\ºÞ");
-		ironVendor.addItem(new MenuItem("ÅKªO¤û¦×")).addItem(new MenuItem("ÅKªO½Þ"));
+		ironVendor.addItem(new MenuItem("ÅKªO¤û¦×"))
+		.addItem(new MenuItem("ÅKªO½Þ"));
 		
 		firstRestaurant.addItem(italyVendor).addItem(ironVendor);
 		
@@ -58,7 +60,9 @@ public class Main {
 		.addItem(new MenuItem("³J¥]¶º"))
 		.addItem(new MenuItem("¾i¼Ö¦h"));
 		
-		myMenuList.printAllMenu();
+		List<MealsGettable> list = myMenuList.toList();
+		for (MealsGettable m : list)
+			System.out.println(m);
 	}
 
 }

@@ -1,3 +1,4 @@
+import java.util.List;
 
 public class Vendor extends MealsGettable {
 
