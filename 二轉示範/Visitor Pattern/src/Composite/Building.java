@@ -1,5 +1,8 @@
+package Composite;
 import java.util.ArrayList;
 import java.util.List;
+
+import Visitor.Visitor;
 
 public class Building extends MealsGettable {
 
@@ -11,6 +14,11 @@ public class Building extends MealsGettable {
 	protected void printSubItems() {
 		for ( MealsGettable m : menuList )
 			m.printSelfAndItems();
+	}
+
+	@Override
+	public void acceptVisitor(Visitor visitor) {
+		visitor.outputNode(this);
 	}
 
 	

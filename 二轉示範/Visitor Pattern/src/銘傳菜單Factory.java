@@ -1,25 +1,23 @@
-import java.util.List;
-
 import Composite.Building;
+import Composite.CompositeMenuList;
 import Composite.MealsGettable;
 import Composite.MenuCategory;
 import Composite.MenuItem;
-import Composite.*;
-public class Main {
+import Composite.Vendor;
 
-	
-	public static void main(String[] args) {
-		CompositeMenuList myMenuList = new CompositeMenuList("銘傳大學");
+public class 銘傳菜單Factory {
+	public static MealsGettable create() {
+CompositeMenuList 銘傳菜單 = new CompositeMenuList("銘傳大學");
 		
 		MealsGettable firstRestaurant = new Building("一餐");
 		MealsGettable secondRestaurant = new Building("二餐");
 		MealsGettable bbNingVendor = new Vendor("BB阿甯路邊攤");
 		MealsGettable yellowMom = new Vendor("黃媽媽");
 		
-		myMenuList.addItem(firstRestaurant);
-		myMenuList.addItem(secondRestaurant);
-		myMenuList.addItem(bbNingVendor);
-		myMenuList.addItem(yellowMom);
+		銘傳菜單.addItem(firstRestaurant);
+		銘傳菜單.addItem(secondRestaurant);
+		銘傳菜單.addItem(bbNingVendor);
+		銘傳菜單.addItem(yellowMom);
 		
 		/*一餐*/
 		
@@ -64,9 +62,6 @@ public class Main {
 		.addItem(new MenuItem("蛋包飯"))
 		.addItem(new MenuItem("養樂多"));
 		
-		
-		for (MealsGettable m : myMenuList)
-			System.out.println(m);
+		return 銘傳菜單;
 	}
-
 }

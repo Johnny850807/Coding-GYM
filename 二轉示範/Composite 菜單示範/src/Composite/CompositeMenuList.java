@@ -1,10 +1,10 @@
+package Composite;
 import java.util.ArrayList;
 
 
 
-class CompositeMenuList extends MealsGettable{
+public class CompositeMenuList extends MealsGettable{
 	
-
 	public CompositeMenuList(String selfName) {
 		super("¤j¾Ç", selfName);
 	}
