@@ -1,14 +1,11 @@
 package View;
 
-import java.util.Scanner;
-
 import Model.User;
+import Util.Input;
 
 public class EcommerceState extends State{
-	private User user;
-	public EcommerceState(User user, View view) {
+	public EcommerceState(View view) {
 		super(view);
-		this.user = user;
 	}
 
 	@Override
@@ -16,7 +13,7 @@ public class EcommerceState extends State{
 		int type = Input.nextInt("(1) 觀看已購買商品 (2) 購買商品 (3) 登出" ,1 ,3);
 		switch (type) {
 		case 1:
-			user.showProducts();
+			view.getUser().showProducts();
 			view.onShowUserProductsFinish();
 			break;
 		case 2:

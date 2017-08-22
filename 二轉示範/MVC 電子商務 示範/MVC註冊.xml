@@ -6,7 +6,7 @@
 </user>
 <user account="sad1" money="5000" name="ha" password="s55"/>
 <user account="sd" money="5000" name="asd" password="a"/>
-<user account="q" money="1080" name="水球" password="q">
+<user account="q" money="260" name="水球" password="q">
 <product date="2017/08/21 22:09:26" name="樹枝" price="40"/>
 <product date="2017/08/21 22:10:59" name="鞋子" price="2100"/>
 <product date="2017/08/21 22:13:28" name="樹枝" price="40"/>
@@ -26,9 +26,18 @@
 <product date="2017/08/22 01:06:53" name="樹枝" price="40"/>
 <product date="2017/08/22 01:06:53" name="樹枝" price="40"/>
 <product date="2017/08/22 01:06:53" name="樹枝" price="40"/>
+<product date="2017/08/23 00:19:01" name="UML教學" price="300"/>
+<product date="2017/08/23 00:19:38" name="樹枝" price="40"/>
+<product date="2017/08/23 00:21:07" name="JAVA教學" price="400"/>
+<product date="2017/08/23 00:22:29" name="樹枝" price="40"/>
+<product date="2017/08/23 00:24:19" name="樹枝" price="40"/>
 </user>
 <user account="dd" money="1960" name="asdas" password="dd">
 <product date="2017/08/22 00:56:02" name="春" price="3000"/>
 <product date="2017/08/22 00:56:02" name="樹枝" price="40"/>
+</user>
+<user account="d" money="1700" name="asdf" password="d">
+<product date="2017/08/23 00:24:31" name="春" price="3000"/>
+<product date="2017/08/23 00:24:31" name="UML教學" price="300"/>
 </user>
 </MVC>

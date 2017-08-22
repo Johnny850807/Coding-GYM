@@ -20,4 +20,5 @@ public interface View {
 	public State getState();
 	public void setState(State state);
 	public ECommerce getEcommerce();
+	public User getUser();
 }
