@@ -7,19 +7,18 @@ import Exception.StackEmptyException;
 public class LinStack<T> implements Iterable<T> {
 
 	private Comparator<T> myComparator;
-	private Object[] stack = new Object[1000];
+	private Object[] stack;
 	private int index; // push陣列用
-	private int choice; // switch用
-	private int amount; // 決定choice用
+	private boolean turnToHead = true;
 	private int firstIndex; // pop-頭
 	private int lastIndex; // pop-尾
 
 	public LinStack(Comparator<T> comparator) {
 		myComparator = comparator;
 		index = 0;
-		amount = 1;
 		firstIndex = 0;
 		lastIndex = 0;
+		stack = new Object[1000];
 	}
 
 	public void push(T t) {
@@ -31,26 +30,20 @@ public class LinStack<T> implements Iterable<T> {
 
 	@SuppressWarnings("unchecked")
 	public T pop() throws StackEmptyException {
-		T object = null;
-		if (lastIndex - firstIndex == 0)
-			throw new StackEmptyException();
-		if (amount % 2 == 1)
-			choice = 1;
-		if (amount % 2 == 0)
-			choice = 2;
 
-		switch (choice) {
-		case 1:
+		T object;
+		if (lastIndex - firstIndex == 0) {
+			throw new StackEmptyException();
+		}
+		if (turnToHead) {
 			object = (T) stack[firstIndex];
 			firstIndex++;
-			amount++;
-			break;
-
-		case 2:
+			turnToHead = false;
+		} else {
 			object = (T) stack[--lastIndex];
-			amount++;
-			break;
+			turnToHead = true;
 		}
+
 		return object;
 	}
 
@@ -65,51 +58,40 @@ public class LinStack<T> implements Iterable<T> {
 				}
 	}
 
+	public LinStack<T> copy() {
+		LinStack<T> linStack = new LinStack<T>(myComparator);
+		linStack.stack = stack;
+		linStack.firstIndex = firstIndex;
+		linStack.lastIndex = lastIndex;
+		return linStack;
+	}
+
 	public Iterator<T> iterator() {
 		return new InnerIterator();
 	}
 
 	private class InnerIterator implements Iterator<T> {
-
-		private int choice;
-		private int first;
-		private int last;
-		private int amount;
+		private LinStack<T> linStack;
 
 		public InnerIterator() {
-			first = firstIndex;
-			last = lastIndex;
-			amount = 1;
+			linStack = LinStack.this.copy();
 		}
 
 		@Override
 		public boolean hasNext() {
-			return first < last;
+			return linStack.firstIndex < linStack.lastIndex;
 		}
 
 		@SuppressWarnings("unchecked")
 		@Override
 		public T next() {
-			T object = null;
-			if (amount % 2 == 1)
-				choice = 1;
-			if (amount % 2 == 0)
-				choice = 2;
-
-			switch (choice) {
-			case 1:
-				object = (T) stack[first];
-				first++;
-				amount++;
-				break;
-
-			case 2:
-				object = (T) stack[--last];
-				amount++;
-				break;
+			T nextOne = null;
+			try {
+				nextOne = linStack.pop();
+			} catch (StackEmptyException e) {
+				e.getMessage();
 			}
-			return object;
-
+			return nextOne;
 		}
 
 	}
