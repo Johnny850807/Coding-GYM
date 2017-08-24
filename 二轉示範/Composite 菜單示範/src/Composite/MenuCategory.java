@@ -1,11 +1,13 @@
+package Composite;
+import java.util.ArrayList;
 import java.util.List;
 
-public class Vendor extends MealsGettable {
+public class MenuCategory extends MealsGettable {
 
-	public Vendor(String selfName) {
-		super( "Åu³c" , selfName);
+	public MenuCategory(String selfName) {
+		super( "¤ÀÃþ" , selfName);
 	}
-	
+
 	@Override
 	protected void printSubItems() {
 		for ( MealsGettable m : menuList )
@@ -14,5 +16,6 @@ public class Vendor extends MealsGettable {
 			m.printSelfAndItems();
 		}
 	}
+
 
 }

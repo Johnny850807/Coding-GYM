@@ -1,6 +1,10 @@
-import java.util.ArrayList;
 import java.util.List;
 
+import Composite.Building;
+import Composite.MealsGettable;
+import Composite.MenuCategory;
+import Composite.MenuItem;
+import Composite.*;
 public class Main {
 
 	
@@ -60,8 +64,8 @@ public class Main {
 		.addItem(new MenuItem("³J¥]¶º"))
 		.addItem(new MenuItem("¾i¼Ö¦h"));
 		
-		List<MealsGettable> list = myMenuList.toList();
-		for (MealsGettable m : list)
+		
+		for (MealsGettable m : myMenuList)
 			System.out.println(m);
 	}
 

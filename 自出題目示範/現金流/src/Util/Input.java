@@ -1,7 +1,6 @@
 package Util;
 
 import java.util.Scanner;
-
 public class Input {
 	private static final Scanner scanner = new Scanner(System.in);
 	
@@ -17,6 +16,22 @@ public class Input {
 		return input;
 	}
 	
+	public static String next(){
+		return nextLine("");  // empty message
+	}
+	
+	public static String next(String message){
+		String input;
+		System.out.print(message);
+		if (!message.isEmpty())
+			System.out.println();
+		do
+		{
+			input = scanner.next();
+		}while(input.isEmpty());
+		return input;
+	}
+	
 	public static String nextLine(){
 		return nextLine("");  // empty message
 	}
@@ -25,7 +40,7 @@ public class Input {
 		while(true)
 		{
 			try{
-				String input  = nextLine(message);
+				String input  = next(message);
 				return Integer.valueOf(input.trim());
 			}catch(NumberFormatException err){ 
 				System.out.println("¿é¤J¿ù»~");

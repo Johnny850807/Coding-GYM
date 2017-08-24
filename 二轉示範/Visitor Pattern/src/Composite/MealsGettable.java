@@ -1,7 +1,10 @@
+package Composite;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
+
+import Visitor.Visitor;
 
 public abstract class MealsGettable implements Iterable<MealsGettable>{
 	protected String typeName;
@@ -26,11 +29,17 @@ public abstract class MealsGettable implements Iterable<MealsGettable>{
 		return String.format("%s: %s%n",typeName,selfName);
 	}
 	
+	public String getSelfName() {
+		return selfName;
+	}
+	
 	
 	public MealsGettable addItem(MealsGettable subItem){
 		menuList.add(subItem);
 		return this;
 	}
+	
+	public abstract void acceptVisitor(Visitor visitor);
 	
 
 	public Iterator<MealsGettable> iterator() {

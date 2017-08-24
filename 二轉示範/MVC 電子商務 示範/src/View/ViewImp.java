@@ -5,6 +5,7 @@ import java.util.List;
 import Controller.ECommerce;
 import Model.Product;
 import Model.User;
+import Util.Input;
 
 public class ViewImp implements View{
 	private ECommerce ecommerce;
@@ -24,7 +25,7 @@ public class ViewImp implements View{
 	
 	@Override
 	public void onSignInSuccessfully(User user) {
-		state = new EcommerceState(user, this);
+		state = new EcommerceState(this);
 		this.user = user;
 		System.out.println(user);		
 		state.showUi();
@@ -67,6 +68,7 @@ public class ViewImp implements View{
 
 	@Override
 	public void onProductCreatedFinsih(User user) {
+		this.user = user;
 		System.out.println("¡ ∂R¶®•\ !!");
 		System.out.println(user);
 		state.showUi();
@@ -97,6 +99,11 @@ public class ViewImp implements View{
 	@Override
 	public ECommerce getEcommerce() {
 		return ecommerce;
+	}
+
+	@Override
+	public User getUser() {
+		return user;
 	}
 
 }

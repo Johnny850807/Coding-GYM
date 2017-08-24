@@ -35,6 +35,7 @@ public class UserRepositoryImp implements UserRepository{
 			throw new MoneyNotEnoughException();
 		Element userElement = builder.buyProduct(product).build();
 		int length = parseProductElementsUnderUserElement(userElement).size();
-		return user = parseUserByElement(userElement);
+		user = parseUserByElement(userElement);
+		return user; 
 	}
 }
