@@ -22,4 +22,10 @@ public class SwitchTvChannelCommand implements Command
 		tv.changeProgram(choose.nextInt());
 	}
 
+	@Override
+	public void undo()
+	{
+		tv.changeProgram(tv.getProgramNumber());
+	}
+
 }

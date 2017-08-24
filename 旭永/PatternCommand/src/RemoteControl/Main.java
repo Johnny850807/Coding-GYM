@@ -22,7 +22,7 @@ public class Main
 			isend = choose.equals("end");
 				if(!isend)
 				{
-					try{
+					try {
 						remotecontrol.press(choose);
 					} catch(CommandException ex) {
 						System.out.println(ex.getMessage());

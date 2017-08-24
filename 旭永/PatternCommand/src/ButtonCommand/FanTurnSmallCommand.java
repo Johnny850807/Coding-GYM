@@ -17,4 +17,10 @@ public class FanTurnSmallCommand implements Command
 		fan.turnSmall();
 	}
 
+	@Override
+	public void undo()
+	{
+		fan.turnLarge();
+	}
+
 }

@@ -20,9 +20,15 @@ public class UndoCommand implements Command
 	public void execute()
 	{
 		if(!undoCommandStack.isEmpty()) 
-			undoCommandStack.pop().execute();
+			undoCommandStack.pop().undo();
 		else
 			throw new CommandException("無法還原了");
+	}
+
+	@Override
+	public void undo() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
