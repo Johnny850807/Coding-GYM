@@ -17,7 +17,7 @@ public class User extends Thread {
 	
 	@Override
 	public void run() {
-		while (bank.hasBlance()) {
+		while (bank.hasBlance() && money != 0) {
 			depositOrDraw();
 		}
 	}
