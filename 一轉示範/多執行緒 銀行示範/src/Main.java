@@ -7,42 +7,22 @@ public class Main {
 	static List<Thread> threadList = new ArrayList<Thread>();
 	public static void main(String[] args) {
 		try {
-			genarateUser();
-			while(!bank.isStop())
-			{
-				Thread.sleep(50);
-				for ( Thread t : threadList )  // Wait for every thread's work done
+			genarateUsers();
+			while(!bank.isBroke()){
+				for ( Thread t : threadList )  // 等待執行緒們都結束
 					t.join();
-			}
+			} // 等待銀行破產
 
-			bank.setStop(true);
 			int result = bank.getIncome() - bank.getOutlay();
-			
-
-			
 			System.out.printf("結論: 總和 %d - %d = %d %n",bank.getIncome() , bank.getOutlay() , result);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 	}
 	
-	private static void genarateUser() {
-		threadList.add(new Thread ( new User(bank) ));
-		threadList.add(new Thread ( new User(bank) ));
-		threadList.add(new Thread ( new User(bank) ));
-		threadList.add(new Thread ( new User(bank) ));
-		threadList.add(new Thread ( new User(bank) ));
-		threadList.add(new Thread ( new User(bank) ));
-		threadList.add(new Thread ( new User(bank) ));
-		threadList.add(new Thread ( new User(bank) ));
-		threadList.add(new Thread ( new User(bank) ));
-		threadList.add(new Thread ( new User(bank) ));
-		threadList.add(new Thread ( new User(bank) ));
-		threadList.add(new Thread ( new User(bank) ));
-		threadList.add(new Thread ( new User(bank) ));
-		threadList.add(new Thread ( new User(bank) ));
-		threadList.add(new Thread ( new User(bank) ));
-		
+	private static void genarateUsers() {
+		for ( int i = 0 ; i < 100 ; i ++)
+			threadList.add(new Thread ( new User(bank) ));
 		for (Thread t : threadList)
 			t.start();
 	}

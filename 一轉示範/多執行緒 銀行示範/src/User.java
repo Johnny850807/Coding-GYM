@@ -15,34 +15,34 @@ public class User implements Runnable{
 	
 	@Override
 	public void run() {
-		if (name == null)
-			Thread.currentThread().setName(NAMES[ ++nameIndex % NAMES.length]);
-		
-		while(!bank.isStop())
-		{
-			try {
-				TimeUnit.SECONDS.sleep(random.nextInt(5));
-				
-				if (random.nextBoolean())
-					deposit(random.nextInt(money)+1);
-				else
-					draw(random.nextInt(6900)+100);
-				
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
+		try{
+			if (name == null)
+				Thread.currentThread().setName(NAMES[++nameIndex % NAMES.length]);
+			doTransactions();
+		}catch (BankNoMoneyException e) {
+			// 如果銀行沒錢了，例外就會丟出並強制結束使用者的行為。
+		}catch(Exception err){
+			err.printStackTrace();
 		}
 	}
 	
-	private void deposit(int amount){
-		System.out.printf("User %s is depositting , Amount : %d ...%n" , Thread.currentThread().getName() , amount);
-		bank.deposit(amount);
+	private void doTransactions() throws Exception{
+		while (!bank.isBroke()) 
+		{
+			if (random.nextBoolean() && money != 0 )
+				deposit(random.nextInt(money) + 1);
+			else
+				draw(random.nextInt(2800) + 100);
+		}
+	}
+
+	private void deposit(int amount) throws Exception{
+		bank.deposit(this, amount);
 		money -= amount;
 	}
 	
-	private void draw(int amount){
-		int result = bank.draw(amount);
-		System.out.printf("User %s is drawing , Amount : %d ... , Get : %d %n" , Thread.currentThread().getName() , amount , result);
+	private void draw(int amount) throws Exception{
+		int result = bank.draw(this, amount);
 		money += result;
 	}
 
