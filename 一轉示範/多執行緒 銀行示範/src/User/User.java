@@ -1,5 +1,11 @@
+package User;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
+
+import Bank.Bank;
+import Bank.BankNoMoneyException;
+import Bank.Bank.Action;
+
 
 public class User implements Runnable{
 	private static Random random = new Random();
@@ -32,17 +38,17 @@ public class User implements Runnable{
 			if (random.nextBoolean() && money != 0 )
 				deposit(random.nextInt(money) + 1);
 			else
-				draw(random.nextInt(2800) + 100);
+				draw(random.nextInt(3800) + 100);
 		}
 	}
 
 	private void deposit(int amount) throws Exception{
-		bank.deposit(this, amount);
+		bank.action(this, amount, Action.DEPOSITE);
 		money -= amount;
 	}
 	
 	private void draw(int amount) throws Exception{
-		int result = bank.draw(this, amount);
+		int result = bank.action(this, amount, Action.DRAW);
 		money += result;
 	}
 
