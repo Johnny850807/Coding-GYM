@@ -19,7 +19,7 @@ public class User extends Thread {
 	public void run() {
 		while (bank.hasBlance()) {
 			try {
-				sleep(2000);
+				sleep(0);
 				depositOrDraw();
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
@@ -32,7 +32,8 @@ public class User extends Thread {
 		int randomNumber = random.nextInt(3);
 		switch (randomNumber) {
 		case 0:
-			deposit();
+			if (getMoney() != 0)
+				deposit();
 			break;
 		case 1:
 			draw();

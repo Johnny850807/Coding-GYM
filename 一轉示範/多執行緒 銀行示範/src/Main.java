@@ -14,6 +14,7 @@ public class Main {
 			for ( int i = 0 ; i < 2000 ; i ++ ) // 運行兩千次 驗證資料完全一致
 			{
 				initResourceAndRunUserThreads();
+
 				for ( Thread t : threadList )  // 等待執行緒們都結束
 					t.join();
 
