@@ -18,13 +18,7 @@ public class User extends Thread {
 	@Override
 	public void run() {
 		while (bank.hasBlance()) {
-			try {
-				sleep(0);
-				depositOrDraw();
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+			depositOrDraw();
 		}
 	}
 
@@ -46,7 +40,6 @@ public class User extends Thread {
 		int randomMoney = random.nextInt(getMoney()) + 1;
 		money -= randomMoney;
 		bank.deposit(randomMoney);
-		
 	}
 	
 	public void draw() {

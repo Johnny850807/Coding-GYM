@@ -34,6 +34,7 @@ public class Bank {
 	public synchronized void deposit(int money) {
 		if (!hasBlance()) 
 			return;
+		delay(200);
 		balance += money;
 		depositMoney += money;
 		System.out.println(Thread.currentThread().getName() + "¦s$ " + money + ", ³Ñ$ " + getBalance());
@@ -42,6 +43,7 @@ public class Bank {
 	public synchronized void draw(int money){
 		if (!hasBlance()) 
 			return;
+		delay(200);
 		if (balance >= money) {
 			balance -= money;
 			drawMoney += money;
@@ -56,9 +58,8 @@ public class Bank {
 	}
 	
 	public boolean hasBlance() {
-		if (getBalance() == 0) {
+		if (getBalance() == 0) 	
 			return false;
-		}
 		return true;
 	}
 	
@@ -74,4 +75,11 @@ public class Bank {
 		
 	}
 	
+	public void delay(int time) {
+		try {
+			Thread.sleep(time);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
 }
