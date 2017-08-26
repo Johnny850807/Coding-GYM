@@ -26,7 +26,8 @@ public class User extends Thread {
 		int randomNumber = random.nextInt(3);
 		switch (randomNumber) {
 		case 0:
-			deposit();
+			if (getMoney() != 0)
+				deposit();
 			break;
 		case 1:
 			draw();

@@ -4,7 +4,6 @@ import java.util.concurrent.TimeUnit;
 
 import Bank.Bank;
 import Bank.BankNoMoneyException;
-import Bank.Bank.Action;
 
 
 public class User implements Runnable{
@@ -43,12 +42,12 @@ public class User implements Runnable{
 	}
 
 	private void deposit(int amount) throws Exception{
-		bank.action(this, amount, Action.DEPOSITE);
+		bank.deposite(this, amount);
 		money -= amount;
 	}
 	
 	private void draw(int amount) throws Exception{
-		int result = bank.action(this, amount, Action.DRAW);
+		int result = bank.draw(this, amount);
 		money += result;
 	}
 

@@ -13,6 +13,10 @@ public class Bank {
 		return instance;
 	}
 	
+	public static void reset(){
+		instance = null;
+	}
+	
 	public Bank() {
 		setBalance(10000);
 		drawMoney = 0;
@@ -36,7 +40,7 @@ public class Bank {
 		System.out.println(Thread.currentThread().getName() + "¦s$ " + money + ", ³Ñ$ " + getBalance());
 	}
 	
-	public synchronized void draw(int money) {
+	public synchronized void draw(int money){
 		if (!hasBlance()) 
 			return;
 		delay(200);
@@ -59,15 +63,22 @@ public class Bank {
 		return true;
 	}
 	
-	public void compareMoney() {
-		System.out.println("10000 + " + depositMoney + " = " + drawMoney);
+	public void compareMoney(){
+		try{
+			if (depositMoney + 10000 != drawMoney)
+				throw new Exception();
+			System.out.println("10000 + " + depositMoney + " = " + drawMoney);
+		}catch (Exception e) {
+			e.printStackTrace();
+			System.exit(0);
+		}
+		
 	}
 	
 	public void delay(int time) {
 		try {
 			Thread.sleep(time);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
