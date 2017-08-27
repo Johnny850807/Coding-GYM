@@ -23,6 +23,7 @@ public class User implements Runnable{
 		try{
 			if (name == null)
 				Thread.currentThread().setName(NAMES[++nameIndex % NAMES.length]);
+			System.out.println(Thread.currentThread().getName());
 			doTransactions();
 		}catch (BankNoMoneyException e) {
 			// 如果銀行沒錢了，例外就會丟出並強制結束使用者的行為。

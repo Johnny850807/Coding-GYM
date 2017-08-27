@@ -1,52 +1,17 @@
 package ²×·¥±K½X¦hAI;
 
 public abstract class Player {
-	protected GuessGame game = GuessGame.getInstance();
-	protected PlayerType type; 
-	protected String name;
-	protected int id;
-	public static int playerAmount = 0;
+	private String name;
 	
-	public Player(PlayerType type , String name){
-		this.type = type;
-		this.name = name;
-		this.id = ++playerAmount;
+	public Player(){
+		name = nameSelf();
 	}
 	
-	@Override
-	public String toString() {
-		return String.format("-%s %d  %s-", type , id , name);
-	}
-	public String getGuessMessage(int guess){
-		return String.format("%s ²q¤F¼Æ¦r  %d%n" , this , guess );
-	}
-	public int doGuessingAction(){
-		//Template method
-		int guess =  game.getMaxBound() == game.getMinBound() ?
-				game.getMaxBound() : getGuessingNumber();
-		getGuessMessage(guess);
-		return guess;
-	}
-	
-	protected abstract int getGuessingNumber();
-	
-	public PlayerType getType() {
-		return type;
-	}
-	public void setType(PlayerType type) {
-		this.type = type;
-	}
+	protected abstract String nameSelf();
+	protected abstract String getPlayerType();
+	protected abstract int guess(int min, int max);
+
 	public String getName() {
-		return name;
+		return "(" + getPlayerType() + ":" + name + ")";
 	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
-	
 }

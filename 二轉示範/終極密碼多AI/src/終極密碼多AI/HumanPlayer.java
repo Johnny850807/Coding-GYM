@@ -1,19 +1,22 @@
 package 終極密碼多AI;
 
-import java.util.Scanner;
+import Util.Input;
 
 public class HumanPlayer extends Player{
 
-	private Scanner scanner;
-
-	public HumanPlayer(String name) {
-		super(PlayerType.PLAYER, name);
+	@Override
+	protected String nameSelf() {
+		return Input.next("請輸入名稱");
 	}
 
 	@Override
-	public int getGuessingNumber() {
-		scanner = new Scanner(System.in);
-		return scanner.nextInt();
+	protected String getPlayerType() {
+		return "玩家";
+	}
+
+	@Override
+	protected int guess(int min, int max) {
+		return Input.nextInt(min,max);
 	}
 
 }

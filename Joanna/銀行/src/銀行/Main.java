@@ -11,7 +11,6 @@ public class Main {
 			user.setName(i + "¸¹");
 			user.start();
 		}
-
 	}
 
 }
