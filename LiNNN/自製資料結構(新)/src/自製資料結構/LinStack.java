@@ -28,8 +28,7 @@ public class LinStack<T> implements Iterable<T> {
 		comparator(); // ±Æ§Ç¥Î
 	}
 
-	@SuppressWarnings("unchecked")
-	public T pop() throws StackEmptyException {
+	public T pop() {
 
 		T object;
 		if (lastIndex - firstIndex == 0) {
@@ -38,16 +37,14 @@ public class LinStack<T> implements Iterable<T> {
 		if (turnToHead) {
 			object = (T) stack[firstIndex];
 			firstIndex++;
-			turnToHead = false;
 		} else {
 			object = (T) stack[--lastIndex];
-			turnToHead = true;
 		}
 
+		turnToHead = !turnToHead;
 		return object;
 	}
 
-	@SuppressWarnings("unchecked")
 	public void comparator() {
 		for (int i = lastIndex - 1; i > 0; i--)
 			for (int j = 0; j < i; j++)
@@ -60,9 +57,9 @@ public class LinStack<T> implements Iterable<T> {
 
 	public LinStack<T> copy() {
 		LinStack<T> linStack = new LinStack<T>(myComparator);
-		linStack.stack = stack;
-		linStack.firstIndex = firstIndex;
-		linStack.lastIndex = lastIndex;
+		linStack.stack = this.stack;
+		linStack.firstIndex = this.firstIndex;
+		linStack.lastIndex = this.lastIndex;
 		return linStack;
 	}
 
@@ -82,16 +79,9 @@ public class LinStack<T> implements Iterable<T> {
 			return linStack.firstIndex < linStack.lastIndex;
 		}
 
-		@SuppressWarnings("unchecked")
 		@Override
 		public T next() {
-			T nextOne = null;
-			try {
-				nextOne = linStack.pop();
-			} catch (StackEmptyException e) {
-				e.getMessage();
-			}
-			return nextOne;
+			return linStack.pop();
 		}
 
 	}

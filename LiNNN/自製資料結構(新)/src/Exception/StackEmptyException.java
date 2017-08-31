@@ -1,6 +1,6 @@
 package Exception;
 
-public class StackEmptyException extends Exception{
+public class StackEmptyException extends RuntimeException{
 
 	@Override
 	public String getMessage() {
