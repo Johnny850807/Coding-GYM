@@ -1,14 +1,13 @@
 package Gun;
 
-import Bullet.*;
+import Bullet.Bullet;
+import Bullet.ExplosionBullet;
 
-
-public class ExplosionGun implements Gun {
+public class ExplosionGun extends Gun {
 
 	@Override
 	public Bullet createBullet() {
 		return new ExplosionBullet();
 	}
-
 
 }

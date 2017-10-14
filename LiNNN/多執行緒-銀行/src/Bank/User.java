@@ -23,10 +23,10 @@ public class User implements Runnable {
 		int choice = (int) (Math.random() * 2);
 
 		if (choice == 1) {
-			int money = (int) (Math.random() * 3000 + 1);
+			int money = (int) (Math.random() * 300 + 1);
 			bankAccount.deposit(money);
 		} else {
-			int money = (int) (Math.random() * 2500 + 2000);
+			int money = (int) (Math.random() * 250 + 200);
 
 			if (money > bankAccount.getBalance())
 				throw new BalanceIsOverdraftException();

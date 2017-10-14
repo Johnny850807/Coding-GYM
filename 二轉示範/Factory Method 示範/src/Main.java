@@ -4,28 +4,31 @@ import java.util.*;
 import Bullet.*;
 
 public class Main {
-	static Scanner scanner = new Scanner(System.in);
-	static Hero hero = new Hero();
-	static Monster monster;
+	private static Scanner scanner = new Scanner(System.in);
+	private static int count;
+	private static Hero hero = new Hero();
+	private static Monster monster;
 	public static void main(String[] args) {
 		initMonsterAndShow();
-		do
-		{
-			shootingMonster(bulletChoosing());
-			printMonsterInfo();
-		}while(!judgeEnding());
+		fight();
+		System.out.printf("使用回合數  %d%n" , count);
 	}
 	
-	static void initMonsterAndShow(){
+	private static void initMonsterAndShow(){
 		monster = new Monster(new Random().nextInt(3000)+1950);
-		representMonster();
-	}
-	
-	static void representMonster(){
 		System.out.printf("== 遇到怪物 生命 %d%n" , monster.getHp());
 	}
 	
-	static int bulletChoosing(){
+	private static void fight(){
+		do
+		{
+			count ++;
+			hero.shootMonsterWithSpecifiedNumOfGuns(monster, bulletChoosing());
+			System.out.printf("怪物生命剩下 %d%n" , monster.getHp());
+		}while(!monster.isDead());
+	}
+	
+	private static int bulletChoosing(){
 		int choice;
 		do
 		{
@@ -37,20 +40,4 @@ public class Main {
 		return choice;
 	}
 	
-	static void shootingMonster(int numOfGun){
-		hero.shootMonsterWithSpecifiedNumOfGuns(monster, numOfGun);
-	}
-	
-	static void printMonsterInfo(){
-		System.out.printf("怪物生命剩下 %d%n" , monster.getHp());
-	}
-	
-	static boolean judgeEnding(){
-		return monster.isDead();
-	}
-	
-	static void printFinalCount(){
-		System.out.printf("使用回合數  %d%n" , hero.getCountRound());
-	}
-
 }

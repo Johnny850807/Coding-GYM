@@ -1,8 +1,9 @@
 package Gun;
 
-import Bullet.*;
+import Bullet.Bullet;
+import Bullet.MachineBullet;
 
-public class MachineGun implements Gun {
+public class MachineGun extends Gun{
 
 	@Override
 	public Bullet createBullet() {
