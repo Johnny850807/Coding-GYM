@@ -10,7 +10,7 @@ public class BankAccount {
 			System.out.print("");
 
 		else {
-			Thread.sleep(1000);
+			Thread.sleep(10);
 			balance += money;
 			depositMoney += money;
 			System.out.println("User " + Thread.currentThread().getName() + " is depositting, Amount: " + money);
@@ -19,7 +19,7 @@ public class BankAccount {
 
 	public synchronized void draw(int money) throws InterruptedException {
 		if (getBalance() > money) {
-			Thread.sleep(1000);
+			Thread.sleep(10);
 			balance -= money;
 			drawMoney += money;
 			System.out.println("User " + Thread.currentThread().getName() + " is drawing, Amount: " + money

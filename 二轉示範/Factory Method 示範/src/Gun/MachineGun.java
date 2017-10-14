@@ -9,9 +9,4 @@ public class MachineGun implements Gun {
 		return new MachineBullet();
 	}
 
-	@Override
-	public int getDamage() {
-		return  new MachineBullet().getSumDamage();
-	}
-
 }

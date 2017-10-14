@@ -9,9 +9,5 @@ public class SniperGun implements Gun {
 		return new SniperBullet();
 	}
 
-	@Override
-	public int getDamage() {
-		return new SniperBullet().getSumDamage();
-	}
 
 }

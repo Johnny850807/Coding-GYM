@@ -10,9 +10,5 @@ public class ExplosionGun implements Gun {
 		return new ExplosionBullet();
 	}
 
-	@Override
-	public int getDamage() {
-		return  new ExplosionBullet().getSumDamage();
-	}
 
 }
