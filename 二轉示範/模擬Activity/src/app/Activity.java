@@ -50,6 +50,7 @@ public abstract class Activity {
 	protected final void startActivity(Intent intent){
 		try {
 			Class<? extends Activity> target = intent.getTargetActivityClass();
+			intent.getPausedActivity().onPause();
 			Activity newActivity = target.newInstance();
 			setIntentToNewActivityByReflection(newActivity, intent);
 			newActivity.start();

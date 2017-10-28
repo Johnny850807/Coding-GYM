@@ -33,4 +33,8 @@ public final class Intent {
 	protected Class<? extends Activity> getTargetActivityClass(){
 		return targetActivity;
 	}
+	
+	public Activity getPausedActivity(){
+		return from;
+	}
 }
