@@ -2,19 +2,8 @@ package Gun;
 
 import Bullet.Bullet;
 
-public abstract class Gun {
+public interface Gun {
+
+	Bullet createBullet();
 	
-	private Bullet bullet;
-	private int damage;
-	
-	public Gun() {
-		bullet = createBullet();
-		damage = bullet.getSumDamage();
-	}
-	
-	public abstract Bullet createBullet();
-	
-	public int getDamage() {
-		return damage;
-	}
 }

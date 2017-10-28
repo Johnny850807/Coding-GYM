@@ -7,27 +7,10 @@ import Gun.SniperGun;
 
 public class Player {
 	
-	private Gun gun;
+	private Gun[] guns = {null, new MachineGun(), new ExplosionGun(), new SniperGun()};
 	
-	public void chooseGun(int selection) {
-		switch (selection) {
-		case 1:
-			gun = new MachineGun();
-			break;
-		case 2:
-			gun = new ExplosionGun();
-			break;
-		case 3:
-			gun = new SniperGun();
-			break;
-
-		default:
-			break;
-		}
-	}
-	
-	public int getSumDamage() {
-		return gun.getDamage();
+	public int getSumDamage(int selection) {
+		return guns[selection].createBullet().getSumDamage();
 	}
 	
 }

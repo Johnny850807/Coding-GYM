@@ -16,8 +16,7 @@ public class Main {
 			round++;
 			System.out.println("第"+ round + "回合，選擇槍(1)機關槍 (2)散彈槍 (3)狙擊槍");
 			int selection = input.nextInt();
-			player.chooseGun(selection);
-			int damage = player.getSumDamage();
+			int damage = player.getSumDamage(selection);
 			System.out.println("怪物HP減少" + damage);
 			monster.decreaseHealthPoint(damage);
 			System.out.println();
