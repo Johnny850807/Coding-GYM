@@ -1,26 +1,26 @@
 
 class Student:
     def __init__(self, height, weight, grades, studentId):
-        self.__id = str(studentId)
-        self.__height = int(height)
-        self.__weight = int(weight)
-        self.__grades = int(grades)
+        self._id = str(studentId)
+        self._height = int(height)
+        self._weight = int(weight)
+        self._grades = int(grades)
 
     @property
     def id(self):
-        return self.__id
+        return self._id
 
     @property
     def height(self):
-        return self.__height
+        return self._height
 
     @property
     def weight(self):
-        return self.__weight
+        return self._weight
         
     @property
     def grades(self):
-        return self.__grades
+        return self._grades
 
     def __str__(self):
         return "Student [height={0.height}, weight={0.weight}, grades={0.grades}, id={0.id}]".format(self)
