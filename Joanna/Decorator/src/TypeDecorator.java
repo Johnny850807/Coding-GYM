@@ -9,7 +9,7 @@ public abstract class TypeDecorator implements Pokemon{
 	
 	@Override
 	public int attack(Pokemon typeDecorator, int hurt) {
-		double addition = calculateHurt(typeDecorator, this);
+		float addition = calculateHurt(typeDecorator);
 		String status = "";
 		if (addition > 1) 
 			status = "Double!";
@@ -19,20 +19,6 @@ public abstract class TypeDecorator implements Pokemon{
 		return pokemon.attack(typeDecorator, (int) (hurt * addition));
 	}
 	
-	public double calculateHurt(Pokemon pokemon1, Pokemon pokemon2) {
-		if (pokemon1 instanceof Water && pokemon2 instanceof Grass)
-			return 0.5;
-		if (pokemon1 instanceof Water && pokemon2 instanceof Fire) 
-			return 2;
-		if (pokemon1 instanceof Grass && pokemon2 instanceof Fire) 
-			return 0.5;
-		if (pokemon1 instanceof Grass && pokemon2 instanceof Water) 
-			return 2;
-		if (pokemon1 instanceof Fire && pokemon2 instanceof Water) 
-			return 0.5;
-		if (pokemon1 instanceof Fire && pokemon2 instanceof Grass)
-			return 2;
-		return 1;
-	}
+	public abstract float calculateHurt(Pokemon pokemon);
 	
 }

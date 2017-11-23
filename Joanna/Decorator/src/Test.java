@@ -9,7 +9,7 @@ public class Test {
 		pokemon2 = new Grass(pokemon2);
 
 		int hurt = 100;
-		System.out.println(pokemon1.getDescription() + "遇到" + pokemon2.getDescription() + "初始威力" + hurt);
+		System.out.println(pokemon1.getDescription() + " 遇到 " + pokemon2.getDescription() + "\n初始威力" + hurt);
 		System.out.println(pokemon1.attack(pokemon2, hurt));
 	}
 	
