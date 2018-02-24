@@ -8,38 +8,36 @@ import java.util.concurrent.TimeUnit;
 
 import View.*;
 
+
 public class Restaurant {
-	private static Restaurant instance = new Restaurant();
-	private static Collection<Guest> guestSet = 
+	private Collection<Guest> guestSet = 
 			Collections.checkedSet(new HashSet<Guest>(), Guest.class);
 	
-	private ClickableView button = new Button();
+	private ClickableView orderingRing;
 	
-	//singleton
-	private Restaurant(){
-		setupButton();
+	/**
+	 * Note that we did a dependency inversion, we don't specify the type of ClickableView to Button,
+	 * instead, we fetch the instance of it from the parameter of the constructor.
+	 * So the type can be various. It needn't be a button.
+	 */
+	public Restaurant(ClickableView orderingRing){
+		this.orderingRing = orderingRing;
+		
+		// so now the restaurant is an observer of the ClickableView!
+		// restaurant needs to know if the ring got clicked!
+		// once the ring is clicked, it's time to handle the request from Guests!
+		orderingRing.setOnClickListener((guest) ->handleGuestRequest(guest));
 	}  
 	
-	public static Restaurant getInstance(){
-		return instance;
-	}
-	
-	private void setupButton(){
-		button.setOnClickListener(new ClickableView.OnClickListener() {
-			@Override
-			public void onClick(Guest guest) {
-				handleGuest(guest);
-			}
-		});
-	}
-	
-	private void handleGuest(Guest guest){
+	private void handleGuestRequest(Guest guest){
 		System.out.println(guest+" ≠q¿\§F~~~~");
+		
+		// here we should start a thread, otherwise orders cannot work simultaneously.
 		new Thread(){
 			@Override
 			public void run() {
 				try {
-					makeOrderToGuest(guest);
+					fillOrderAndNotifyGuest(guest);
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
@@ -47,9 +45,9 @@ public class Restaurant {
 		}.start();
 	}
 	
-	private void makeOrderToGuest(Guest guest) throws InterruptedException{
-		TimeUnit.SECONDS.sleep(5);
-		guest.onOrderFinished();
+	private void fillOrderAndNotifyGuest(Guest guest) throws InterruptedException{
+		TimeUnit.SECONDS.sleep(5);  // simulation of working
+		guest.onOrderFinished(this);
 	}
 	
 	public void addGuest(Guest guest){
@@ -62,7 +60,7 @@ public class Restaurant {
 	}
 
 	public ClickableView getButton() {
-		return button;
+		return orderingRing;
 	}
 	
 }

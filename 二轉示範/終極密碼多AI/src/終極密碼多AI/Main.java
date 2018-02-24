@@ -10,7 +10,6 @@ import Util.Input;
 public class Main {
 
 	public static void main(String[] args) {
-
 		GuessGame game = new GuessGame();
 		List<Player> players = createPlayers();
 		

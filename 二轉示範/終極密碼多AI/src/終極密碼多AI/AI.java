@@ -1,12 +1,15 @@
 package 終極密碼多AI;
 
-import 撲克牌21點示範.NameGenerator;
-
 public abstract class AI extends Player{
-
+	private static int amount = 0;
+	
+	public AI(){
+		amount++;
+	}
+	
 	@Override
 	protected String nameSelf() {
-		return NameGenerator.getInstance().nextName();
+		return "AI " + String.valueOf(amount++);
 	}
 
 }
