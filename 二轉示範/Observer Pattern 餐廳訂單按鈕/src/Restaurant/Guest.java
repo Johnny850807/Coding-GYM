@@ -8,7 +8,7 @@ import View.ClickableView;
 /**
  * Here we have Guest class, but its an abstract class.
  * We make an abstraction so that guests can react differently to certain events,
- * such as "When the order is finished" event, or use the different way to click button.
+ * such as "When the order is finished" event, or different ways to click button.
  * However, if there is an abstraction, means there are things to be different.
  * And the more important point is that here Guest is an observer of the restaurant, 
  * so it should be abstract.
@@ -27,16 +27,16 @@ public abstract class Guest {
 		return NAME_SET[index];
 	}
 
-	public abstract void clickButton(ClickableView button);
-	
-	public abstract void onOrderFinished(Restaurant restaurant);
-	
 	public void accessRestaurant(Restaurant restaurant) throws InterruptedException{
 		System.out.println(this+" ¶i¤JÀ\ÆU¤F..");
 		restaurant.addGuest(this);  //become an observer of the restaurant
 		TimeUnit.SECONDS.sleep(3);
-		restaurant.getButton().click(this);  // click the button for ordering food!
+		clickButton(restaurant.getButton()); // click the button for ordering food!
 	}
+
+	public abstract void clickButton(ClickableView button);
+	
+	public abstract void onOrderFinished(Restaurant restaurant);
 	
 	public void leaveRestaurant(Restaurant restaurant){
 		restaurant.removeGuest(this);
