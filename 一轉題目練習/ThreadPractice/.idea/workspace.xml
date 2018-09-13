@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a9424541-a4be-4d96-926d-47372303e826" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Lin一轉題目重寫/IOSignInSystem/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IOSignInSystem/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Joanna/進階註冊系統/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Joanna/進階註冊系統/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Joanna/進階註冊系統/src/進階註冊系統/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Joanna/進階註冊系統/src/進階註冊系統/FileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/DataStructure/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/DataStructure/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/DataStructure/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/DataStructure/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/DataStructure/DataStructure.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/DataStructure/out/production/DataStructure/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/DataStructure/out/production/DataStructure/StoresManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/DataStructure/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/DataStructure/src/StoresManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/IOSignInSystem/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/IOSignInSystem/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/IOSignInSystem/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/IOSignInSystem/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/IOSignInSystem/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/IOSignInSystem/IOSignInSystem.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/IOSignInSystem/out/production/IOSignInSystem/FileReaderAndWriter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/IOSignInSystem/out/production/IOSignInSystem/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/IOSignInSystem/out/production/IOSignInSystem/SignInSystem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/IOSignInSystem/out/production/IOSignInSystem/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/IOSignInSystem/out/production/IOSignInSystem/UserList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/IOSignInSystem/out/production/IOSignInSystem/exception/AccountDuplicatedException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/IOSignInSystem/out/production/IOSignInSystem/exception/UserSignInFailException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/IOSignInSystem/src/FileRecorder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/IOSignInSystem/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/IOSignInSystem/src/SignInSystem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/IOSignInSystem/src/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/IOSignInSystem/src/UserManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/IOSignInSystem/src/exception/AccountDuplicatedException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/IOSignInSystem/src/exception/UserSignInFailException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/ListMap/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/ListMap/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/ListMap/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/ListMap/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/ListMap/ListMap.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/ListMap/out/production/ListMap/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/ListMap/out/production/ListMap/StoreManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/ListMap/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/ListMap/src/StoreManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/自製資料結構(新)/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/自製資料結構(新)/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/自製資料結構(新)/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/自製資料結構(新)/bin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/自製資料結構(新)/bin/Exception/StackEmptyException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/自製資料結構(新)/bin/自製資料結構/LinStack$InnerIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/自製資料結構(新)/bin/自製資料結構/LinStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/自製資料結構(新)/bin/自製資料結構/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/自製資料結構(新)/bin/自製資料結構/MyComparator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/自製資料結構(新)/bin/自製資料結構/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/自製資料結構(新)/src/Exception/StackEmptyException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/自製資料結構(新)/src/自製資料結構/LinStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/自製資料結構(新)/src/自製資料結構/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/自製資料結構(新)/src/自製資料結構/MyComparator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/自製資料結構(新)/src/自製資料結構/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/進階註冊系統/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../LiNNN/進階註冊系統/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../資源區/IO進階登入/帳密.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../資源區/IO進階登入/帳密.txt" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-771128407">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="1161" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="1161" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="2004401645">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="90" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="90" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/exception/BalanceIsNotEnoughException.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Bank.java" />
+        <option value="$PROJECT_DIR$/src/User.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-81" />
+    <option name="y" value="4" />
+    <option name="width" value="1456" />
+    <option name="height" value="916" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ThreadPractice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ThreadPractice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ThreadPractice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ThreadPractice" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536736879747" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="ThreadPractice" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a9424541-a4be-4d96-926d-47372303e826" name="Default Changelist" comment="" />
+      <created>1536727391456</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1536727391456</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1456" height="916" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25716332" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32992327" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+          <folding>
+            <element signature="e#203#204#0" expanded="true" />
+            <element signature="e#235#236#0" expanded="true" />
+            <element signature="e#521#522#0" expanded="true" />
+            <element signature="e#612#613#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding>
+            <element signature="e#1050#1051#0" expanded="true" />
+            <element signature="e#1084#1085#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/exception/BalanceIsNotEnoughException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+          <folding>
+            <element signature="e#133#134#0" expanded="true" />
+            <element signature="e#195#196#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="58" lean-forward="true" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

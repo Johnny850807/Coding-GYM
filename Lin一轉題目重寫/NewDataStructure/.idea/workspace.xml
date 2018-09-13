@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9cbdc022-0a5f-43bb-8989-f37f90b2d096" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../IOSignInSystem/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../一轉題目練習/IOSignInSystem/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../一轉題目練習/ThreadPractice/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Joanna/進階註冊系統/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Joanna/進階註冊系統/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Joanna/進階註冊系統/src/進階註冊系統/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Joanna/進階註冊系統/src/進階註冊系統/FileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/DataStructure/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/DataStructure/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/DataStructure/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/DataStructure/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/DataStructure/DataStructure.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/DataStructure/out/production/DataStructure/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/DataStructure/out/production/DataStructure/StoresManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/DataStructure/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/DataStructure/src/StoresManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/IOSignInSystem/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/IOSignInSystem/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/IOSignInSystem/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/IOSignInSystem/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/IOSignInSystem/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/IOSignInSystem/IOSignInSystem.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/IOSignInSystem/out/production/IOSignInSystem/FileReaderAndWriter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/IOSignInSystem/out/production/IOSignInSystem/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/IOSignInSystem/out/production/IOSignInSystem/SignInSystem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/IOSignInSystem/out/production/IOSignInSystem/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/IOSignInSystem/out/production/IOSignInSystem/UserList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/IOSignInSystem/out/production/IOSignInSystem/exception/AccountDuplicatedException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/IOSignInSystem/out/production/IOSignInSystem/exception/UserSignInFailException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/IOSignInSystem/src/FileRecorder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/IOSignInSystem/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/IOSignInSystem/src/SignInSystem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/IOSignInSystem/src/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/IOSignInSystem/src/UserManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/IOSignInSystem/src/exception/AccountDuplicatedException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/IOSignInSystem/src/exception/UserSignInFailException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/ListMap/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/ListMap/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/ListMap/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/ListMap/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/ListMap/ListMap.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/ListMap/out/production/ListMap/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/ListMap/out/production/ListMap/StoreManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/ListMap/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/ListMap/src/StoreManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/自製資料結構(新)/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/自製資料結構(新)/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/自製資料結構(新)/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/自製資料結構(新)/bin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/自製資料結構(新)/bin/Exception/StackEmptyException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/自製資料結構(新)/bin/自製資料結構/LinStack$InnerIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/自製資料結構(新)/bin/自製資料結構/LinStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/自製資料結構(新)/bin/自製資料結構/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/自製資料結構(新)/bin/自製資料結構/MyComparator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/自製資料結構(新)/bin/自製資料結構/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/自製資料結構(新)/src/Exception/StackEmptyException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/自製資料結構(新)/src/自製資料結構/LinStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/自製資料結構(新)/src/自製資料結構/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/自製資料結構(新)/src/自製資料結構/MyComparator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/自製資料結構(新)/src/自製資料結構/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LiNNN/進階註冊系統/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../LiNNN/進階註冊系統/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../資源區/IO進階登入/帳密.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../資源區/IO進階登入/帳密.txt" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1734895980">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="1037" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="1037" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="348042977">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="116" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="116" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data_structure/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="116">
+              <caret line="9" column="48" lean-forward="true" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#289#298#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data_structure/Student.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+              <folding>
+                <element signature="e#104#105#0" expanded="true" />
+                <element signature="e#140#141#0" expanded="true" />
+                <element signature="e#240#241#0" expanded="true" />
+                <element signature="e#276#277#0" expanded="true" />
+                <element signature="e#322#323#0" expanded="true" />
+                <element signature="e#367#368#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/data_structure/LinStack.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="62" column="24" lean-forward="true" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1774#1775#0" expanded="true" />
+                <element signature="e#1816#1817#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/exception/StackIsEmptyException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+              <folding>
+                <element signature="e#127#128#0" expanded="true" />
+                <element signature="e#170#171#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data_structure/LinComparator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="7" column="61" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Student.java" />
+        <option value="$PROJECT_DIR$/src/LinComparator.java" />
+        <option value="$PROJECT_DIR$/src/exception/StackIsEmptyException.java" />
+        <option value="$PROJECT_DIR$/src/data_structure/Main.java" />
+        <option value="$PROJECT_DIR$/src/data_structure/Student.java" />
+        <option value="$PROJECT_DIR$/src/data_structure/LinStack.java" />
+        <option value="$PROJECT_DIR$/src/data_structure/LinComparator.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-81" />
+    <option name="y" value="4" />
+    <option name="width" value="1456" />
+    <option name="height" value="916" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="NewDataStructure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NewDataStructure" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NewDataStructure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NewDataStructure" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NewDataStructure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NewDataStructure" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="data_structure" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NewDataStructure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NewDataStructure" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536791835069" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ThreadPractice" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="data_structure.Main" />
+      <module name="NewDataStructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="data_structure.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9cbdc022-0a5f-43bb-8989-f37f90b2d096" name="Default Changelist" comment="" />
+      <created>1536697236892</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1536697236892</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1456" height="916" extended-state="7" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.260745" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32992327" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39897698" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32992327" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.260745" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32992327" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+    </layout-to-restore>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/data_structure/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="9" column="48" lean-forward="true" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#289#298#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data_structure/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <folding>
+            <element signature="e#104#105#0" expanded="true" />
+            <element signature="e#140#141#0" expanded="true" />
+            <element signature="e#240#241#0" expanded="true" />
+            <element signature="e#276#277#0" expanded="true" />
+            <element signature="e#322#323#0" expanded="true" />
+            <element signature="e#367#368#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data_structure/LinComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="61" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/exception/StackIsEmptyException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+          <folding>
+            <element signature="e#127#128#0" expanded="true" />
+            <element signature="e#170#171#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data_structure/LinStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="62" column="24" lean-forward="true" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1774#1775#0" expanded="true" />
+            <element signature="e#1816#1817#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
