@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="多型_人/src"/>
+	<classpathentry kind="src" path="形狀/src"/>
+	<classpathentry kind="src" path="學生/src"/>
+	<classpathentry kind="src" path="Card_Battle/src"/>
+	<classpathentry kind="src" path="GuessNumberGame/src"/>
+	<classpathentry kind="src" path="Login_In/src"/>
+	<classpathentry kind="output" path="Card_Battle/bin"/>
+</classpath>

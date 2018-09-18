@@ -1,4 +1,4 @@
-package 進階註冊系統;
+package ?i?????U?t??;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -25,7 +25,7 @@ public class FileManager {
 	
 	public void readFile() {
 		try {
-			FileReader fr = new FileReader("..\\..\\資源區\\IO進階登入\\帳密.txt");
+			FileReader fr = new FileReader("..\\..\\????\\IO?i???n?J\\?b?K.txt");
 			BufferedReader br = new BufferedReader(fr);
 			
 			ArrayList<User> users = new ArrayList<User>();
@@ -43,7 +43,7 @@ public class FileManager {
 	
 	public void writeFile() {
 		try {
-			FileWriter fw = new FileWriter("..\\..\\資源區\\IO進階登入\\帳密.txt");
+			FileWriter fw = new FileWriter("..\\..\\????\\IO?i???n?J\\?b?K.txt");
 			BufferedWriter bw = new BufferedWriter(fw);
 			UserInformation ui = UserInformation.getInstance();
 			for (User u : ui.getUsers()) {
