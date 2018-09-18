@@ -17,7 +17,7 @@ public abstract class Player {
 
 	public Player() {
 		super();
-		named();
+		nameSelf();
 	}
 	
 	public void setGraph(int choice) {
@@ -32,7 +32,7 @@ public abstract class Player {
 		return graph;
 	}
 	
-	public abstract void named();
+	public abstract void nameSelf();
 	
 	public String getName() {
 		return name;

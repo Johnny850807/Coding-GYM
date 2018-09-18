@@ -2,7 +2,7 @@
 public class RealPlayer extends Player {
 
 	@Override
-	public void named() {
+	public void nameSelf() {
 		System.out.println("½Ð¿é¤J¦WºÙ: ");
 		name = input.nextLine();
 	}
