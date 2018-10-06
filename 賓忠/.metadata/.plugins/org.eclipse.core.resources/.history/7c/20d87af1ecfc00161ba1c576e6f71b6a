@@ -1,7 +1,0 @@
-package Loginsystem;
-
-public class Allerror extends Exception{
-	public Allerror(){
-		System.out.println("用戶不存在");
-	}
-}
