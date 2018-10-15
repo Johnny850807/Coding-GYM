@@ -5,13 +5,11 @@ public class Customer {
 	private static String customerQueue ;
 		
 	public Customer() {
-
 	}
 	
 	public Customer(String customerName) {
 		setCustomerName(customerName);
 	}
-	
 	
 	public String getCustomerName() {
 		return customerName;
