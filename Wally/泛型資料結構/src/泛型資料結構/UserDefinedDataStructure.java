@@ -20,10 +20,10 @@ public class UserDefinedDataStructure<T> implements Iterable<T> {
 	public void push(T t) {
 	
 		if	(hasPopped) {
-			reload(arrayT);
+			removeNullElement(arrayT);
 			hasPopped = false ;
 		}
-		
+	
 		if	( arrayTElementAmount == arrayT.length ) {
 			arrayT = Arrays.copyOf(arrayT, arrayT.length * 2);			
 		}
@@ -32,10 +32,10 @@ public class UserDefinedDataStructure<T> implements Iterable<T> {
 		arrayTElementAmount++ ;	
 		popIndex = 0 ;
 		
-		normalSort();
+		ascendingSort();
 	}
 	
-	private void reload(Object[] arrayT) {
+	private void removeNullElement(Object[] arrayT) {
 			
 		arrayTElementAmount--;		
 
@@ -62,7 +62,7 @@ public class UserDefinedDataStructure<T> implements Iterable<T> {
 		return (T)popElement ;
 	}
 	
-	private void normalSort() {
+	private void ascendingSort() {
 	
 		Object replaceArrayT[] = new Object [arrayTElementAmount];
 		Object reverseReplaceArrayT[] = new Object [arrayTElementAmount];
@@ -73,25 +73,29 @@ public class UserDefinedDataStructure<T> implements Iterable<T> {
 			int reverseCompareResultNumber  = (arrayTElementAmount-1) ;
 			
 			for	(int j = 0 ; j < arrayTElementAmount ; j++ ) {
-				
+				// 共大過幾個其他數字
 				if 	( myComparator.compare(arrayT[i], arrayT[j]) > 0 ) {
 					compareResultNumber++ ;
 				}
 			}
+			//正排序
 			replaceArrayT[compareResultNumber] = arrayT[i];
+			//逆排序
 			reverseReplaceArrayT[reverseCompareResultNumber-compareResultNumber] = arrayT[i];
 		}	
-		arrayT = visitSort(replaceArrayT, reverseReplaceArrayT);
+		arrayT = iteratorSort(replaceArrayT, reverseReplaceArrayT);
 	}
 	
-	private Object[] visitSort(Object[]replaceArrayT,Object[]reverseReplaceArrayT) {
+	private Object[] iteratorSort(Object[]replaceArrayT,Object[]reverseReplaceArrayT) {
 	
 		Object[] visitArray = new Object[arrayTElementAmount] ;
 		
 		for	(int i = 0; i < visitArray.length; i++) {
+		//	正排序放奇位
 			if	( i % 2 == 0 ) {
 				visitArray[i] = replaceArrayT[(i+1)/2];
 			}
+		//	逆排序放偶位	
 			else if( i % 2 == 1 ){
 				visitArray[i] = reverseReplaceArrayT[i/2];
 			}
@@ -108,7 +112,6 @@ public class UserDefinedDataStructure<T> implements Iterable<T> {
 		private int index = 0 ;
 		
 		InnerIterator(){
-//		normalSort();
 		}
 
 		@Override
