@@ -1,13 +1,20 @@
 
 public class RestaurantThread {
 
-	public RestaurantThread() {
-		// TODO Auto-generated constructor stub
-	}
-
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
+	/*	timeThread a1 = new timeThread();
+		workThread b1 = new workThread();
+		
+		Thread timeThread = new Thread(a1);
+		Thread workThread = new Thread(b1);
+		
+		timeThread.setPriority(10);
+		workThread.setPriority(5);
+		
+	//	workThread.start();
+	//	timeThread.start();
+	 */
+		
 	}
-
 }

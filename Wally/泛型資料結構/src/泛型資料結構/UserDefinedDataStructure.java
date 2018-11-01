@@ -18,12 +18,12 @@ public class UserDefinedDataStructure<T> implements Iterable<T> {
 	}
 	
 	public void push(T t) {
-	
+
 		if	(hasPopped) {
 			removeNullElement(arrayT);
 			hasPopped = false ;
 		}
-	
+		// 若滿倉便擴充
 		if	( arrayTElementAmount == arrayT.length ) {
 			arrayT = Arrays.copyOf(arrayT, arrayT.length * 2);			
 		}
@@ -34,7 +34,9 @@ public class UserDefinedDataStructure<T> implements Iterable<T> {
 		
 		ascendingSort();
 	}
-	
+	/**
+	 * 將pop過的陣列重新裝填至新陣列
+	 */
 	private void removeNullElement(Object[] arrayT) {
 			
 		arrayTElementAmount--;		
@@ -61,7 +63,9 @@ public class UserDefinedDataStructure<T> implements Iterable<T> {
 		System.gc();
 		return (T)popElement ;
 	}
-	
+	/**
+	 * 升冪排序
+	 */
 	private void ascendingSort() {
 	
 		Object replaceArrayT[] = new Object [arrayTElementAmount];
@@ -85,7 +89,11 @@ public class UserDefinedDataStructure<T> implements Iterable<T> {
 		}	
 		arrayT = iteratorSort(replaceArrayT, reverseReplaceArrayT);
 	}
-	
+	/**
+	 * 正排序放奇數位
+	 * 逆排序置偶數位
+	 * 交疊排序
+	 */
 	private Object[] iteratorSort(Object[]replaceArrayT,Object[]reverseReplaceArrayT) {
 	
 		Object[] visitArray = new Object[arrayTElementAmount] ;
