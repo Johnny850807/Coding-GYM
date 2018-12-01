@@ -3,9 +3,9 @@ public class Order {
 
 	private int numberPlate ;
 	private boolean isFoodUndone = true ;
-	private Ｍenu customerOrder ;
+	private Menu customerOrder ;
 
-	public Order(int customerSerialNumber , Ｍenu food) {
+	public Order(int customerSerialNumber , Menu food) {
 		setNumberPlate(customerSerialNumber);
 		setFoodInfo(food);
 	}
@@ -18,11 +18,11 @@ public class Order {
 		return numberPlate;
 	}
 	
-	public void setFoodInfo(Ｍenu customerOrder) {
+	public void setFoodInfo(Menu customerOrder) {
 		this.customerOrder = customerOrder;
 	}
 	
-	public Ｍenu getFoodInfo() {
+	public Menu getFoodInfo() {
 		return customerOrder;
 	}
 	

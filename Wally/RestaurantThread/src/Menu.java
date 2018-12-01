@@ -1,5 +1,5 @@
 
-public enum Ｍenu {
+public enum Menu {
 
 	HAMBURGER(13,23),
 	PIZZA(18,30) ,
@@ -10,7 +10,7 @@ public enum Ｍenu {
 	private int cookingTime;
 	private int mealPrice;
 	
-	Ｍenu(int cookingTime , int mealCost) {
+	Menu(int cookingTime , int mealCost) {
 		
 		this.cookingTime = cookingTime*1000 ;
 		this.mealPrice = mealCost ;

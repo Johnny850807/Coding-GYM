@@ -26,7 +26,7 @@ public class CustomerThread implements Runnable{
 					
 				Thread.sleep(300);
 					
-				Ｍenu customerFood = customerOrder.getFoodInfo();
+				Menu customerFood = customerOrder.getFoodInfo();
 				int mealPrice = customerFood.getMealPrice();
 					
 				System.out.println("第"+customerSerialNumber+"位客人已用餐完畢");
@@ -42,10 +42,10 @@ public class CustomerThread implements Runnable{
 	
 	private synchronized void setCustomerFoodOrder() {
 		
-		Ｍenu oneMeal ;
+		Menu oneMeal ;
 		Random randomOrder = new Random();
 		
-		oneMeal = Ｍenu.values()[randomOrder.nextInt(Ｍenu.values().length)];
+		oneMeal = Menu.values()[randomOrder.nextInt(Menu.values().length)];
 		
 		synchronized (counterStaff) {
 		customerSerialNumber = ++customerAmount ;	

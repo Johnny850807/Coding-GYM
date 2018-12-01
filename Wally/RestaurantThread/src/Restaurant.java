@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Random;
 
@@ -137,7 +136,7 @@ public class Restaurant {
 			}
 				if (customerOrder!=null) {
 				
-				Ｍenu customerFood = customerOrder.getFoodInfo();
+				Menu customerFood = customerOrder.getFoodInfo();
 				
 				int cookingTime = customerFood.getCookingTime();
 				
