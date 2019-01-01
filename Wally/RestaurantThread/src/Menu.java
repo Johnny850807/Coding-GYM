@@ -1,11 +1,11 @@
 
 public enum Menu {
 
-	HAMBURGER(13,23),
-	PIZZA(18,30) ,
-	FRENCH_FRIES(6,11) ,
-	CHICKEN_NUGGETS(8,13) ,
-	CHICKEN_LEG(25,40) ;
+	漢堡(13,23),
+	披薩(18,30) ,
+	薯條(6,11) ,
+	雞塊(8,13) ,
+	雞腿(25,40) ;
 	
 	private int cookingTime;
 	private int mealPrice;
@@ -15,14 +15,10 @@ public enum Menu {
 		this.cookingTime = cookingTime*1000 ;
 		this.mealPrice = mealCost ;
 	}
-	public int getCookingTime() {
-		
+	public int getCookingTime() {	
 		return cookingTime;
 	}
-
-	public int getMealPrice() {
-		
+	public int getMealPrice() {	
 		return mealPrice;
 	}
-
 }
