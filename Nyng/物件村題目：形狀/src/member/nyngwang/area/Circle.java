@@ -1,4 +1,4 @@
-package org.nyngwang.area;
+package member.nyngwang.area;
 
 import java.lang.Math;
 

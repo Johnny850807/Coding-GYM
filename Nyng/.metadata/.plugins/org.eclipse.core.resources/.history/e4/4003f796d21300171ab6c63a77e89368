@@ -1,5 +1,0 @@
-package org.nyngwang.composite;
-
-public interface FindFood {
-	public void thought();
-}

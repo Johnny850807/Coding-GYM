@@ -1,5 +1,0 @@
-package org.nyngwang.area;
-
-public class Rectangle extends Shape {
-
-}
