@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="src">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/jsoup-1.10.3 拷貝.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/vocabulary_crawler 拷貝.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
