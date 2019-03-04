@@ -1,9 +1,0 @@
-package org.nyngwang.composite;
-
-public class BeefHotPlateNoodles extends Food {
-
-	public BeefHotPlateNoodles(String name) {
-		super(name);
-	}
-
-}

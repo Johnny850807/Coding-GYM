@@ -1,7 +1,0 @@
-package org.nyngwang.area;
-
-import java.util.Scanner;
-
-public abstract class Shape {
-	private AreaLogic logic;
-}

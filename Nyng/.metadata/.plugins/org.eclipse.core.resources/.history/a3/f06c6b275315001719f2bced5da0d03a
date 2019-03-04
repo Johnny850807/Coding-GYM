@@ -1,6 +1,0 @@
-package org.nyngwang.area;
-
-public abstract class Shape {
-	protected Parameters para;
-	public abstract double area();
-}

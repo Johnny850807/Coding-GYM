@@ -1,7 +1,0 @@
-package org.nyngwang.area;
-
-public abstract class Parameters {
-	protected Shape shape;
-	
-	public abstract void load();
-}

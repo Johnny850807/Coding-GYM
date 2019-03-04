@@ -1,6 +1,0 @@
-package org.nyngwang.area;
-
-public abstract class Shape {
-	public void readData();
-	public abstract double area();
-}

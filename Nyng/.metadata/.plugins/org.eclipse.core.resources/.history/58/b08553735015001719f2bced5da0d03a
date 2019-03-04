@@ -1,7 +1,0 @@
-package org.nyngwang.area;
-
-public abstract class Parameters {
-	protected 
-	
-	public abstract void load();
-}

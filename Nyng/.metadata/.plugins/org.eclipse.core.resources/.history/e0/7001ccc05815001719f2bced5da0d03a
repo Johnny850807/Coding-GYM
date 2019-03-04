@@ -1,6 +1,0 @@
-package org.nyngwang.area;
-
-public class Triangle extends Shape {
-	protected double base;
-	protected
-}

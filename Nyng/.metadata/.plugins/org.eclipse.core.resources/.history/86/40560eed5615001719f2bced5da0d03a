@@ -1,5 +1,0 @@
-package org.nyngwang.area;
-
-public interface Computer {
-	public double compute(Triangle triangle);
-}

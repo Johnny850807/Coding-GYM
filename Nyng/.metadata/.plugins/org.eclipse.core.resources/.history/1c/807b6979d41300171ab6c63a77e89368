@@ -1,5 +1,0 @@
-package org.nyngwang.composite;
-
-public abstract class Restaurant implements FindFood {
-	
-}
