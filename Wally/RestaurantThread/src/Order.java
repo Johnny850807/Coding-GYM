@@ -1,23 +1,26 @@
 
 public class Order {
+    private int id;
+    private Meal customerOrder;
 
-	private int numberPlate ;
-	private Menu customerOrder ;
+    public Order(int id, Meal food) {
+        setId(id);
+        setFood(food);
+    }
 
-	public Order(int customerSerialNumber , Menu food) {
-		setNumberPlate(customerSerialNumber);
-		setFoodInfo(food);
-	}
-	public void setNumberPlate(int customerSerialNumber) {
-		this.numberPlate = customerSerialNumber;
-	}
-	public int getNumberPlate() {
-		return numberPlate;
-	}
-	public void setFoodInfo(Menu customerOrder) {
-		this.customerOrder = customerOrder;
-	}
-	public Menu getFoodInfo() {
-		return customerOrder;
-	}
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setFood(Meal customerOrder) {
+        this.customerOrder = customerOrder;
+    }
+
+    public Meal getFoodInfo() {
+        return customerOrder;
+    }
 }
