@@ -3,7 +3,7 @@ import java.util.*;
 
 public class VocabularyExam {
 
-    private Map<String, LinkedList<Definition>> examinationResult = new HashMap<String, LinkedList<Definition>>();
+    private Map<String, LinkedList<Definition>> examinationResult = new HashMap<>();
     private TestRecord testRecord = new TestRecord();
 
     public VocabularyExam(VocabularyList englishVocabularyList) {
