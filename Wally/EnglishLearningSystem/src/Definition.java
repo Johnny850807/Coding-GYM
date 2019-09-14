@@ -9,8 +9,8 @@ public class Definition {
 
     public Definition(String vocabulary, String partOfSpeech, String definition) {
         this.vocabulary = vocabulary;
-        this.partOfSpeech = "(" + partOfSpeech + ".)";
         this.definition = definition;
+        setPartOfSpeech(partOfSpeech);
     }
 
     public void setCorrectAnswerDate(String correctAnswerDate) {
@@ -48,7 +48,22 @@ public class Definition {
         return examQuestion;
     }
 
+    private void setPartOfSpeech(String partOfSpeech) {
+        if (!partOfSpeech.contains("(") || !partOfSpeech.contains(".)")) {
+            this.partOfSpeech = "(" + partOfSpeech + ".)";
+        } else {
+            this.partOfSpeech = partOfSpeech;
+        }
+    }
+
     public String toString() {
         return "單字" + vocabulary + "\n詞性" + partOfSpeech + "\n定義" + definition;
+    }
+
+    @Override
+    public boolean equals(Object object) {
+        String objectDefinition = (object.toString()).replace("[", "");
+        objectDefinition = objectDefinition.replace("]", "");
+        return (this.toString()).equals(objectDefinition);
     }
 }
