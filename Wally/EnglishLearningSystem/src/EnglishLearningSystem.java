@@ -10,15 +10,13 @@ public class EnglishLearningSystem {
         VocabularyList englishVocabularyList = new VocabularyList();
 
         System.out.println("您好，歡迎來到英文單字複習系統 v1.0");
-
+        
         do {
             System.out.println("(1)管理單字(2)進行複習(3)離開");
             userInput = input.nextLine();
-            //userInput = "2";
             switch (userInput) {
                 case "1":
                     manageVocabularys(englishVocabularyList);
-                    englishVocabularyList.saveFile();
                     break;
                 case "2":
                     reviewVocabularys(englishVocabularyList);
@@ -30,8 +28,8 @@ public class EnglishLearningSystem {
                     System.out.println("輸入錯誤，請重新輸入");
                     break;
             }
+            englishVocabularyList.saveFile();
         } while (!userInput.equals("3"));
-
     }
 
     private static void manageVocabularys(VocabularyList englishVocabularyList) {
@@ -68,7 +66,7 @@ public class EnglishLearningSystem {
     }
 
     private static void reviewVocabularys(VocabularyList englishVocabularyList) {
-        if (englishVocabularyList.isEmpty()) {
+        if (englishVocabularyList.getVocabularyMap().isEmpty()) {
             System.out.println("請先添加單字");
         } else {
             VocabularyExam englishVocabularyExam = new VocabularyExam(englishVocabularyList);

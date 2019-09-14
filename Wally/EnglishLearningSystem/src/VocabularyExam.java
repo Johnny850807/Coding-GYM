@@ -3,85 +3,76 @@ import java.util.*;
 
 public class VocabularyExam {
 
-    private Map<String, LinkedList<Definition>> examinationResult = new HashMap<>();
-    private TestRecord testRecord = new TestRecord();
+    private VocabularyList englishVocabularyList;
+    private HashMap<String, LinkedList<Definition>> examinationResult = new HashMap<>();
 
     public VocabularyExam(VocabularyList englishVocabularyList) {
-        updateExaminationRange(englishVocabularyList);
-    }
-
-    private void updateExaminationRange(VocabularyList englishVocabularyList) {
-        if (englishVocabularyList.getListSizeChange()||!englishVocabularyList.getOldVocabularyList().isEmpty()) {
-            LinkedList<Vocabulary> vocabularyList = englishVocabularyList.getNewVocabularyList();
-            LinkedList<String> answerDateList = new LinkedList<String>();
-            for (Vocabulary vovabulary : vocabularyList) {
-                ArrayList<Definition> definitionArrayList = vovabulary.getDefinitionArrayList();
-                for (Definition definition : definitionArrayList) {
-                    if (!testRecord.getTestRocord().containsValue(definition)) {
-                        answerDateList.add(definition.getAnswerDate());
-                        testRecord.setTestRecord(definition.getAnswerDate(), definition);
-                    }
-                }
-            }
-            englishVocabularyList.resetListSizeChange();
-        }
+        this.englishVocabularyList = englishVocabularyList;
     }
 
     public void startEnglishExam() {
         System.out.println("複習開始!");
-        Map<String, LinkedList<Definition>> examinationRange;
-        LinkedList<String> answerDateList = testRecord.getAnswerDateList();
-        LinkedList<String> resultDateList = new LinkedList<String>();
-        examinationRange = testRecord.getTestRocord();
+        HashMap<String, LinkedList<Definition>> examinationRange = englishVocabularyList.getRecord();
+        LinkedList<String> answerDateList = englishVocabularyList.getAnswerDateList();
+        LinkedList<String> resultDateList = new LinkedList<>();
         boolean isExamTime = true;
+        int times = 0;
+        resultDateList.add("無");
 
         for (String answerDate : answerDateList) {
             LinkedList<Definition> definitionLinkedList = examinationRange.get(answerDate);
             while (!definitionLinkedList.isEmpty()) {
                 Random randomQuestion = new Random();
                 Definition question = definitionLinkedList.get(randomQuestion.nextInt(definitionLinkedList.size()));
-                LinkedList<Definition> examinationResultList = new LinkedList<Definition>();
+                definitionLinkedList.remove(question);
+
                 if (isExamTime) {
-                    if (!examinationRange.containsValue(question)) {
+                    for (int answerTimes = 2; answerTimes >= 0; answerTimes--) {
+
                         System.out.println(question.getExamQuestion() + ":" + question.getPartOfSpeech() + question.getDefinition());
                         System.out.println("請輸入答案:");
-                        for (int answerTimes = 2; answerTimes >= 0; answerTimes--) {
-                            String userAnswer = EnglishLearningSystem.input.nextLine();
-                            definitionLinkedList.remove(question);
-                            if (userAnswer.equals(question.getVocabulary())) {
-                                System.out.println("答對");
-                                Date correctAnswerDate = new Date();
-                                SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
-                                question.setCorrectAnswerDate(dateFormat.format(correctAnswerDate));
-                                resultDateList.add(question.getAnswerDate());
-                                answerTimes = -1;
-                            }
-                            if (answerTimes > 0) {
-                                System.out.println("錯誤，剩下" + answerTimes + "次機會");
-                            } else if (answerTimes == 0) {
-                                System.out.println("失敗！請多複習！答案為" + question.getVocabulary() + "!");
-                                isExamTime = false;
-                                // bug位待修
-                            }
+                        String userAnswer = EnglishLearningSystem.input.nextLine();
+
+                        if (userAnswer.equals(question.getVocabulary())) {
+                            System.out.println("答對");
+                            resultDateList.add(question.getAnswerDate());
+                            Date correctAnswerDate = new Date();
+                            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
+                            question.setCorrectAnswerDate(dateFormat.format(correctAnswerDate));
+                            resultDateList.add(question.getAnswerDate());
+                            answerTimes = -1;
+                        }
+                        if (answerTimes > 0) {
+                            System.out.println("錯誤，剩下" + answerTimes + "次機會");
+                        } else if (answerTimes == 0) {
+                            System.out.println("失敗！請多複習！答案為" + question.getVocabulary() + "!");
+                            isExamTime = false;
                         }
                     }
                 }
 
-                examinationResultList.add(question);
                 if (examinationResult.containsKey(question.getAnswerDate())) {
                     examinationResult.get(question.getAnswerDate()).add(question);
+                    times++;
                 } else {
-
+                    LinkedList<Definition> examinationResultList = new LinkedList<>();
+                    examinationResultList.add(question);
                     examinationResult.put(question.getAnswerDate(), examinationResultList);
+                    times++;
                 }
             }
-            if (!examinationResult.containsKey(answerDate)) {
-                answerDateList.remove(answerDate);
+
+            if (examinationResult.containsKey(answerDate)) {
+                if (examinationResult.get(answerDate).isEmpty()) {
+                    examinationResult.remove(answerDate);
+                }
             }
         }
-
-        //answerDateList.addAll(resultDateList);
-        testRecord.saveRecordFile(answerDateList, examinationResult);
+        System.out.println(times);
+        answerDateList.clear();
+        examinationRange.clear();
+        answerDateList.addAll(resultDateList);
+        examinationRange.putAll(examinationResult);
         System.out.println("考試結束");
     }
 }

@@ -39,10 +39,9 @@ public class Dictionary {
     public void printVocabularyInfo(String vocabulary) {
         Map<PartOfSpeech, List<String>> mapDefinitions = getDefinitions(vocabulary);
         for (PartOfSpeech pos : mapDefinitions.keySet()) {
-            String partOfSpeech = pos.toString();
             System.out.println("詞性：" + pos);
             System.out.println("意思：");
-            List<String> definitionsOfPos = (List<String>) mapDefinitions.get(pos);
+            List<String> definitionsOfPos = mapDefinitions.get(pos);
             for (int i = 0; i < definitionsOfPos.size(); i++) {
                 String oneOfdefinitions = definitionsOfPos.get(i);
                 System.out.println((i + 1) + " : " + oneOfdefinitions);
