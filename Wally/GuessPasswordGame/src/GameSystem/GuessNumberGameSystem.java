@@ -5,20 +5,26 @@ import GamePlayer.*;
 import java.util.List;
 import java.util.LinkedList;
 import java.util.Random;
+import java.util.Scanner;
 
-public class GuessPasswordGameSystem extends GuessPasswordGameTemplate {
+public class GuessNumberGameSystem {
 
+    protected final Scanner scanner = new Scanner(System.in);
     protected List<Player> gamePlayerList;
     int belowNumber, topNumber, password, playerGuessPassword;
 
     public static void main(String[] args) {
-        GuessPasswordGameSystem guessPasswordGameSystem = new GuessPasswordGameSystem();
-        guessPasswordGameSystem.gameProcess();
+        GuessNumberGameSystem guessNumberGame = new GuessNumberGameSystem();
+        guessNumberGame.gameProcess();
     }
 
+    protected void gameProcess() {
+        onGameStart();
+        onOneGameRound();
+        onGameEnd();
+    }
 
-    @Override
-    protected void start() {
+    protected void onGameStart() {
         belowNumber = 0;
         topNumber = 100;
         password = new Random().nextInt(99) + 1;
@@ -27,8 +33,14 @@ public class GuessPasswordGameSystem extends GuessPasswordGameTemplate {
         setPlayerTypes();
     }
 
-    @Override
-    protected void playOneRound(int currentRound) {
+    protected void onOneGameRound() {
+        int currentRound = 0;
+        do {
+            onPlayerTurn(++currentRound);
+        } while (!isGameOver());
+    }
+
+    protected void onPlayerTurn(int currentRound) {
         System.out.println("[回合] 第 " + currentRound + " 回合");
         for (Player gamePlayer : gamePlayerList) {
             System.out.println("[範圍] " + belowNumber + " ~ " + topNumber);
@@ -42,13 +54,11 @@ public class GuessPasswordGameSystem extends GuessPasswordGameTemplate {
         }
     }
 
-    @Override
     protected boolean isGameOver() {
         return playerGuessPassword == password;
     }
 
-    @Override
-    protected void end() {
+    protected void onGameEnd() {
         System.out.print("[問題] 要再來一場嗎 ? <Yes> or <No> ");
         if (((scanner.nextLine()).toUpperCase()).contains("Y")) {
             gameProcess();
