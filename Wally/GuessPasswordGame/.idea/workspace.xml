@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e2b1405-ea60-454b-a043-f3fe9ec7cfa7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Minesweeper/src/Grid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Minesweeper/src/MinesweeperGameSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Minesweeper/src/MinesweeperMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameSystem/GuessPasswordGameSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameSystem/GuessPasswordGameSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameSystem/GuessPasswordGameTemplate.java" beforeDir="false" />
-    </list>
+    <list default="true" id="8e2b1405-ea60-454b-a043-f3fe9ec7cfa7" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,10 +12,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/GameSystem/GuessPasswordGameSystem.java">
+        <entry file="file://$PROJECT_DIR$/src/GameSystem/GuessNumberGameSystem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+            <state relative-caret-position="475">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,10 +57,11 @@
         <option value="$PROJECT_DIR$/src/GamePlayer/GuessOddNumberPasswordAI.java" />
         <option value="$PROJECT_DIR$/src/GameSystem/GuessPasswordGameTemplate.java" />
         <option value="$PROJECT_DIR$/src/GameSystem/GuessPasswordGameSystem.java" />
+        <option value="$PROJECT_DIR$/src/GameSystem/GuessNumberGameSystem.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1440" />
     <option name="height" value="825" />
@@ -80,6 +74,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -88,20 +83,14 @@
               <item name="GuessPasswordGame" type="b2602c69:ProjectViewProjectNode" />
               <item name="GuessPasswordGame" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="GuessPasswordGame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GuessPasswordGame" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570875760191" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570875768359" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
@@ -152,8 +141,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="825" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -182,7 +172,7 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/GuessPasswordGame.iml">
+    <entry file="file://$PROJECT_DIR$/GuessNumberGame.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
@@ -237,17 +227,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GameSystem/GuessPasswordGameTemplate.java">
+    <entry file="file://$PROJECT_DIR$/src/GameSystem/GuessPasswordGameTemplate.java" />
+    <entry file="file://$PROJECT_DIR$/src/GameSystem/GuessNumberGameSystem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-114">
-          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GameSystem/GuessPasswordGameSystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+        <state relative-caret-position="475">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

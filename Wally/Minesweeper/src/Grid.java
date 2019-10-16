@@ -11,12 +11,12 @@ public class Grid {
         return isOpen;
     }
 
-    public void setBomb() {
-        isBomb = true;
+    public void setBomb(boolean isBomb) {
+        this.isBomb = isBomb;
     }
 
-    public void setOpen() {
-        isOpen = true;
+    public void setOpen(boolean isOpen) {
+        this.isOpen = isOpen;
     }
 
     public void setSurroundingBombAmount(int surroundingBombAmount) {
