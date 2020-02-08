@@ -1,19 +1,9 @@
 package Composite;
-import java.util.List;
 
-public class Vendor extends MealsGettable {
+public class Vendor extends AbstractCompositeMenuItem {
 
 	public Vendor(String selfName) {
-		super( "Åu³c" , selfName);
-	}
-	
-	@Override
-	protected void printSubItems() {
-		for ( MealsGettable m : menuList )
-		{
-			System.out.print("	");
-			m.printSelfAndItems();
-		}
+		super( "æ”¤è²©" , selfName);
 	}
 
 }

@@ -1,8 +1,8 @@
 <component name="libraryTable">
-  <library name="EnglishLearningSystem">
+  <library name="jsoup-1.10.3">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/vocabulary_crawler.jar!/" />
       <root url="jar://$PROJECT_DIR$/jsoup-1.10.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/vocabulary_crawler.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

@@ -1,21 +1,9 @@
 package Composite;
-import java.util.ArrayList;
-import java.util.List;
 
-public class MenuCategory extends MealsGettable {
+public class MenuCategory extends AbstractCompositeMenuItem {
 
 	public MenuCategory(String selfName) {
-		super( "¤ÀÃþ" , selfName);
+		super( "åˆ†é¡ž" , selfName);
 	}
-
-	@Override
-	protected void printSubItems() {
-		for ( MealsGettable m : menuList )
-		{
-			System.out.print("	");
-			m.printSelfAndItems();
-		}
-	}
-
 
 }

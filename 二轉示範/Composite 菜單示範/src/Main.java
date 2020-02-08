@@ -1,71 +1,68 @@
-import java.util.List;
-
 import Composite.Building;
-import Composite.MealsGettable;
 import Composite.MenuCategory;
-import Composite.MenuItem;
+import Composite.Meal;
 import Composite.*;
 public class Main {
 
-	
+
 	public static void main(String[] args) {
-		CompositeMenuList myMenuList = new CompositeMenuList("»Ê¶Ç¤j¾Ç");
-		
-		MealsGettable firstRestaurant = new Building("¤@À\");
-		MealsGettable secondRestaurant = new Building("¤GÀ\");
-		MealsGettable bbNingVendor = new Vendor("BBªüÚ¬¸ôÃäÅu");
-		MealsGettable yellowMom = new Vendor("¶À¶ı¶ı");
-		
-		myMenuList.addItem(firstRestaurant);
-		myMenuList.addItem(secondRestaurant);
-		myMenuList.addItem(bbNingVendor);
-		myMenuList.addItem(yellowMom);
-		
-		/*¤@À\*/
-		
-		MealsGettable italyVendor = new Vendor("¸q¤j§Q");
-		italyVendor.addItem(new MenuItem("µf­X¸q¤j§QÄÑ"));
-		italyVendor.addItem(new MenuItem("ÖK¯N°_¥qÄÑ"));
-		
-		MealsGettable ironVendor = new Vendor("ÅKªOÀ\ºŞ");
-		ironVendor.addItem(new MenuItem("ÅKªO¤û¦×"))
-		.addItem(new MenuItem("ÅKªO½Ş"));
-		
+		College college = new College("éŠ˜å‚³å¤§å­¸");
+
+		Building firstRestaurant = new Building("ä¸€é¤");
+		Building secondRestaurant = new Building("äºŒé¤");
+		Vendor bbNingVendor = new Vendor("BBé˜¿ç”¯è·¯é‚Šæ”¤");
+		Vendor yellowMom = new Vendor("é»ƒåª½åª½");
+
+		college.addItem(firstRestaurant);
+		college.addItem(secondRestaurant);
+		college.addItem(bbNingVendor);
+		college.addItem(yellowMom);
+
+		/*ä¸€é¤*/
+
+		Vendor italyVendor = new Vendor("ç¾©å¤§åˆ©");
+		italyVendor.addItem(new Meal("ç•ªèŒ„ç¾©å¤§åˆ©éºµ"));
+		italyVendor.addItem(new Meal("ç„—çƒ¤èµ·å¸éºµ"));
+
+		Vendor ironVendor = new Vendor("éµæ¿é¤ç®¡");
+		ironVendor.addItem(new Meal("éµæ¿ç‰›è‚‰"))
+				.addItem(new Meal("éµæ¿è±¬"));
+
 		firstRestaurant.addItem(italyVendor).addItem(ironVendor);
-		
-		/*¤GÀ\*/
-		
-		MealsGettable eightSquare = new Vendor("¤K¤è¶³¶°");
-		eightSquare.addItem(new MenuItem("­ì¨ı»å¤l")).addItem(new MenuItem("ÏÉ¨½»å¤l"));
-		
-		MealsGettable MyFamily = new Vendor("¥ş®a");
-		
-		MyFamily.addItem(new MenuCategory("²¢ÂIÃş")
-				.addItem(new MenuItem("°_¥q³J¿|"))
-				.addItem(new MenuItem("Ä«ªGÄÑ¥]")))
-		.addItem(new MenuCategory("·LªiÃş")
-				.addItem(new MenuItem("¤û¦×ª£ÄÑ"))
-				.addItem(new MenuItem("½Ş¦×»\¶º")));
-		
+
+		/*äºŒé¤*/
+
+		Vendor eightSquare = new Vendor("å…«æ–¹é›²é›†");
+		eightSquare.addItem(new Meal("åŸå‘³é¤ƒå­")).addItem(new Meal("çˆé‡Œé¤ƒå­"));
+
+		Vendor MyFamily = new Vendor("å…¨å®¶");
+
+		MyFamily.addItem(new MenuCategory("ç”œé»é¡")
+				.addItem(new Meal("èµ·å¸è›‹ç³•"))
+				.addItem(new Meal("è˜‹æœéºµåŒ…")))
+				.addItem(new MenuCategory("å¾®æ³¢é¡")
+						.addItem(new Meal("ç‰›è‚‰ç‚’éºµ"))
+						.addItem(new Meal("è±¬è‚‰è“‹é£¯")));
+
 		secondRestaurant.addItem(eightSquare).addItem(MyFamily);
-		
-		/*BBªüÚ¬¸ôÃäÅu*/
-		
-		bbNingVendor.addItem(new MenuCategory("²{ª£Ãş")
-				.addItem(new MenuItem("²{ª£Àj³½"))
-				.addItem(new MenuItem("²{³õ¦N®³´Î")))
-		.addItem(new MenuCategory("°sÃş")
-				.addItem(new MenuItem("«Â¤h§Ò"))
-				.addItem(new MenuItem("¥xÆW°à°s")));
-		
-		/*¶À¶ı¶ı*/
-		
-		yellowMom.addItem(new MenuItem("½Ş¦×»\¶º"))
-		.addItem(new MenuItem("³J¥]¶º"))
-		.addItem(new MenuItem("¾i¼Ö¦h"));
-		
-		
-		for (MealsGettable m : myMenuList)
+
+		/*BBé˜¿ç”¯è·¯é‚Šæ”¤*/
+
+		bbNingVendor.addItem(new MenuCategory("ç¾ç‚’é¡")
+				.addItem(new Meal("ç¾ç‚’é®‘é­š"))
+				.addItem(new Meal("ç¾å ´å‰æ‹¿æ£’")))
+				.addItem(new MenuCategory("é…’é¡")
+						.addItem(new Meal("å¨å£«å¿Œ"))
+						.addItem(new Meal("å°ç£å•¤é…’")));
+
+		/*é»ƒåª½åª½*/
+
+		yellowMom.addItem(new Meal("è±¬è‚‰è“‹é£¯"))
+				.addItem(new Meal("è›‹åŒ…é£¯"))
+				.addItem(new Meal("é¤Šæ¨‚å¤š"));
+
+
+		for (MenuItem m : college)
 			System.out.println(m);
 	}
 
