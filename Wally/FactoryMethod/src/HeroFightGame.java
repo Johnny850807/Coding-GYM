@@ -50,7 +50,7 @@ public class HeroFightGame {
             System.out.println("Round " + round + " fight !!!");
             GunType gunType = heroSelectGun();
             System.out.println("Hero selected " + gunType);
-            int heroAttackDamage = hero.attack(GunFactory.generateGun(gunType));
+            int heroAttackDamage = hero.attack(gunType.getGun());
             System.out.println("Hero has attacked the monster " + heroAttackDamage + " damage");
             monster.setHp(monster.getHp() - heroAttackDamage);
             System.out.println("Monster only has " + Math.max(0, monster.getHp()) + " hp");
@@ -60,8 +60,12 @@ public class HeroFightGame {
     private Scanner scanner = new Scanner(System.in);
 
     private GunType heroSelectGun() {
-        System.out.println("英雄選擇槍枝: 1. 機關槍 2. 散彈槍 3. 狙擊槍");
-        return GunType.values()[scanner.nextInt() - 1];
+        int gunSelect;
+        do {
+            System.out.println("英雄選擇槍枝: 1. 機關槍 2. 散彈槍 3. 狙擊槍");
+            gunSelect = scanner.nextInt();
+        } while (gunSelect < 1 || gunSelect > 4);
+        return GunType.values()[gunSelect - 1];
     }
 
     private void gameOver() {

@@ -1,8 +1,10 @@
 import Bullet.Bullet;
+import Bullet.ExplosionBullet;
 
 public class ShotGun extends Gun {
 
-    public ShotGun(Bullet bullet) {
-        super(bullet);
+    @Override
+    public Bullet fire() {
+        return new ExplosionBullet();
     }
 }
