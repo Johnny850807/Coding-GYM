@@ -13,7 +13,6 @@ public class LocateItemVisitor implements ItemVisitor {
     private Item item;
     private FileNotFoundException fileNotFoundException;
     private String itemName;
-    private String absolutePath;
 
     public LocateItemVisitor(Directory root, Directory currentDir) {
         this.root = root;

@@ -6,6 +6,8 @@ import java.util.stream.Stream;
  * @author johnny850807@gmail.com (Waterball))
  */
 public class LocalDirectory extends AbstractItem implements Directory {
+    private final Link ALIAS_THIS_DIR = new Link(".", () -> this);
+    private final Link ALIAS_PARENT = new Link("..", this::getParent);
     private List<Item> children = new ArrayList<>(5);
 
     public LocalDirectory(String name) {
@@ -19,8 +21,7 @@ public class LocalDirectory extends AbstractItem implements Directory {
      * The hook for its subclass to add its children during instantiation.
      */
     protected List<Item> onSetupChildren() {
-        return Arrays.asList(new Link(".", () -> this),
-                new Link("..", this::getParent));
+        return Arrays.asList(ALIAS_THIS_DIR, ALIAS_PARENT);
     }
 
 
@@ -54,9 +55,16 @@ public class LocalDirectory extends AbstractItem implements Directory {
 
     @Override
     public List<Item> search(String keyword) {
-        return children.stream()
-                .flatMap(child -> includeChildAndItsSearchResults(keyword, child))
-                .collect(Collectors.toList());
+        List<Item> result = new LinkedList<>();
+        for (Item child : children) {
+            if (child.getName().contains(keyword)) {
+                result.add(child);
+            }
+            if (!(child instanceof Link)) {
+                result.addAll(child.search(keyword));
+            }
+        }
+        return result;
     }
 
     @Override
@@ -70,12 +78,5 @@ public class LocalDirectory extends AbstractItem implements Directory {
         itemVisitor.visit(this);
     }
 
-    private Stream<Item> includeChildAndItsSearchResults(String keyword, Item item) {
-        List<Item> result = new LinkedList<>();
-        if (item.getName().contains(keyword)) {
-            result.add(item);
-        }
-        result.addAll(item.search(keyword));
-        return result.stream();
-    }
+
 }
