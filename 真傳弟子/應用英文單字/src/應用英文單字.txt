@@ -1,0 +1,4 @@
+orange 18 
+apple 19 
+hello 18 
+juice 18 

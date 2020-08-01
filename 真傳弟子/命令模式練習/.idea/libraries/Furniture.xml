@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Furniture">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/Furniture.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

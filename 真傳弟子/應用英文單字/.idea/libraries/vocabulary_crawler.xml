@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="vocabulary_crawler">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/vocabulary_crawler.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
