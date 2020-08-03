@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -11,7 +12,9 @@ public class Root extends LocalDirectory {
 
     @Override
     protected List<Item> onSetupChildren() {
-        return Collections.emptyList();
+        return Arrays.asList(
+                new Link(".", () -> this),
+                new Link("..", () -> this));
     }
 
     @Override

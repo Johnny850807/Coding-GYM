@@ -66,7 +66,7 @@ public abstract class Role implements Decision {
         return skills;
     }
 
-    public void restore() {
+    public void restoreCapability() {
         this.capability = fixedCapability.clone();
     }
 

@@ -38,9 +38,9 @@ public class Battle {
     }
 
     public void startBattle() {
-        System.out.println(enemies.stream().map(Role::getName)
-                .collect(Collectors.joining(" ")));
+        printEnemies();
         System.out.println("戰鬥開始！");
+
         int turn = 0;
         while (!gameOver) {
             delay(800);
@@ -52,7 +52,12 @@ public class Battle {
             turn = (turn + 1) % allRoles.size();
         }
 
-        humanHero.restore();
+        humanHero.restoreCapability();
+    }
+
+    private void printEnemies() {
+        System.out.println(enemies.stream().map(Role::getName)
+                .collect(Collectors.joining(" ")));
     }
 
     private void checkDeadRoles() {
