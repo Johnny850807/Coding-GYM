@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d700b67a-3c35-423d-ad39-2acfd72db03d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/players/decisions/Decision.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stocks/StockLifecycle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stocks/factories/StockMarketFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stocks/factories/StockMarketFactoryImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stocks/strategies/ExcitingPriceFluctuationStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stocks/strategies/HighPriceFluctuationStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stocks/strategies/NormalPriceFluctuationStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stocks/strategies/PriceFluctuationStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stocks/strategies/SmallRatePriceFluctuationStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exception/CashFlowException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exception/CashFlowException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exception/MoneyNotEnoughException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exception/MoneyNotEnoughException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exception/NoStockException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exception/NoStockException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exception/StockNotEnoughException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exception/StockNotEnoughException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exception/StockNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exception/StockNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/CashFlowGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/CashFlowGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/CashFlowGameSaveManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/CashFlowGameSaveManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/GameConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IO/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/FileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player/AI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/players/AI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player/GodAI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player/HumanPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/players/HumanPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/players/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player/StupidAI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/players/StupidAI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stock/Factory/StockMarketFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stock/Factory/StockMarketFactoryImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stock/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stocks/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stock/PriceRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stocks/PriceRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stock/PriceStrategy/ExcitingPriceStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stock/PriceStrategy/HighPriceStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stock/PriceStrategy/NormalPriceStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stock/PriceStrategy/PriceStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stock/PriceStrategy/SmallRatePriceStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stock/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stocks/Stock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stock/StockItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stock/StockMarket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stocks/StockMarket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stock/StockProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stocks/StockProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Util/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Input.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Util/NameGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/NameGenerator.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+  </component>
+  <component name="ProjectId" id="1fZMo1Z1pNtzllDHcegJp2CNJmH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager">
+    <configuration name="CashFlowGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="game.CashFlowGame" />
+      <module name="現金流" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CashFlowGame" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d700b67a-3c35-423d-ad39-2acfd72db03d" name="Default Changelist" comment="" />
+      <created>1596421332849</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596421332849</updated>
+      <workItem from="1596421343417" duration="142000" />
+      <workItem from="1596421500548" duration="5709000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1596515496492">
+      <screen x="0" y="23" width="1920" height="982" />
+    </state>
+    <state x="552" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1920.981@0.23.1920.981" timestamp="1596422042383" />
+    <state x="552" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1920.982@0.23.1920.982" timestamp="1596515496492" />
+    <state x="698" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596422120186">
+      <screen x="0" y="23" width="1920" height="981" />
+    </state>
+    <state x="698" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.981@0.23.1920.981" timestamp="1596422120186" />
+    <state width="1878" height="831" key="GridCell.Tab.0.bottom" timestamp="1596515020649">
+      <screen x="0" y="23" width="1920" height="982" />
+    </state>
+    <state width="1878" height="327" key="GridCell.Tab.0.bottom/0.23.1920.981@0.23.1920.981" timestamp="1596423502113" />
+    <state width="1878" height="831" key="GridCell.Tab.0.bottom/0.23.1920.982@0.23.1920.982" timestamp="1596515020649" />
+    <state width="1878" height="831" key="GridCell.Tab.0.center" timestamp="1596515020648">
+      <screen x="0" y="23" width="1920" height="982" />
+    </state>
+    <state width="1878" height="327" key="GridCell.Tab.0.center/0.23.1920.981@0.23.1920.981" timestamp="1596423502113" />
+    <state width="1878" height="831" key="GridCell.Tab.0.center/0.23.1920.982@0.23.1920.982" timestamp="1596515020648" />
+    <state width="1878" height="831" key="GridCell.Tab.0.left" timestamp="1596515020648">
+      <screen x="0" y="23" width="1920" height="982" />
+    </state>
+    <state width="1878" height="327" key="GridCell.Tab.0.left/0.23.1920.981@0.23.1920.981" timestamp="1596423502112" />
+    <state width="1878" height="831" key="GridCell.Tab.0.left/0.23.1920.982@0.23.1920.982" timestamp="1596515020648" />
+    <state width="1878" height="831" key="GridCell.Tab.0.right" timestamp="1596515020648">
+      <screen x="0" y="23" width="1920" height="982" />
+    </state>
+    <state width="1878" height="327" key="GridCell.Tab.0.right/0.23.1920.981@0.23.1920.981" timestamp="1596423502113" />
+    <state width="1878" height="831" key="GridCell.Tab.0.right/0.23.1920.982@0.23.1920.982" timestamp="1596515020648" />
+    <state width="1878" height="413" key="GridCell.Tab.1.bottom" timestamp="1596514293282">
+      <screen x="0" y="23" width="1920" height="982" />
+    </state>
+    <state width="1878" height="327" key="GridCell.Tab.1.bottom/0.23.1920.981@0.23.1920.981" timestamp="1596423491394" />
+    <state width="1878" height="413" key="GridCell.Tab.1.bottom/0.23.1920.982@0.23.1920.982" timestamp="1596514293282" />
+    <state width="1878" height="413" key="GridCell.Tab.1.center" timestamp="1596514293281">
+      <screen x="0" y="23" width="1920" height="982" />
+    </state>
+    <state width="1878" height="327" key="GridCell.Tab.1.center/0.23.1920.981@0.23.1920.981" timestamp="1596423491393" />
+    <state width="1878" height="413" key="GridCell.Tab.1.center/0.23.1920.982@0.23.1920.982" timestamp="1596514293281" />
+    <state width="1878" height="413" key="GridCell.Tab.1.left" timestamp="1596514293281">
+      <screen x="0" y="23" width="1920" height="982" />
+    </state>
+    <state width="1878" height="327" key="GridCell.Tab.1.left/0.23.1920.981@0.23.1920.981" timestamp="1596423491393" />
+    <state width="1878" height="413" key="GridCell.Tab.1.left/0.23.1920.982@0.23.1920.982" timestamp="1596514293281" />
+    <state width="1878" height="413" key="GridCell.Tab.1.right" timestamp="1596514293281">
+      <screen x="0" y="23" width="1920" height="982" />
+    </state>
+    <state width="1878" height="327" key="GridCell.Tab.1.right/0.23.1920.981@0.23.1920.981" timestamp="1596423491394" />
+    <state width="1878" height="413" key="GridCell.Tab.1.right/0.23.1920.982@0.23.1920.982" timestamp="1596514293281" />
+    <state x="896" y="167" key="SettingsEditor" timestamp="1596423403369">
+      <screen x="0" y="23" width="1920" height="981" />
+    </state>
+    <state x="896" y="167" key="SettingsEditor/0.23.1920.981@0.23.1920.981" timestamp="1596423403369" />
+    <state x="668" y="281" key="refactoring.ChangeSignatureDialog" timestamp="1596515716477">
+      <screen x="0" y="23" width="1920" height="982" />
+    </state>
+    <state x="668" y="281" key="refactoring.ChangeSignatureDialog/0.23.1920.982@0.23.1920.982" timestamp="1596515716477" />
+    <state x="625" y="249" width="670" height="676" key="search.everywhere.popup" timestamp="1596422350230">
+      <screen x="0" y="23" width="1920" height="981" />
+    </state>
+    <state x="625" y="249" width="670" height="676" key="search.everywhere.popup/0.23.1920.981@0.23.1920.981" timestamp="1596422350230" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/game/CashFlowGame.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
