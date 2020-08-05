@@ -15,8 +15,8 @@ public class NormalPriceFluctuationStrategy implements PriceFluctuationStrategy 
             priceChange *= -1;
         }
 
-        int resultPrice = Math.max(stock.getPrice() + priceChange, 0);
-        stock.setPrice(resultPrice);
+        int resultPrice = Math.max(stock.getCurrentPrice() + priceChange, 0);
+        stock.setCurrentPrice(resultPrice);
     }
 
 }

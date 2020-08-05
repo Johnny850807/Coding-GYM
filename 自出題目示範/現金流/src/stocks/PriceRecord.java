@@ -4,8 +4,8 @@ import java.util.LinkedList;
 import java.util.stream.Collectors;
 
 public class PriceRecord implements StockLifecycle {
-    private Stock stock;
-    private LinkedList<Integer> records = new LinkedList<Integer>();
+    private final Stock stock;
+    private final LinkedList<Integer> records = new LinkedList<Integer>();
 
     public PriceRecord(Stock stock) {
         this.stock = stock;
@@ -18,18 +18,16 @@ public class PriceRecord implements StockLifecycle {
     }
 
     @Override
-    public void display() {
-        System.out.println(this);
+    public void onDayBegins() {
+        appendRecord(stock.getCurrentPrice());
     }
 
     @Override
-    public void newDay() {
-        addNewRecord(stock.getPrice());
+    public void onDayEnds() {
     }
 
-    public void addNewRecord(int price) {
+    private void appendRecord(int price) {
         records.add(price);
     }
-
 
 }

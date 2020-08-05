@@ -1,10 +1,7 @@
 package utils;
 
-import players.decisions.Decision;
-
-import java.util.Arrays;
+import java.util.Collection;
 import java.util.Scanner;
-import java.util.stream.Collectors;
 
 public class Input {
     private static final Scanner scanner = new Scanner(System.in);
@@ -70,25 +67,12 @@ public class Input {
         return nextInt("", min, max);
     }
 
-    public static Decision nextDecision(Decision ...decisions) {
-        int input;
-        String message = "請選擇 " + Arrays.stream(decisions)
-                .map(d -> String.format("(%d) %s", d.getNumber(), d.getName()))
-                .collect(Collectors.joining(" "));
-        boolean valid;
-        do {
-            input = nextInt(message);
-            int finalInput = input;
-            valid = Arrays.stream(decisions)
-                    .anyMatch(d -> d.getNumber() == finalInput);
-            if (!valid) {
-                System.err.println("請輸入合法選項");
-            }
-        } while (!valid);
-        int finalDecisionNumber = input;
-
-        return Arrays.stream(decisions)
-                .filter(d -> finalDecisionNumber == d.getNumber())
-                .findFirst().orElseThrow(() -> new IllegalStateException("Implementation bug"));
+    public static int nextInt(String message, Collection<Integer> availableIntegers) {
+        int input = nextInt(message);
+        if (!availableIntegers.contains(input)) {
+            return nextInt(message, availableIntegers);
+        }
+        return input;
     }
+
 }

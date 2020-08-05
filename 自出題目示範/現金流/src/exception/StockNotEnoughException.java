@@ -3,7 +3,19 @@ package exception;
 import stocks.Stock;
 
 public class StockNotEnoughException extends CashFlowException {
-    public StockNotEnoughException(Stock stock) {
-        super(String.format("股票數量不足", stock.getName()));
+    private Stock stock;
+    private int requiredAmount;
+
+    public StockNotEnoughException(Stock stock, int requiredAmount) {
+        this.stock = stock;
+        this.requiredAmount = requiredAmount;
+    }
+
+    public Stock getStock() {
+        return stock;
+    }
+
+    public int getRequiredAmount() {
+        return requiredAmount;
     }
 }

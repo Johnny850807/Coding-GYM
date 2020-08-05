@@ -1,44 +1,58 @@
 package stocks;
 
 import exception.StockNotFoundException;
+import players.Player;
 
-import java.util.HashMap;
-import java.util.Iterator;
+import java.util.Collection;
 import java.util.Map;
+import java.util.TreeMap;
 
-public class StockMarket implements StockLifecycle, Iterable<Stock> {
-    private final Map<Integer, Stock> stocks = new HashMap<>(); // key: id  value: stock
+public class StockMarket implements StockLifecycle {
+    private final Map<Integer, Stock> stockMap = new TreeMap<>(); // key: id  value: stock
+    private final Agent agent = new Agent();
 
+    public Agent getAgent() {
+        return agent;
+    }
+
+    public Collection<Stock> getStocks() {
+        return stockMap.values();
+    }
 
     public Stock getStockById(int stockId) {
-        if (stocks.containsKey(stockId)) {
-            return stocks.get(stockId);
+        if (stockMap.containsKey(stockId)) {
+            return stockMap.get(stockId);
         }
         throw new StockNotFoundException(stockId);
     }
 
     public void addStock(Stock stock) {
-        stocks.put(stock.getId(), stock);
+        stockMap.put(stock.getId(), stock);
     }
 
     @Override
-    public void newDay() {
-        stocks.values().forEach(Stock::newDay);
+    public void onDayBegins() {
+        stockMap.values().forEach(Stock::onDayBegins);
     }
 
     @Override
-    public void display() {
-        stocks.values().forEach(Stock::display);
+    public void onDayEnds() {
+        stockMap.values().forEach(Stock::onDayEnds);
     }
 
-    public StockProduct executeOrder(Order order) {
-        Stock stock = getStockById(order.getStockId());
-        int cost = stock.getPrice() * order.getAmount();
-        return new StockProduct(stock, order, cost);
-    }
+    public class Agent {
+        public void buyStocks(Player player, int stockId, int amount) {
+            Stock stock = getStockById(stockId);
+            int requiredPrice = stock.getCurrentPrice() * amount;
+            player.costMoney(requiredPrice);
+            player.addStocks(stock, amount);
+        }
 
-    @Override
-    public Iterator<Stock> iterator() {
-        return stocks.values().iterator();
+        public void sellStocks(Player player, int stockId, int amount) {
+            Stock stock = getStockById(stockId);
+            int gainedMoney = stock.getCurrentPrice() * amount;
+            player.consumeStocks(stock, amount);
+            player.gainMoney(gainedMoney);
+        }
     }
 }

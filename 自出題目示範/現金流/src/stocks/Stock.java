@@ -2,34 +2,33 @@ package stocks;
 
 import stocks.strategies.PriceFluctuationStrategy;
 
-import java.io.Serializable;
-
-public class Stock implements Serializable, StockLifecycle {
-    private PriceFluctuationStrategy priceFluctuationStrategy;
-    private PriceRecord records;
+public class Stock implements StockLifecycle {
+    private final PriceFluctuationStrategy priceFluctuationStrategy;
+    private final PriceRecord records;
     private int id;
     private String name;
-    private int price;
+    private int currentPrice;
 
 
-    public Stock(int id, String name, int price, PriceFluctuationStrategy priceFluctuationStrategy) {
+    public Stock(int id, String name, int currentPrice, PriceFluctuationStrategy priceFluctuationStrategy) {
         this.id = id;
         this.name = name;
-        this.price = price;
+        this.currentPrice = currentPrice;
         this.priceFluctuationStrategy = priceFluctuationStrategy;
+        priceFluctuationStrategy.setStock(this);
         records = new PriceRecord(this);
-        records.addNewRecord(price);
     }
 
     @Override
-    public void newDay() {
-        priceFluctuationStrategy.changePrice(this);
-        records.newDay();
+    public void onDayBegins() {
+        priceFluctuationStrategy.onDayBegins();
+        records.onDayBegins();
     }
 
     @Override
-    public void display() {
-        System.out.println(this);
+    public void onDayEnds() {
+        priceFluctuationStrategy.onDayEnds();
+        records.onDayEnds();
     }
 
     public int getId() {
@@ -48,17 +47,17 @@ public class Stock implements Serializable, StockLifecycle {
         this.name = name;
     }
 
-    public int getPrice() {
-        return price;
+    public int getCurrentPrice() {
+        return currentPrice;
     }
 
-    public void setPrice(int price) {
-        this.price = price;
+    public void setCurrentPrice(int currentPrice) {
+        this.currentPrice = currentPrice;
     }
 
     @Override
     public String toString() {
-        return String.format("(%d) %s %d$ -> %s %n", id, name, price, records);
+        return String.format("(%d) %s %d$ -> %s %n", id, name, currentPrice, records);
     }
 
 }

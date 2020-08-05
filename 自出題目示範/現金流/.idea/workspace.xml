@@ -20,60 +20,62 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d700b67a-3c35-423d-ad39-2acfd72db03d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/players/decisions/Decision.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stocks/StockLifecycle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stocks/factories/StockMarketFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stocks/factories/StockMarketFactoryImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stocks/strategies/ExcitingPriceFluctuationStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stocks/strategies/HighPriceFluctuationStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stocks/strategies/NormalPriceFluctuationStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stocks/strategies/PriceFluctuationStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stocks/strategies/SmallRatePriceFluctuationStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Exception/CashFlowException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exception/CashFlowException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Exception/MoneyNotEnoughException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exception/MoneyNotEnoughException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Exception/NoStockException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exception/NoStockException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Exception/StockNotEnoughException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exception/StockNotEnoughException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Exception/StockNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exception/StockNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/CashFlowGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/CashFlowGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/CashFlowGameSaveManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/CashFlowGameSaveManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/GameConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IO/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/FileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Player/AI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/players/AI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Player/GodAI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Player/HumanPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/players/HumanPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/players/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Player/StupidAI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/players/StupidAI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stock/Factory/StockMarketFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stock/Factory/StockMarketFactoryImp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stock/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stocks/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stock/PriceRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stocks/PriceRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stock/PriceStrategy/ExcitingPriceStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stock/PriceStrategy/HighPriceStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stock/PriceStrategy/NormalPriceStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stock/PriceStrategy/PriceStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stock/PriceStrategy/SmallRatePriceStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stock/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stocks/Stock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stock/StockItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stock/StockMarket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stocks/StockMarket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stock/StockProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stocks/StockProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Util/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Input.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Util/NameGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/NameGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/johnnypan.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ai/AI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/CashflowGameController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/GameRecorder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/decisions/BuyStockDecision.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/decisions/CompleteTurnDecision.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/decisions/Decision.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/decisions/SellStockDecision.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exception/NotYourTurnException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/game/CashFlowGameImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/game/GameCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/game/StockMarketSnapshot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/players/OwnStock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presenters/CommandLinePresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/mongodb/diagnostic.data/metrics.2020-08-04T10-31-56Z-00000" beforeDir="false" afterPath="$PROJECT_DIR$/data/mongodb/diagnostic.data/metrics.2020-08-04T10-31-56Z-00000" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/mongodb/diagnostic.data/metrics.interim" beforeDir="false" afterPath="$PROJECT_DIR$/data/mongodb/diagnostic.data/metrics.interim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exception/CashFlowException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exception/CashFlowException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exception/StockNotEnoughException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exception/StockNotEnoughException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exception/StockNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exception/StockNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/CashFlowGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/CashFlowGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/CashFlowGameSaveManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/GameConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/io/FileManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/players/AI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/players/HumanPlayer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/players/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/players/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/players/StupidAI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ai/StupidAI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/players/decisions/Decision.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stocks/Order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stocks/PriceRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stocks/PriceRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stocks/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stocks/Stock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stocks/StockLifecycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stocks/StockLifecycle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stocks/StockMarket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stocks/StockMarket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stocks/StockProduct.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stocks/strategies/ExcitingPriceFluctuationStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stocks/strategies/HighPriceFluctuationStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stocks/strategies/NormalPriceFluctuationStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stocks/strategies/NormalPriceFluctuationStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stocks/strategies/PriceFluctuationStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stocks/strategies/PriceFluctuationStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stocks/strategies/SmallRatePriceFluctuationStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Input.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -95,6 +97,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -102,17 +106,34 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+  </component>
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="game" />
+    </key>
+    <key name="MoveInnerDialog.RECENTS_KEY">
+      <recent name="game" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="game.records.commands" />
+      <recent name="controllers.decisions" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/ai" />
+    </key>
   </component>
   <component name="RunManager">
-    <configuration name="CashFlowGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="game.CashFlowGame" />
+    <configuration name="CashFlowGameImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="game.CashFlowGameImpl" />
       <module name="現金流" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="game.*" />
+          <option name="PATTERN" value="game.records.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,7 +143,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CashFlowGame" />
+        <item itemvalue="Application.CashFlowGameImpl" />
       </list>
     </recent_temporary>
   </component>
@@ -137,7 +158,7 @@
       <option name="presentableId" value="Default" />
       <updated>1596421332849</updated>
       <workItem from="1596421343417" duration="142000" />
-      <workItem from="1596421500548" duration="5709000" />
+      <workItem from="1596421500548" duration="24793000" />
     </task>
     <servers />
   </component>
@@ -156,35 +177,56 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1596515496492">
+    <state x="773" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1596625454525">
+      <screen x="0" y="23" width="1920" height="982" />
+    </state>
+    <state x="773" y="236" key="#com.intellij.ide.util.MemberChooser/0.23.1920.982@0.23.1920.982" timestamp="1596625454525" />
+    <state x="698" y="335" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1596621019417">
+      <screen x="0" y="23" width="1920" height="982" />
+    </state>
+    <state x="698" y="335" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1920.982@0.23.1920.982" timestamp="1596621019417" />
+    <state x="767" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1596620739257">
+      <screen x="0" y="23" width="1920" height="982" />
+    </state>
+    <state x="767" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.23.1920.982@0.23.1920.982" timestamp="1596620739257" />
+    <state x="735" y="415" width="450" height="205" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1596621020283">
+      <screen x="0" y="23" width="1920" height="982" />
+    </state>
+    <state x="735" y="415" width="450" height="205" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1920.982@0.23.1920.982" timestamp="1596621020283" />
+    <state x="732" y="365" key="#com.intellij.refactoring.move.moveInner.MoveInnerDialog" timestamp="1596620741989">
+      <screen x="0" y="23" width="1920" height="982" />
+    </state>
+    <state x="732" y="365" key="#com.intellij.refactoring.move.moveInner.MoveInnerDialog/0.23.1920.982@0.23.1920.982" timestamp="1596620741989" />
+    <state x="552" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1596617840359">
       <screen x="0" y="23" width="1920" height="982" />
     </state>
     <state x="552" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1920.981@0.23.1920.981" timestamp="1596422042383" />
-    <state x="552" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1920.982@0.23.1920.982" timestamp="1596515496492" />
-    <state x="698" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596422120186">
-      <screen x="0" y="23" width="1920" height="981" />
+    <state x="552" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1920.982@0.23.1920.982" timestamp="1596617840359" />
+    <state x="698" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596617710086">
+      <screen x="0" y="23" width="1920" height="982" />
     </state>
     <state x="698" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.981@0.23.1920.981" timestamp="1596422120186" />
-    <state width="1878" height="831" key="GridCell.Tab.0.bottom" timestamp="1596515020649">
+    <state x="698" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.982@0.23.1920.982" timestamp="1596617710086" />
+    <state width="1878" height="158" key="GridCell.Tab.0.bottom" timestamp="1596600021786">
       <screen x="0" y="23" width="1920" height="982" />
     </state>
     <state width="1878" height="327" key="GridCell.Tab.0.bottom/0.23.1920.981@0.23.1920.981" timestamp="1596423502113" />
-    <state width="1878" height="831" key="GridCell.Tab.0.bottom/0.23.1920.982@0.23.1920.982" timestamp="1596515020649" />
-    <state width="1878" height="831" key="GridCell.Tab.0.center" timestamp="1596515020648">
+    <state width="1878" height="158" key="GridCell.Tab.0.bottom/0.23.1920.982@0.23.1920.982" timestamp="1596600021786" />
+    <state width="1878" height="158" key="GridCell.Tab.0.center" timestamp="1596600021785">
       <screen x="0" y="23" width="1920" height="982" />
     </state>
     <state width="1878" height="327" key="GridCell.Tab.0.center/0.23.1920.981@0.23.1920.981" timestamp="1596423502113" />
-    <state width="1878" height="831" key="GridCell.Tab.0.center/0.23.1920.982@0.23.1920.982" timestamp="1596515020648" />
-    <state width="1878" height="831" key="GridCell.Tab.0.left" timestamp="1596515020648">
+    <state width="1878" height="158" key="GridCell.Tab.0.center/0.23.1920.982@0.23.1920.982" timestamp="1596600021785" />
+    <state width="1878" height="158" key="GridCell.Tab.0.left" timestamp="1596600021785">
       <screen x="0" y="23" width="1920" height="982" />
     </state>
     <state width="1878" height="327" key="GridCell.Tab.0.left/0.23.1920.981@0.23.1920.981" timestamp="1596423502112" />
-    <state width="1878" height="831" key="GridCell.Tab.0.left/0.23.1920.982@0.23.1920.982" timestamp="1596515020648" />
-    <state width="1878" height="831" key="GridCell.Tab.0.right" timestamp="1596515020648">
+    <state width="1878" height="158" key="GridCell.Tab.0.left/0.23.1920.982@0.23.1920.982" timestamp="1596600021785" />
+    <state width="1878" height="158" key="GridCell.Tab.0.right" timestamp="1596600021785">
       <screen x="0" y="23" width="1920" height="982" />
     </state>
     <state width="1878" height="327" key="GridCell.Tab.0.right/0.23.1920.981@0.23.1920.981" timestamp="1596423502113" />
-    <state width="1878" height="831" key="GridCell.Tab.0.right/0.23.1920.982@0.23.1920.982" timestamp="1596515020648" />
+    <state width="1878" height="158" key="GridCell.Tab.0.right/0.23.1920.982@0.23.1920.982" timestamp="1596600021785" />
     <state width="1878" height="413" key="GridCell.Tab.1.bottom" timestamp="1596514293282">
       <screen x="0" y="23" width="1920" height="982" />
     </state>
@@ -205,28 +247,27 @@
     </state>
     <state width="1878" height="327" key="GridCell.Tab.1.right/0.23.1920.981@0.23.1920.981" timestamp="1596423491394" />
     <state width="1878" height="413" key="GridCell.Tab.1.right/0.23.1920.982@0.23.1920.982" timestamp="1596514293281" />
-    <state x="896" y="167" key="SettingsEditor" timestamp="1596423403369">
-      <screen x="0" y="23" width="1920" height="981" />
-    </state>
-    <state x="896" y="167" key="SettingsEditor/0.23.1920.981@0.23.1920.981" timestamp="1596423403369" />
-    <state x="668" y="281" key="refactoring.ChangeSignatureDialog" timestamp="1596515716477">
+    <state x="896" y="167" key="SettingsEditor" timestamp="1596614128732">
       <screen x="0" y="23" width="1920" height="982" />
     </state>
-    <state x="668" y="281" key="refactoring.ChangeSignatureDialog/0.23.1920.982@0.23.1920.982" timestamp="1596515716477" />
-    <state x="625" y="249" width="670" height="676" key="search.everywhere.popup" timestamp="1596422350230">
-      <screen x="0" y="23" width="1920" height="981" />
+    <state x="896" y="167" key="SettingsEditor/0.23.1920.981@0.23.1920.981" timestamp="1596423403369" />
+    <state x="896" y="167" key="SettingsEditor/0.23.1920.982@0.23.1920.982" timestamp="1596614128732" />
+    <state x="739" y="291" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1596603545651">
+      <screen x="0" y="23" width="1920" height="982" />
+    </state>
+    <state x="739" y="291" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1920.982@0.23.1920.982" timestamp="1596603545651" />
+    <state x="698" y="272" key="extract.method.dialog" timestamp="1596620143558">
+      <screen x="0" y="23" width="1920" height="982" />
+    </state>
+    <state x="698" y="272" key="extract.method.dialog/0.23.1920.982@0.23.1920.982" timestamp="1596620143558" />
+    <state x="668" y="281" key="refactoring.ChangeSignatureDialog" timestamp="1596625543077">
+      <screen x="0" y="23" width="1920" height="982" />
+    </state>
+    <state x="668" y="281" key="refactoring.ChangeSignatureDialog/0.23.1920.982@0.23.1920.982" timestamp="1596625543077" />
+    <state x="625" y="249" width="670" height="677" key="search.everywhere.popup" timestamp="1596625547879">
+      <screen x="0" y="23" width="1920" height="982" />
     </state>
     <state x="625" y="249" width="670" height="676" key="search.everywhere.popup/0.23.1920.981@0.23.1920.981" timestamp="1596422350230" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/game/CashFlowGame.java</url>
-          <line>63</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="625" y="249" width="670" height="677" key="search.everywhere.popup/0.23.1920.982@0.23.1920.982" timestamp="1596625547879" />
   </component>
 </project>
