@@ -26,6 +26,10 @@ public class CashflowGameController {
 
         void onPlayerTurn(Player player);
 
+        void onSavingGame();
+
+        void onGameSaved();
+
         Decision onMakeDecision(BuyStockDecision buyStockDecision,
                                 SellStockDecision sellStockDecision,
                                 CompleteTurnDecision completeTurnDecision);
@@ -33,24 +37,43 @@ public class CashflowGameController {
         void onGameOver(List<Player> winnersInRank);
     }
 
+    public interface PlayerListener extends Listener {
+        void onAskingPlayerName(Consumer<String> nameConsumer);
+    }
+
     public CashflowGameController(CashFlowGame game) {
         this.game = game;
     }
 
-    public void addPlayerListener(int playerId, Listener listener) {
-        playerListenerMap.put(playerId, listener);
-        addListener(listener);
+    public void addListener(PlayerListener listener) {
+        listeners.add(listener);
     }
+
 
     public void addListener(Listener listener) {
         listeners.add(listener);
     }
 
     public void startGame() {
+        askForPlayerNames();
         game.startGame();
         currentDay = game.getCurrentDay();
         notifyAllListeners(Listener::onGameStarted);
         notifyAllListeners(Listener::onDayBegins);
+    }
+
+    private void askForPlayerNames() {
+        listeners.stream()
+                .filter(l -> l instanceof PlayerListener)
+                .map(l -> (PlayerListener) l)
+                .forEach(this::askForPlayerName);
+    }
+
+    private void askForPlayerName(PlayerListener playerListener) {
+        playerListener.onAskingPlayerName(name -> {
+            int playerId = game.addPlayerAndGetId(new Player(name));
+            playerListenerMap.put(playerId, playerListener);
+        });
     }
 
     public void buyStock(Player player, int stockId, int amount) {

@@ -20,48 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d700b67a-3c35-423d-ad39-2acfd72db03d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/johnnypan.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ai/AI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/CashflowGameController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/GameRecorder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/decisions/BuyStockDecision.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/decisions/CompleteTurnDecision.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/decisions/Decision.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/decisions/SellStockDecision.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exception/NotYourTurnException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/game/CashFlowGameImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/game/GameCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/game/StockMarketSnapshot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/players/OwnStock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/presenters/CommandLinePresenter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mongodb/diagnostic.data/metrics.2020-08-04T10-31-56Z-00000" beforeDir="false" afterPath="$PROJECT_DIR$/data/mongodb/diagnostic.data/metrics.2020-08-04T10-31-56Z-00000" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mongodb/diagnostic.data/metrics.interim" beforeDir="false" afterPath="$PROJECT_DIR$/data/mongodb/diagnostic.data/metrics.interim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exception/CashFlowException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exception/CashFlowException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exception/StockNotEnoughException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exception/StockNotEnoughException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exception/StockNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exception/StockNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/CashFlowGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/CashFlowGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/CashFlowGameSaveManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/GameConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/FileManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/players/AI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/players/HumanPlayer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/players/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/players/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/players/StupidAI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ai/StupidAI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/players/decisions/Decision.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stocks/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stocks/PriceRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stocks/PriceRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stocks/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stocks/Stock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stocks/StockLifecycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stocks/StockLifecycle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stocks/StockMarket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stocks/StockMarket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stocks/StockProduct.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stocks/strategies/ExcitingPriceFluctuationStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stocks/strategies/HighPriceFluctuationStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stocks/strategies/NormalPriceFluctuationStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stocks/strategies/NormalPriceFluctuationStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stocks/strategies/PriceFluctuationStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stocks/strategies/PriceFluctuationStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stocks/strategies/SmallRatePriceFluctuationStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Input.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/CashflowGameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/CashflowGameController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +118,7 @@
       <option name="presentableId" value="Default" />
       <updated>1596421332849</updated>
       <workItem from="1596421343417" duration="142000" />
-      <workItem from="1596421500548" duration="24793000" />
+      <workItem from="1596421500548" duration="26086000" />
     </task>
     <servers />
   </component>
