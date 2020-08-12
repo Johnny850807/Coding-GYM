@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4862f938-138c-49be-bf14-2ce36479b5ba" name="Default Changelist" comment="" />
+    <list default="true" id="4862f938-138c-49be-bf14-2ce36479b5ba" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../命令模式練習/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../命令模式練習/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../進階登入系統/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../進階登入系統/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../進階登入系統/src/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/../進階登入系統/src/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../進階登入系統/src/UserList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../進階登入系統/src/UserList.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,6 +58,7 @@
       <option name="presentableId" value="Default" />
       <updated>1596279729268</updated>
       <workItem from="1596279731597" duration="14000" />
+      <workItem from="1597048454205" duration="7000" />
     </task>
     <servers />
   </component>

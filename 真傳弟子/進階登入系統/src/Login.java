@@ -18,7 +18,7 @@ public class Login {
 
     public void login(String account,String password) {
         try {
-            list.judementLoginInput(account, password);
+            list.judgementLoginInput(account, password);
         }catch(UserInputError | IOException e){
             e.printStackTrace();
         }

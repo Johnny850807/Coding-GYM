@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="987d48d8-994a-4a10-aa5b-b0dc6e5e2840" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ff6zbUHCpiiePvZGzVi85JXawq" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="proxypatten.Main" />
+      <module name="ProxyPatten快取" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="987d48d8-994a-4a10-aa5b-b0dc6e5e2840" name="Default Changelist" comment="" />
+      <created>1596597062997</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596597062997</updated>
+      <workItem from="1596597065437" duration="105000" />
+      <workItem from="1596597313272" duration="190000" />
+      <workItem from="1596597539228" duration="195000" />
+      <workItem from="1596597773906" duration="200000" />
+      <workItem from="1596600792688" duration="845000" />
+      <workItem from="1596605659240" duration="3000" />
+      <workItem from="1596606056117" duration="8604000" />
+      <workItem from="1596626920322" duration="4297000" />
+      <workItem from="1596678780105" duration="1763000" />
+      <workItem from="1596807278069" duration="6107000" />
+      <workItem from="1596883859105" duration="202000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="672" y="167" key="#WebServer.jar" timestamp="1596597336688">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="672" y="167" key="#WebServer.jar/0.0.1920.1040@0.0.1920.1040" timestamp="1596597336688" />
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1596815331677">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1596815331677" />
+    <state x="549" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1596883979896">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="549" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596883979896" />
+    <state width="431" height="466" key="DebuggerActiveHint" timestamp="1596622281984">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="431" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1596622281984" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1596597167474">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1596597167474" />
+    <state width="1877" height="269" key="GridCell.Tab.0.bottom" timestamp="1596811285370">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="269" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596811285370" />
+    <state width="1877" height="269" key="GridCell.Tab.0.center" timestamp="1596811285369">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="269" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596811285369" />
+    <state width="1877" height="269" key="GridCell.Tab.0.left" timestamp="1596811285369">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="269" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596811285369" />
+    <state width="1877" height="269" key="GridCell.Tab.0.right" timestamp="1596811285370">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="269" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596811285370" />
+    <state width="1877" height="337" key="GridCell.Tab.1.bottom" timestamp="1596627015284">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="337" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596627015284" />
+    <state width="1877" height="337" key="GridCell.Tab.1.center" timestamp="1596627015284">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="337" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596627015284" />
+    <state width="1877" height="337" key="GridCell.Tab.1.left" timestamp="1596627015284">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="337" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596627015284" />
+    <state width="1877" height="337" key="GridCell.Tab.1.right" timestamp="1596627015284">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="337" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596627015284" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1596597144855">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596597144855" />
+    <state x="648" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1596883861715">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="648" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596883861715" />
+    <state x="731" y="222" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1596884045168">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="731" y="222" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596884045168" />
+    <state x="336" y="130" key="new project wizard" timestamp="1596698357540">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="336" y="130" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1596698357540" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/adapter/WebAdapter.java</url>
+          <line>12</line>
+          <properties class="proxypatten.WebAdapter" method="request">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/proxypatten/Observable.java</url>
+          <line>19</line>
+          <properties class="proxypatten.Observable" method="response">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/proxypatten/User.java</url>
+          <line>4</line>
+          <properties class="proxypatten.User" method="response">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="webAdapter" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
