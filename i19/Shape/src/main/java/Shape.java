@@ -1,4 +1,3 @@
-import java.text.NumberFormat;
 import java.util.Scanner;
 
 /**
@@ -6,6 +5,7 @@ import java.util.Scanner;
  */
 public interface Shape {
     Scanner IN = new Scanner(System.in);
+
     double calculation();
 }
 

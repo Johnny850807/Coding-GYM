@@ -8,8 +8,7 @@ public class CountRectangle implements Shape {
         System.out.println("輸入長、寬：");
         double length = IN.nextDouble();
         double width = IN.nextDouble();
-        double result = length * width;
-        return (double) Math.round(result * 100) / 100;
+        return length * width;
     }
 }
 

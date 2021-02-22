@@ -12,11 +12,13 @@ public class ShapeCalculation {
         this.shape = shape;
     }
 
-    public double countResult(Shape shape){
-        if(shape == null){
+    public double countResult(Shape shape, int bit) {
+        double pow = Math.pow(10, bit);
+        if (shape == null) {
             this.shape = new CountCircle();
         }
-        return this.shape.calculation();
+        double shapeCount = this.shape.calculation();
+        return (double) Math.round(shapeCount * pow) / pow;
     }
 }
 

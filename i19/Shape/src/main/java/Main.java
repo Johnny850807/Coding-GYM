@@ -15,9 +15,11 @@ public class Main {
         System.out.println("使用者首先決定要計算何種形狀的面積：\n" +
                 "(1) 圓形 (2) 矩形 (3) 三角形");
         Shape shape = SHAPES[in.nextInt()];
+        System.out.println("你要四捨五入到第幾位?");
+        int bit = in.nextInt();
         ShapeCalculation shapeCalculation = new ShapeCalculation(shape);
         shapeCalculation.setShape(shape);
-        System.out.println(shapeCalculation.countResult(shape));
+        System.out.println(shapeCalculation.countResult(shape, bit));
     }
 }
 
