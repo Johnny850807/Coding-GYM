@@ -2,21 +2,15 @@
  * @author i19
  */
 public class ShapeCalculation {
-    private Shape shape;
-
-    public void setShape(Shape shape) {
-        this.shape = shape;
-    }
+    private final Shape shape;
 
     public ShapeCalculation(Shape shape) {
         this.shape = shape;
     }
 
-    public double countResult(Shape shape, int bit) {
+    public double countResult(int bit) {
         double pow = Math.pow(10, bit);
-        if (shape == null) {
-            this.shape = new CountCircle();
-        }
+        this.shape.inputShapeParameter();
         double shapeCount = this.shape.calculation();
         return (double) Math.round(shapeCount * pow) / pow;
     }

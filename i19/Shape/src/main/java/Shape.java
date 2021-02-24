@@ -6,6 +6,8 @@ import java.util.Scanner;
 public interface Shape {
     Scanner IN = new Scanner(System.in);
 
+    void inputShapeParameter();
+
     double calculation();
 }
 
