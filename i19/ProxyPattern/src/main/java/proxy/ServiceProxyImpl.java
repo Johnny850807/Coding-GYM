@@ -10,7 +10,9 @@ import java.util.Map;
  */
 public class ServiceProxyImpl implements Service {
     private final Service service;
-    private final Map<String, String> cache = new HashMap<>();
+    private final Map<String, String> cacheIds = new HashMap<>();
+    private final Map<String, String> cacheProductDetails = new HashMap<>();
+
 
     public ServiceProxyImpl(Service service) {
         this.service = service;
@@ -18,21 +20,21 @@ public class ServiceProxyImpl implements Service {
 
     @Override
     public String getIds(String name) throws WebException, InterruptedException {
-        if (cache.containsKey(name)) {
-            return cache.get(name);
+        if (cacheIds.containsKey(name)) {
+            return cacheIds.get(name);
         }
         String id = service.getIds(name);
-        cache.put(name, id);
+        cacheIds.put(name, id);
         return id;
     }
 
     @Override
     public String getProductDetails(String id) throws WebException, InterruptedException {
-        if (cache.containsKey(id)) {
-            return cache.get(id);
+        if (cacheProductDetails.containsKey(id)) {
+            return cacheProductDetails.get(id);
         }
         String productDetails = service.getProductDetails(id);
-        cache.put(id, productDetails);
+        cacheProductDetails.put(id, productDetails);
         return productDetails;
     }
 }

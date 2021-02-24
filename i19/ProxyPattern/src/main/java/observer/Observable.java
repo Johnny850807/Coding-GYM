@@ -8,7 +8,7 @@ public interface Observable {
 
     void deleteDisplay(Display display);
 
-    void notifyDisplay(String productIds);
+    void update(String name);
 
 }
 
