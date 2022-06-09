@@ -25,10 +25,6 @@ public class Main {
                 }
             }
         }
-//        80 100 55 32 81
-//        100 81 55 32 80
-//        100 81 80 32 55
-//        100 81 80 55 32
 
         for (Student s : students) {
             System.out.println(s);
