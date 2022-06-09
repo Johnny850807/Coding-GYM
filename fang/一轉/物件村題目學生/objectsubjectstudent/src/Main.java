@@ -17,14 +17,18 @@ public class Main {
 
         Student studentTemp;
         for (int i = 0; i < students.length - 1; i++) {
-            for (int j = i; j < students.length - 1; j++) {
-                if (students[j].getScore() > students[j + 1].getScore()) {
+            for (int j = i + 1; j < students.length; j++) {
+                if (students[i].getScore() > students[j].getScore()) {
                     studentTemp = students[i];
-                    students[i] = students[j + 1];
-                    students[j + 1] = studentTemp;
+                    students[i] = students[j];
+                    students[j] = studentTemp;
                 }
             }
         }
+//        80 100 55 32 81
+//        100 81 55 32 80
+//        100 81 80 32 55
+//        100 81 80 55 32
 
         for (Student s : students) {
             System.out.println(s);
