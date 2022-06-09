@@ -16,11 +16,15 @@ public class Main {
         }
 
         Student studentTemp;
+        Student student;
+        Student nextStudent;
         for (int i = 0; i < students.length - 1; i++) {
             for (int j = i + 1; j < students.length; j++) {
-                if (students[i].getScore() > students[j].getScore()) {
-                    studentTemp = students[i];
-                    students[i] = students[j];
+                student = students[i];
+                nextStudent = students[j];
+                if (student.getScore() > nextStudent.getScore()) {
+                    studentTemp = student;
+                    students[i] = nextStudent;
                     students[j] = studentTemp;
                 }
             }
